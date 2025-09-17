@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .links {
+    display: flex;
+    gap: 20px;
+    font-family: Unbounded;
+    text-decoration: none;
+    color: black;
+  }
+  .projects {
+    margin-top: 50px;
+  }
+  .projects .filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+    gap: 20px;
+    margin-bottom: 50px;
+    transform: translateY(30px);
+    transition: opacity 0.4s transform 0.4s;
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+  }
+  .projects .image {
+    height: 200px;
+    width: 186px;
+    background-color: black;
+  }
+  .projects .image2 {
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+  }
+  #showall {
+    z-index: 10;
+  }
+  #new {
+    z-index: 20;
+  }
+  #old {
+    z-index: 30;
+  }
+  #present {
+    z-index: 40;
+  }
+  .projects .filter.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 300ms;
+  }
+  .projects .filter.hide {
+    transform: translateY(30px);
+    opacity: 0;
+    display: flex;
+    transition: 300ms;
+  }
+</style>
+<body>
+  <div class="links">
+    <a href="" id="showbtn">Show all</a>
+    <a href="" id="newbtn">New</a>
+    <a href="" id="oldbtn">Old</a>
+    <a href="" id="prbtn">Present</a>
+  </div>
+  <div class="projects">
+    <div class="filter" id="showall">
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image2"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+    </div>
+    <div class="filter" id="new">
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+    </div>
+    <div class="filter" id="present">
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image2"></div>
+    </div>
+    <div class="filter" id="old">
+      <div class="image2"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+    </div>
+  </div>
+  <div class="head">
+    <h2 style="position: relative; z-index: 100; color: black;">Welcome</h2>
+  </div>
+
+  <script>
+  const filters = document.querySelectorAll('.filter');
+
+  const buttons = {
+    showbtn: document.getElementById('showbtn'),
+    newbtn: document.getElementById('newbtn'),
+    oldbtn: document.getElementById('oldbtn'),
+    prbtn: document.getElementById('prbtn')
+  };
+
+  const sections = {
+    showbtn: document.getElementById('showall'),
+    newbtn: document.getElementById('new'),
+    oldbtn: document.getElementById('old'),
+    prbtn: document.getElementById('present')
+  };
+
+  // Function to show selected filter
+  function showFilter(selectedId) {
+    filters.forEach(filter => {
+      if (filter === sections[selectedId]) {
+        // Show the clicked one
+        filter.classList.remove('hide');
+        filter.classList.add('show');
+      } else {
+        // Hide others
+        filter.classList.remove('show');
+        filter.classList.add('hide');
+      }
+    });
+  }
+
+  // Attach event listeners to each button
+  Object.keys(buttons).forEach(key => {
+    buttons[key].addEventListener('click', event => {
+      event.preventDefault();
+      showFilter(key);
+    });
+  });
+
+  // Initially show "Show All"
+  showFilter('showbtn');
+  </script>
+</body>
+</html>
