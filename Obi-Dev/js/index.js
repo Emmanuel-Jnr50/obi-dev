@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Auto play
     function startAutoSlide() {
-      autoSlideInterval = setInterval(nextSlide, 3000); // slower autoplay
+      autoSlideInterval = setInterval(nextSlide, 5000); // slower autoplay
     }
 
     function stopAutoSlide() {
@@ -218,57 +218,59 @@ document.querySelectorAll(".reel").forEach(reel => {
 
 
 
-const buttons = {
-  showbtn: document.getElementById('showbtn'),
-  newbtn:  document.getElementById('finbtn'),
-  oldbtn:  document.getElementById('marketbtn'),
-  prbtn:   document.getElementById('edbtn')
-};
+// const buttons = {
+//   showbtn: document.getElementById('showbtn'),
+//   newbtn:  document.getElementById('finbtn'),
+//   oldbtn:  document.getElementById('marketbtn'),
+//   prbtn:   document.getElementById('edbtn')
+// };
 
-const sections = {
-  showbtn: document.getElementById('showall'),
-  newbtn:  document.getElementById('finance'),
-  oldbtn:  document.getElementById('marketing'),
-  prbtn:   document.getElementById('edtech')
-};
+// const sections = {
+//   showbtn: document.getElementById('showall'),
+//   newbtn:  document.getElementById('finance'),
+//   oldbtn:  document.getElementById('marketing'),
+//   prbtn:   document.getElementById('edtech')
+// };
 
-let current = sections.showbtn;
-current.classList.add('show'); // initial
+// let current = sections.showbtn;
+// current.classList.add('show'); // initial
 
-function waitForTransition(el, propName = null, timeout = 700) {
-  return new Promise(resolve => {
-    let done = false;
-    function handler(e) {
-      if (e.target !== el) return;
-      if (!propName || e.propertyName === propName) {
-        if (!done) { done = true; el.removeEventListener('transitionend', handler); clearTimeout(timer); resolve(); }
-      }
-    }
-    el.addEventListener('transitionend', handler);
-    const timer = setTimeout(() => { if (!done) { done = true; el.removeEventListener('transitionend', handler); resolve(); } }, timeout);
-  });
-}
+// function waitForTransition(el, propName = null, timeout = 700) {
+//   return new Promise(resolve => {
+//     let done = false;
+//     function handler(e) {
+//       if (e.target !== el) return;
+//       if (!propName || e.propertyName === propName) {
+//         if (!done) { done = true; el.removeEventListener('transitionend', handler); clearTimeout(timer); resolve(); }
+//       }
+//     }
+//     el.addEventListener('transitionend', handler);
+//     const timer = setTimeout(() => { if (!done) { done = true; el.removeEventListener('transitionend', handler); resolve(); } }, timeout);
+//   });
+// }
 
-async function showFilter(key) {
-  const next = sections[key];
-  if (!next || next === current) return;
+// async function showFilter(key) {
+//   const next = sections[key];
+//   if (!next || next === current) return;
 
-  // Start hide current
-  current.classList.remove('show');
-  // wait for opacity/max-height to finish
-  await waitForTransition(current, 'max-height');
+//   // Start hide current
+//   current.classList.remove('show');
+//   // wait for opacity/max-height to finish
+//   await waitForTransition(current, 'max-height');
 
-  // show next
-  next.classList.add('show');
+//   // show next
+//   next.classList.add('show');
 
-  // update current ref
-  current = next;
-}
+//   // update current ref
+//   current = next;
+// }
 
-// wire buttons
-Object.keys(buttons).forEach(k => {
-  buttons[k].addEventListener('click', e => {
-    e.preventDefault();
-    showFilter(k);
-  });
-});
+// // wire buttons
+// Object.keys(buttons).forEach(k => {
+//   buttons[k].addEventListener('click', e => {
+//     e.preventDefault();
+//     showFilter(k);
+//   });
+// });
+
+

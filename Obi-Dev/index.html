@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obi-Dev • Portfolio</title>
+    <title>Obi-Dev | Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="media-queries/style-query.css">
+    <link rel="icon" href="/img/thumbnail.png" type="icon">
 </head>
-<body>
+<body id="home">
     <div class="preloader" id="preloader">
         <span></span>
         <h1>OBI-DEV</h1>
     </div>
 
-    <div class="hero about" id="home">
+    <div class="hero about">
 
-        <!-- <div id="nav-spacer"></div> -->
-        <div class="menu-bar" id="menu">
+        <div id="nav-spacer"></div>
+        <div class="menu-bar" id="site-nav">
             <div class="logo">
-                <img src="icons/Obi-Dev.svg" alt="">
+                <img src="img/thumbnail.png" alt="">
                 <h2>Obi-Dev</h2>
             </div>
             <div class="links">
@@ -58,6 +60,50 @@
                     <a href="#contact">Contact Us</a>
                 </span>
             </div>
+
+            <div class="menu-btn" id="menubtn">
+                <img src="icons/menu-svgrepo-com (2).svg" alt="">
+            </div>
+            <div class="phone-menu" id="phonemenu">
+                <div class="links2">
+                    <span class="linkx" onclick="location.href='#home'">
+                        <i></i>
+                        <a href="#home" >Home</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#about'">
+                        <i></i>
+                        <a href="#about">About Me</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#resume'">
+                        <i></i>
+                        <a href="#resume">Resume</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#stack'">
+                        <i></i>
+                        <a href="#stack">Stack</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#services'">
+                        <i></i>
+                        <a href="#services">Services</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#portfolio'">
+                        <i></i>
+                        <a href="#portfolio">Portfolio</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#client'">
+                        <i></i>
+                        <a href="#client">Client</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#insight'">
+                        <i></i>
+                        <a href="#insight">Insight</a>
+                    </span>
+                    <span class="linkx" onclick="location.href='#contact'">
+                        <i></i>
+                        <a href="#contact">Contact Us</a>
+                    </span>
+                </div>
+            </div>
         </div>
 
         <div class="about-me">
@@ -67,7 +113,7 @@
             <h2>Senior Frontend Developer Based in Nigeria</h2>
             <span class="arrow">
                 <img src="img/half-arrow.png" alt="">
-                <p>I’m specialize in various areas of design, such as product design, web design, branding, and visual elements etc.</p>
+                <p>I’m specialize in various areas of design, such as product design, web design, UI/UX, and visual elements etc.</p>
             </span>
 
             <div class="stats">
@@ -647,6 +693,35 @@
             </span>
         </div>
     </footer>
+    <script>
+           window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const targetId = params.get('scrollTo');
+            if (targetId) {
+            setTimeout(() => {
+                const target = document.getElementById(targetId);
+                if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 300); // 0.2 seconds delay
+            }
+        });
+
+
+        const menuBtn = document.getElementById('menubtn');
+        const phoneMenu = document.getElementById('phonemenu');
+        const spans = document.querySelectorAll('.linkx');
+
+        menuBtn.addEventListener('click', function() {
+            phoneMenu.classList.toggle('active');
+        });
+
+        spans.forEach(span => {
+            span.addEventListener('click', function() {
+                phoneMenu.classList.remove('active');
+            });
+        });
+    </script>
     <script src="gsap/gsap.min.js"></script>
     <script src="gsap/ScrollTrigger.min.js"></script>
     <script src="js/gsap.js"></script>

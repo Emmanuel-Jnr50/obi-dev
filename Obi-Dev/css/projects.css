@@ -1,5 +1,7 @@
 /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
 
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -167,6 +169,59 @@ nav.fixed {
     left:0;
     right:0;
     top:30px;            /* stays at same gap when fixed */
+}
+
+nav .menu-btn img {
+    width: 25px;
+    display: none;
+}
+nav .phone-menu {
+    position: absolute;
+    z-index: 100;
+    box-shadow: inset 0px 0px 20px #ffffff12;
+    width: 100%;
+    margin-left: -25px;
+    background-color: #141413;
+    padding: 10px 30px 30px 30px;
+    border-radius: 20px;
+    visibility: hidden;
+    transform: translateY(40px);
+    transition: 400ms;
+}
+nav .phone-menu .links2 span {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #39383894;
+    gap: 10px;
+}
+nav .phone-menu .links2 span i {
+    width: 20px;
+    border-bottom: 1px solid #FDF9CF;
+    opacity: 0;
+    transition: 400ms;
+    position: absolute;
+}
+nav .phone-menu .links2 a{
+    display: block;
+    color: #B6B5AF;
+    text-decoration: none;
+    padding: 22.5px 0;
+    font-weight: 400;
+    font-size: 16px;
+    transition: padding 400ms, color 300ms;
+}
+
+nav .phone-menu .links2 span:hover i{
+    opacity: 1;
+}
+
+nav .phone-menu .links2 span:hover a {
+    padding-left: 30px;
+    color: #FDF9CF;
+}
+nav .phone-menu.active {
+    visibility: visible;
+    transform: translateY(0px);
 }
 
 .project-section {
