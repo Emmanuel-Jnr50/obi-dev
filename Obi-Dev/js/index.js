@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         setTimeout(() => {
         preloader.remove();
-        }, 500);
+        }, 1000);
     });
 });
 

@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes scaleOut {
     from {
-        scale: 0.3;
+        scale: 0.5;
         opacity: 0.8;
     }
     to {
@@ -62,7 +62,6 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(2px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    display: none;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
@@ -73,11 +72,12 @@ body::-webkit-scrollbar-thumb {
     position:absolute;
 }
 .preloader h1 {
-    font-size: 30px;
+    font-size: 25px;
     color: transparent;
     position: relative;z-index: 1;
-    -webkit-text-stroke: 1px white;
-    letter-spacing: 20px;
+    -webkit-text-stroke: 1.5px white;
+    letter-spacing: 5px;
+    font-weight: 600;
 }
 nav {
     display: flex;
