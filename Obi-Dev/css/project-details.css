@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.609);
     top: 0;
     left: 0;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 .preloader span {
@@ -169,6 +169,79 @@ nav.fixed {
     left:0;
     right:0;
     top:30px;            /* stays at same gap when fixed */
+}
+
+nav .menu-btn {
+    box-shadow: inset 0px 0px 20px #ffffff12;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+}
+nav .menu-btn img {
+    width: 30px;
+}
+nav .phone-menu {
+    position: absolute;
+    z-index: 100;
+    box-shadow: inset 0px 0px 20px #ffffff12;
+    width: 100%;
+    margin-left: -15px;
+    background-color: #141413;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    top: 75px;
+    visibility: hidden;
+    transition: 400ms;
+    opacity: 0;
+    background-color: #141413;
+}
+nav .phone-menu .links2 span {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #39383829;
+    gap: 10px;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 0 10px;
+    position: relative;
+}
+nav .phone-menu .links2 span i {
+    width: 20px;
+    border-bottom: 1px solid #FDF9CF;
+    opacity: 0;
+    transition: 400ms;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+nav .phone-menu .links2 a{
+    display: block;
+    color: #FDF9CF;
+    text-decoration: none;
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+    transition: padding 400ms, color 300ms, transform 300ms;
+}
+nav .phone-menu .links2 span:nth-child(1) {
+    border-top: 1px solid #39383829;
+}
+
+nav .phone-menu .links2 span:hover i{
+    opacity: 1;
+}
+
+nav .phone-menu .links2 span:hover a {
+    padding-left: 0px;
+    transform: scale(1.1);
+    color: #FDF9CF;
+}
+
+nav .phone-menu.active {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .project-section {
@@ -320,7 +393,7 @@ nav.fixed {
     margin-bottom: 150px;
 }
 .related-projects .one {
-    width: 449px;
+    width: 28%;
     height: 550px;
     overflow: hidden;
     position: relative;

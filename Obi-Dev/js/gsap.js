@@ -81,9 +81,42 @@ gsap.from(".stack .header>span , .stack .header h2", {
   stagger: 0.5
 });
 
-gsap.from(".skill", {
+gsap.from(".skill.one", {
   scrollTrigger: {
-    trigger: ".summary",
+    trigger: ".summary .skill.one",
+    start: "top 70%"
+  },
+  y: 50,
+  opacity: 0,
+  duration: 2,
+  ease: "power3.out",
+  stagger: 0.3 // delay between each
+});
+gsap.from(".skill.two", {
+  scrollTrigger: {
+    trigger: ".summary .skill.two",
+    start: "top 80%"
+  },
+  y: 50,
+  opacity: 0,
+  duration: 2,
+  ease: "power3.out",
+  stagger: 0.3 // delay between each
+});
+gsap.from(".skill.three", {
+  scrollTrigger: {
+    trigger: ".summary .skill.three",
+    start: "top 80%"
+  },
+  y: 50,
+  opacity: 0,
+  duration: 2,
+  ease: "power3.out",
+  stagger: 0.3 // delay between each
+});
+gsap.from(".skill.four", {
+  scrollTrigger: {
+    trigger: ".summary .skill.four",
     start: "top 80%"
   },
   y: 50,
@@ -97,7 +130,7 @@ gsap.from(".skill", {
 gsap.from(".lets-connect .connect-btn", {
   scrollTrigger: {
     trigger: ".lets-connect",     // element to watch
-    start: "top 70%",      // when element hits 80% of viewport
+    start: "top 80%",      // when element hits 80% of viewport
     toggleActions: "play none none none" 
     // play | pause | reverse | reset
   },

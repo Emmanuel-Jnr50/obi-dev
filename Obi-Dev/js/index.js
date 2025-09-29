@@ -177,7 +177,7 @@ function createDigit(finalDigit, delay, reverse = false) {
   setTimeout(() => {
     digit.innerHTML = `<div>${finalDigit}</div>`;
     digit.style.transform = "translateY(0)";
-  }, (delay + 1) * 2000); // fixed timing (2s per animation)
+  }, (delay + 0.5) * 5000); // fixed timing (3s per animation)
   
   return digit;
 }
@@ -187,7 +187,7 @@ function animateReel(reel, target) {
   reel.innerHTML = "";
 
   digits.forEach((d, i) => {
-    const digit = createDigit(d, i * 0.3, i % 2 !== 0); // alternate directions
+    const digit = createDigit(d, i * 0.5, i % 2 !== 1); // alternate directions
     reel.appendChild(digit);
   });
 
