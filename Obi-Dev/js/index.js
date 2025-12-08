@@ -218,59 +218,69 @@ document.querySelectorAll(".reel").forEach(reel => {
 
 
 
-// const buttons = {
-//   showbtn: document.getElementById('showbtn'),
-//   newbtn:  document.getElementById('finbtn'),
-//   oldbtn:  document.getElementById('marketbtn'),
-//   prbtn:   document.getElementById('edbtn')
-// };
+// Project Filter Animation System
 
-// const sections = {
-//   showbtn: document.getElementById('showall'),
-//   newbtn:  document.getElementById('finance'),
-//   oldbtn:  document.getElementById('marketing'),
-//   prbtn:   document.getElementById('edtech')
-// };
+// Get all filter buttons
+const showBtn = document.getElementById('showbtn');
+const finBtn = document.getElementById('finbtn');
+const marketBtn = document.getElementById('marketbtn');
+const edBtn = document.getElementById('edbtn');
 
-// let current = sections.showbtn;
-// current.classList.add('show'); // initial
+// Get all filter sections
+const showAllFilter = document.getElementById('showall');
+const financeFilter = document.getElementById('finance');
+const marketingFilter = document.getElementById('marketing');
+const edTechFilter = document.getElementById('edtech');
 
-// function waitForTransition(el, propName = null, timeout = 700) {
-//   return new Promise(resolve => {
-//     let done = false;
-//     function handler(e) {
-//       if (e.target !== el) return;
-//       if (!propName || e.propertyName === propName) {
-//         if (!done) { done = true; el.removeEventListener('transitionend', handler); clearTimeout(timer); resolve(); }
-//       }
-//     }
-//     el.addEventListener('transitionend', handler);
-//     const timer = setTimeout(() => { if (!done) { done = true; el.removeEventListener('transitionend', handler); resolve(); } }, timeout);
-//   });
-// }
+// Store all filters in an array for easy management
+const filters = [showAllFilter, financeFilter, marketingFilter, edTechFilter];
+const buttons = [showBtn, finBtn, marketBtn, edBtn];
 
-// async function showFilter(key) {
-//   const next = sections[key];
-//   if (!next || next === current) return;
+// Initialize: Show "Show All" by default
+let currentFilter = showAllFilter;
+currentFilter.classList.add('active');
 
-//   // Start hide current
-//   current.classList.remove('show');
-//   // wait for opacity/max-height to finish
-//   await waitForTransition(current, 'max-height');
+// Function to switch filters with animation
+function switchFilter(newFilter, clickedButton) {
+    if (newFilter === currentFilter) return; // Don't do anything if clicking the same filter
+    
+    // Update active button styling
+    buttons.forEach(btn => btn.classList.remove('active'));
+    clickedButton.classList.add('active');
+    
+    // Animate out current filter (fade down)
+    currentFilter.classList.add('fade-out');
+    
+    // After fade out animation completes, show new filter
+    setTimeout(() => {
+        currentFilter.classList.remove('active', 'fade-out');
+        currentFilter = newFilter;
+        currentFilter.classList.add('active', 'fade-in');
+        
+        // Remove fade-in class after animation completes
+        setTimeout(() => {
+            currentFilter.classList.remove('fade-in');
+        }, 600);
+    }, 600);
+}
 
-//   // show next
-//   next.classList.add('show');
+// Add click event listeners
+showBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    switchFilter(showAllFilter, showBtn);
+});
 
-//   // update current ref
-//   current = next;
-// }
+finBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    switchFilter(financeFilter, finBtn);
+});
 
-// // wire buttons
-// Object.keys(buttons).forEach(k => {
-//   buttons[k].addEventListener('click', e => {
-//     e.preventDefault();
-//     showFilter(k);
-//   });
-// });
+marketBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    switchFilter(marketingFilter, marketBtn);
+});
 
-
+edBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    switchFilter(edTechFilter, edBtn);
+});

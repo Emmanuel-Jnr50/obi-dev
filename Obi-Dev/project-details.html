@@ -111,16 +111,16 @@
             </div>
     </nav>
 
-    <div class="project-section">
+    <div class="project-section" id="projectDetails">
         <div class="header">
             <span onclick="window.location.href='/projects.html'" style="cursor: pointer;">
                 <i></i>
                 <h3>Back To Portfolio</h3>
             </span>
 
-            <h2>Digital Brands Design<span></span></h2>
+            <h2 id="projectName">Digital Brands Design<span></span></h2>
 
-            <p>Branding, UI/UX Design, Front-end Development, Back-end Development</p>
+            <p id="projectService">Branding, UI/UX Design, Front-end Development, Back-end Development</p>
         </div>
 
         <div class="project-details">
@@ -128,19 +128,23 @@
                 <h3>Project Details</h3>
                 <span>
                     <h4>Date:</h4>
-                    <p>March 15th, 2023</p>
+                    <p id="projectDate" >March 15th, 2023</p>
                 </span>
                 <span>
                     <h4>Client:</h4>
-                    <p>John Doe</p>
+                    <p id="projectClient" >John Doe</p>
                 </span>
                 <span>
                     <h4>Service:</h4>
-                    <p>Branding, UI/UX Design, Front-end Development, Back-end Development</p>
+                    <p id="projectService" >Branding, UI/UX Design, Front-end Development, Back-end Development</p>
                 </span>
                 <span class="desc">
                     <h4>Description:</h4>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut magni eos ratione voluptatem sequi nesciunt. <br><br>Sed quia non numquam eius modi incidunt ut labore et dolore magnam eni exercitationem ullam corporis suscipit laboriosam,</p>
+                    <p id="projectDescription" >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut magni eos ratione voluptatem sequi nesciunt. <br><br>Sed quia non numquam eius modi incidunt ut labore et dolore magnam eni exercitationem ullam corporis suscipit laboriosam,</p>
+                </span>
+                <span class="desc">
+                    <h4>Typography & Colors:</h4>
+                    <p id="projectTypography" >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut magni eos ratione voluptatem sequi nesciunt. <br><br><i style="background-color: #FDF9CF;"></i><i></i><i></i></p>
                 </span>
 
                 <button>Visit Link</button>
@@ -264,5 +268,6 @@
     <script src="gsap/ScrollTrigger.min.js"></script>
     <script src="js/gsap.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/dynamic_projects.js"></script>
 </body>
 </html>

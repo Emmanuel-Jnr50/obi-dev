@@ -317,6 +317,8 @@ nav .phone-menu.active {
     /* max-height: 0; */
     /* opacity: 0; */
     width: 100%;
+    /* visibility: 0;
+    opacity: 0; */
 }
 .project-section .projects .one {
     width: 32%;
@@ -340,7 +342,7 @@ nav .phone-menu.active {
     position: absolute;
     top: 25px;
     left: 25px;
-    width: 400px;
+    width: 90%;
     height: 505px;
     background-color: #fdf9cff6;
     backdrop-filter: blur(10px);
@@ -352,7 +354,7 @@ nav .phone-menu.active {
     position: absolute;
     top: 25px;
     left: 25px;
-    width: 635px;
+    width: 93.5%;
     height: 505px;
     background-color: #fdf9cff6;
     backdrop-filter: blur(10px);
@@ -393,7 +395,10 @@ nav .phone-menu.active {
     scale: 1;
     opacity: 1;
 }
-
+.filter.show {
+    visibility: 1;
+    opacity: 1;
+}
 
 
 

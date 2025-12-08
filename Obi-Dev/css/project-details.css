@@ -337,9 +337,21 @@ nav .phone-menu.active {
 .project-details .left span:nth-child(5) {
     display: block;
 }
-.project-details .left span:nth-child(5) h4 {
-    padding-bottom: 25px;
+.project-details .left span:nth-child(6) {
+    display: block;
 }
+.project-details .left span:nth-child(5) h4, .project-details .left span:nth-child(6) h4 {
+    padding-bottom: 25px;
+    width: 100%;
+}
+.project-details .desc i {
+    height: 40px;
+    width: 50px;
+    background-color: #B6B5AF;
+}
+/* .project-details .left span:nth-child(6) i:nth-child {
+
+} */
 .project-details .left button {
     background-color: transparent;
     border: none;
