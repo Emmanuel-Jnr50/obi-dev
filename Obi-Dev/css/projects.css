@@ -333,7 +333,7 @@ nav .phone-menu.active {
     position: relative;
 }
 .project-section .projects .one img {
-    width: 500px;
+    width: 100%;
 }
 .project-section .projects .two img {
     width: 850px;

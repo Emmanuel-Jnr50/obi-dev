@@ -382,12 +382,15 @@ nav .phone-menu.active {
     height: 300px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project-section .projects .one img {
-    width: 500px;
+    width: 100%;
 }
 .project-section .projects .two img {
-    width: 850px;
+    width: 110% !important;
 }
 .project-section .projects .one .info {
     position: absolute;
@@ -434,7 +437,7 @@ nav .phone-menu.active {
     background-color: #141413;
     color: #FDF9CF;
     font-size: 12px;
-    margin: 0 75px;
+    margin: 0 60px;
     padding: 10px;
     border-radius: 20px;
 }
@@ -1503,7 +1506,7 @@ nav .phone-menu.active {
     position: relative;
 }
 .project-section .projects .one img {
-    width: 120%;
+    width: 105%;
     object-fit: cover;
 }
 .project-section .projects .two img {

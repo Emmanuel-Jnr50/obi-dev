@@ -159,63 +159,65 @@ function scrollToTop(event) {
   requestAnimationFrame(animateScroll);
 }
 
-function createDigit(finalDigit, delay, reverse = false) {
-  const digit = document.createElement("div");
-  digit.classList.add("digit");
+function createDigit(finalDigit, delay, reverse = false, spinDuration = 2) {
+            const digit = document.createElement("div");
+            digit.classList.add("digit");
 
-  // Create numbers 0-9 stacked vertically
-  let numbers = "";
-  for (let i = 0; i < 10; i++) {
-    numbers += `<div>${reverse ? 9 - i : i}</div>`;
-  }
-  digit.innerHTML = numbers;
+            // Create numbers 0-9 stacked vertically
+            let numbers = "";
+            for (let i = 0; i < 10; i++) {
+                numbers += `<div>${reverse ? 9 - i : i}</div>`;
+            }
+            digit.innerHTML = numbers;
 
-  // Apply animation
-  digit.style.animation = `spin 1s ease-out ${delay}s forwards`;
+            // Apply animation with custom duration
+            digit.style.animation = `spin ${spinDuration}s ease-out ${delay}s forwards`;
 
-  // After spin, set to final digit
-  setTimeout(() => {
-    digit.innerHTML = `<div>${finalDigit}</div>`;
-    digit.style.transform = "translateY(0)";
-  }, (delay + 0.5) * 5000); // fixed timing (3s per animation)
-  
-  return digit;
-}
+            // After spin completes, set to final digit
+            // The key fix: calculate based on actual animation duration + delay
+            setTimeout(() => {
+                digit.innerHTML = `<div>${finalDigit}</div>`;
+                digit.style.transform = "translateY(0)";
+                digit.style.animation = "none";
+            }, (delay + spinDuration) * 1000); // Convert to milliseconds
+            
+            return digit;
+        }
 
-function animateReel(reel, target) {
-  const digits = target.toString().split("");
-  reel.innerHTML = "";
+        function animateReel(reel, target) {
+            const digits = target.toString().padStart(2, '0').split("");
+            reel.innerHTML = "";
 
-  digits.forEach((d, i) => {
-    const digit = createDigit(d, i * 0.5, i % 2 !== 1); // alternate directions
-    reel.appendChild(digit);
-  });
+            digits.forEach((d, i) => {
+                // Each subsequent digit starts later and spins longer
+                const delay = i * 0.3;
+                const spinDuration = 2 + (i * 0.5); // First digit faster, last digit slower
+                const digit = createDigit(d, delay, i % 2 !== 0, spinDuration);
+                reel.appendChild(digit);
+            });
 
-  // Add percentage sign at the end
-  const percent = document.createElement("span");
-  percent.textContent = "%";
-  percent.style.marginLeft = "4px";
-  percent.style.fontWeight = "bold";
-  percent.style.color = "transparent" 
-  percent.style.webkitTextStroke = "1px #fdf9cf";
-  reel.appendChild(percent);
-}
+            // Add percentage sign at the end
+            const percent = document.createElement("span");
+            percent.className = "percent-sign";
+            percent.textContent = "%";
+            percent.style.color = "#fdf9cf";
+            reel.appendChild(percent);
+        }
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const reel = entry.target;
-      const target = reel.getAttribute("data-target");
-      animateReel(reel, target);
-      observer.unobserve(reel); // only once
-    }
-  });
-}, { threshold: 0.5 });
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const reel = entry.target;
+                    const target = reel.getAttribute("data-target");
+                    animateReel(reel, target);
+                    observer.unobserve(reel);
+                }
+            });
+        }, { threshold: 0.5 });
 
-document.querySelectorAll(".reel").forEach(reel => {
-  observer.observe(reel);
-});
-
+        document.querySelectorAll(".reel").forEach(reel => {
+            observer.observe(reel);
+        });
 
 
 // Project Filter Animation System

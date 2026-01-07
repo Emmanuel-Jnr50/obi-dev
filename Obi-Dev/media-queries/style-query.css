@@ -3973,7 +3973,8 @@ body::-webkit-scrollbar-thumb {
 .hero .profile .image img {
     width: 400px;
     margin-top: 80px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    margin-left: 0px;
 }
 .hero .profile h4 {
     text-align: center;
@@ -4079,8 +4080,9 @@ body::-webkit-scrollbar-thumb {
 }
 .about-section .more-info .image img {
     width: 760px;
-    margin-left: 80px;
-    transform: rotate(-2deg);
+    /* margin-left: 80px; */
+    margin-left: 0px;
+    /* transform: rotate(-2deg); */
     margin-top: 90px;
 }
 .about-section .more-info .info {
@@ -4361,8 +4363,8 @@ body::-webkit-scrollbar-thumb {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    height: 250px;
-    width: 250px;
+    height: 270px;
+    width: 270px;
     border-radius: 50%;
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 30px 30px 40px 30px;
