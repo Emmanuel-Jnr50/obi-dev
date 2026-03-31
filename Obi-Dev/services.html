@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obi-Dev | Services</title>
-    <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="media-queries/services-query.css">
-    <link rel="icon" href="/img/thumbnail.png" type="icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Obi-Dev | Services</title>
+        <link rel="stylesheet" href="css/services.css">
+        <link rel="stylesheet" href="media-queries/services-query.css">
+        <link rel="icon" href="/img/thumbnail.png" type="icon">
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
 </head>
 <body>
     <div class="preloader" id="preloader">
@@ -69,7 +70,7 @@
         </div>
 
         <div class="menu-btn" id="menubtn">
-                <img src="icons/menu-svgrepo-com (2).svg" alt="">
+                <img src="icons/menu-duo-lg-svgrepo-com (1).svg" alt="">
             </div>
             <div class="phone-menu" id="phonemenu">
                 <div class="links2">
@@ -85,6 +86,10 @@
                         <i></i>
                         <a href="#resume">Resume</a>
                     </span>
+                    <span class="linkx" onclick="location.href='/index.html?scrollTo=portfolio'">
+                        <i></i>
+                        <a href="#portfolio">Projects</a>
+                    </span>
                     <span class="linkx" onclick="location.href='/index.html?scrollTo=stack'">
                         <i></i>
                         <a href="#stack">Stack</a>
@@ -92,10 +97,6 @@
                     <span class="linkx" onclick="location.href='/index.html?scrollTo=services'">
                         <i></i>
                         <a href="#services">Services</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/index.html?scrollTo=portfolio'">
-                        <i></i>
-                        <a href="#portfolio">Projects</a>
                     </span>
                     <span class="linkx" onclick="location.href='/index.html?scrollTo=client'">
                         <i></i>
@@ -439,5 +440,19 @@
     <script src="gsap/ScrollTrigger.min.js"></script>
     <script src="js/gsap.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        const lenis = new Lenis({
+            duration: 4,
+            smoothWheel: true,
+            smoothTouch: false,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+</script>
 </body>
 </html>

@@ -1,29 +1,23 @@
-document.addEventListener("DOMContentLoaded" , function() {
-  if (window.location.hash) {
-    const target = 
-    document.querySelector(window.location.hash);
-    if (target) {
-      target.scrollIntoView({behavior: 'smooth'});
-    }
-  }
-});
-
-
 document.addEventListener("DOMContentLoaded", function () {
+
+    // Smooth scroll to hash on page load
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    // Preloader
     window.addEventListener('load', () => {
-        window.scrollTo(0, 0); // <-- Ensure scroll reset
-    
+        window.scrollTo(0, 0);
         const preloader = document.getElementById('preloader');
         preloader.style.opacity = '0';
         preloader.style.visibility = 'hidden';
-    
-        setTimeout(() => {
-        preloader.remove();
-        }, 1000);
+        setTimeout(() => { preloader.remove(); }, 1000);
     });
-});
 
-
+    // Hero slider
     const slides = document.querySelector('.slides-one');
     const slideCount = document.querySelectorAll('.slide-one').length;
     const nextBtn = document.querySelector('.next');
@@ -35,254 +29,203 @@ document.addEventListener("DOMContentLoaded", function () {
     let autoSlideInterval;
 
     function showSlide(i) {
-      slides.style.transition = "transform 0.8s ease"; 
-      slides.style.transform = `translateX(${-i * 100}%)`;
+        slides.style.transition = "transform 0.8s ease";
+        slides.style.transform = `translateX(${-i * 100}%)`;
     }
+    function nextSlide() { index = (index + 1) % slideCount; showSlide(index); }
+    function prevSlide() { index = (index - 1 + slideCount) % slideCount; showSlide(index); }
+    function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, 5000); }
+    function stopAutoSlide() { clearInterval(autoSlideInterval); }
 
-    function nextSlide() {
-      index = (index + 1) % slideCount;
-      showSlide(index);
-    }
+    nextBtn.addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
+    prevBtn.addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
 
-    function prevSlide() {
-      index = (index - 1 + slideCount) % slideCount;
-      showSlide(index);
-    }
-
-    // Auto play
-    function startAutoSlide() {
-      autoSlideInterval = setInterval(nextSlide, 5000); // slower autoplay
-    }
-
-    function stopAutoSlide() {
-      clearInterval(autoSlideInterval);
-    }
-
-    nextBtn.addEventListener('click', () => {
-      stopAutoSlide();
-      nextSlide();
-      startAutoSlide();
-    });
-
-    prevBtn.addEventListener('click', () => {
-      stopAutoSlide();
-      prevSlide();
-      startAutoSlide();
-    });
-
-    // Dragging
-    slides.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      startX = e.pageX;
-      stopAutoSlide(); // pause autoplay while dragging
-      slides.style.transition = "none"; 
-    });
-
+    slides.addEventListener('mousedown', (e) => { isDragging = true; startX = e.pageX; stopAutoSlide(); slides.style.transition = "none"; });
     slides.addEventListener('mouseup', (e) => {
-      if (!isDragging) return;
-      isDragging = false;
-      const endX = e.pageX;
-      const diff = startX - endX;
-
-      if (diff > 50) {
-        nextSlide();
-      } else if (diff < -50) {
-        prevSlide();
-      } else {
-        showSlide(index); // snap back if drag too small
-      }
-
-      startAutoSlide(); // resume autoplay
-    });
-
-    slides.addEventListener('mouseleave', () => {
-      if (isDragging) {
+        if (!isDragging) return;
         isDragging = false;
-        showSlide(index);
+        const diff = startX - e.pageX;
+        if (diff > 50) nextSlide();
+        else if (diff < -50) prevSlide();
+        else showSlide(index);
         startAutoSlide();
-      }
     });
-
-    slides.addEventListener('touchstart', (e) => {
-      isDragging = true;
-      startX = e.touches[0].pageX;
-      stopAutoSlide();
-      slides.style.transition = "none";
-    });
-
+    slides.addEventListener('mouseleave', () => { if (isDragging) { isDragging = false; showSlide(index); startAutoSlide(); } });
+    slides.addEventListener('touchstart', (e) => { isDragging = true; startX = e.touches[0].pageX; stopAutoSlide(); slides.style.transition = "none"; });
     slides.addEventListener('touchend', (e) => {
-      if (!isDragging) return;
-      isDragging = false;
-      const endX = e.changedTouches[0].pageX;
-      const diff = startX - endX;
-
-      if (diff > 50) {
-        nextSlide();
-      } else if (diff < -50) {
-        prevSlide();
-      } else {
-        showSlide(index);
-      }
-
-      startAutoSlide();
+        if (!isDragging) return;
+        isDragging = false;
+        const diff = startX - e.changedTouches[0].pageX;
+        if (diff > 50) nextSlide();
+        else if (diff < -50) prevSlide();
+        else showSlide(index);
+        startAutoSlide();
     });
 
-    // Start autoplay initially
     startAutoSlide();
 
-
-function scrollToTop(event) {
-  event.preventDefault(); // stop default anchor jump
-
-  const start = window.scrollY;
-  const duration = 1000; // total scroll time (ms)
-  const heroStop = 0; // scroll until very top
-  const startTime = performance.now();
-
-  function easeOutCubic(t) {
-    return 1 - Math.pow(1 - t, 3);
-  }
-
-  function animateScroll(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const easedProgress = easeOutCubic(progress);
-
-    const newY = start + (heroStop - start) * easedProgress;
-    window.scrollTo(0, newY);
-
-    if (elapsed < duration) {
-      requestAnimationFrame(animateScroll);
-    }
-  }
-
-  requestAnimationFrame(animateScroll);
-}
-
-function createDigit(finalDigit, delay, reverse = false, spinDuration = 2) {
-            const digit = document.createElement("div");
-            digit.classList.add("digit");
-
-            // Create numbers 0-9 stacked vertically
-            let numbers = "";
-            for (let i = 0; i < 10; i++) {
-                numbers += `<div>${reverse ? 9 - i : i}</div>`;
-            }
-            digit.innerHTML = numbers;
-
-            // Apply animation with custom duration
-            digit.style.animation = `spin ${spinDuration}s ease-out ${delay}s forwards`;
-
-            // After spin completes, set to final digit
-            // The key fix: calculate based on actual animation duration + delay
-            setTimeout(() => {
-                digit.innerHTML = `<div>${finalDigit}</div>`;
-                digit.style.transform = "translateY(0)";
-                digit.style.animation = "none";
-            }, (delay + spinDuration) * 1000); // Convert to milliseconds
-            
-            return digit;
-        }
-
-        function animateReel(reel, target) {
-            const digits = target.toString().padStart(2, '0').split("");
-            reel.innerHTML = "";
-
-            digits.forEach((d, i) => {
-                // Each subsequent digit starts later and spins longer
-                const delay = i * 0.3;
-                const spinDuration = 2 + (i * 0.5); // First digit faster, last digit slower
-                const digit = createDigit(d, delay, i % 2 !== 0, spinDuration);
-                reel.appendChild(digit);
-            });
-
-            // Add percentage sign at the end
-            const percent = document.createElement("span");
-            percent.className = "percent-sign";
-            percent.textContent = "%";
-            percent.style.color = "#fdf9cf";
-            reel.appendChild(percent);
-        }
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const reel = entry.target;
-                    const target = reel.getAttribute("data-target");
-                    animateReel(reel, target);
-                    observer.unobserve(reel);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll(".reel").forEach(reel => {
-            observer.observe(reel);
-        });
-
-
-// Project Filter Animation System
-
-// Get all filter buttons
-const showBtn = document.getElementById('showbtn');
-const finBtn = document.getElementById('finbtn');
-const marketBtn = document.getElementById('marketbtn');
-const edBtn = document.getElementById('edbtn');
-
-// Get all filter sections
-const showAllFilter = document.getElementById('showall');
-const financeFilter = document.getElementById('finance');
-const marketingFilter = document.getElementById('marketing');
-const edTechFilter = document.getElementById('edtech');
-
-// Store all filters in an array for easy management
-const filters = [showAllFilter, financeFilter, marketingFilter, edTechFilter];
-const buttons = [showBtn, finBtn, marketBtn, edBtn];
-
-// Initialize: Show "Show All" by default
-let currentFilter = showAllFilter;
-currentFilter.classList.add('active');
-
-// Function to switch filters with animation
-function switchFilter(newFilter, clickedButton) {
-    if (newFilter === currentFilter) return; // Don't do anything if clicking the same filter
-    
-    // Update active button styling
-    buttons.forEach(btn => btn.classList.remove('active'));
-    clickedButton.classList.add('active');
-    
-    // Animate out current filter (fade down)
-    currentFilter.classList.add('fade-out');
-    
-    // After fade out animation completes, show new filter
-    setTimeout(() => {
-        currentFilter.classList.remove('active', 'fade-out');
-        currentFilter = newFilter;
-        currentFilter.classList.add('active', 'fade-in');
-        
-        // Remove fade-in class after animation completes
+    // Reel animation
+    function createDigit(finalDigit, delay, reverse = false, spinDuration = 2) {
+        const digit = document.createElement("div");
+        digit.classList.add("digit");
+        let numbers = "";
+        for (let i = 0; i < 10; i++) { numbers += `<div>${reverse ? 9 - i : i}</div>`; }
+        digit.innerHTML = numbers;
+        digit.style.animation = `spin ${spinDuration}s ease-out ${delay}s forwards`;
         setTimeout(() => {
-            currentFilter.classList.remove('fade-in');
-        }, 600);
-    }, 600);
+            digit.innerHTML = `<div>${finalDigit}</div>`;
+            digit.style.transform = "translateY(0)";
+            digit.style.animation = "none";
+        }, (delay + spinDuration) * 1000);
+        return digit;
+    }
+
+    function animateReel(reel, target) {
+        const digits = target.toString().padStart(2, '0').split("");
+        reel.innerHTML = "";
+        digits.forEach((d, i) => {
+            const delay = i * 0.3;
+            const spinDuration = 2 + (i * 0.5);
+            const digit = createDigit(d, delay, i % 2 !== 0, spinDuration);
+            reel.appendChild(digit);
+        });
+        const percent = document.createElement("span");
+        percent.className = "percent-sign";
+        percent.textContent = "%";
+        percent.style.color = "#fdf9cf";
+        reel.appendChild(percent);
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateReel(entry.target, entry.target.getAttribute("data-target"));
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll(".reel").forEach(reel => observer.observe(reel));
+
+
+  // Services carousel
+    const track = document.querySelector('.services .service-cards');
+    const serviceCards = document.querySelectorAll('.services .service-cards .card');
+    const total = serviceCards.length;
+    let current = 0;
+    let autoTimer;
+
+    console.log('track:', track);
+    console.log('serviceCards:', serviceCards);
+    console.log('total cards found:', total);
+    console.log('next-btn:', document.getElementById('next-btn'));
+    console.log('prev-btn:', document.getElementById('prev-btn'));
+    console.log('carousel-wrapper:', document.querySelector('.carousel-wrapper'));
+
+    function goTo(i) {
+        current = (i + total) % total;
+        const wrapper = document.querySelector('.carousel-wrapper');
+        const cardWidth = wrapper.offsetWidth;
+        console.log('goTo called — index:', current, '| cardWidth:', cardWidth, '| translateX:', -(current * cardWidth));
+        track.style.transform = `translateX(-${current * cardWidth}px)`;
+    }
+
+    function nextCard() { goTo(current + 1); }
+    function prevCard() { goTo(current - 1); }
+    function startAuto() { autoTimer = setInterval(nextCard, 4000); }
+    function resetAuto() { clearInterval(autoTimer); startAuto(); }
+
+    document.getElementById('next-btn').addEventListener('click', () => { nextCard(); resetAuto(); });
+    document.getElementById('prev-btn').addEventListener('click', () => { prevCard(); resetAuto(); });
+
+    window.addEventListener('resize', () => goTo(current));
+
+    startAuto();
+
+});
+
+// scrollToTop stays outside — it's called from an onclick attribute in HTML
+function scrollToTop(event) {
+    event.preventDefault();
+    const start = window.scrollY;
+    const duration = 1000;
+    const startTime = performance.now();
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+    function animateScroll(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        window.scrollTo(0, start * (1 - easeOutCubic(progress)));
+        if (elapsed < duration) requestAnimationFrame(animateScroll);
+    }
+    requestAnimationFrame(animateScroll);
 }
 
-// Add click event listeners
-showBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    switchFilter(showAllFilter, showBtn);
+const reviewTrack = document.querySelector('.client .testimonial');
+const reviews = document.querySelectorAll('.client .testimonial .review');
+const reviewTotal = reviews.length;
+let reviewCurrent = 0;
+let reviewTimer;
+let reviewStartX = 0;
+let reviewIsDragging = false;
+
+function reviewGoTo(i) {
+    reviewCurrent = (i + reviewTotal) % reviewTotal;
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const width = wrapper.offsetWidth;
+    reviewTrack.style.transform = `translateX(-${reviewCurrent * width}px)`;
+}
+
+function nextReview() { reviewGoTo(reviewCurrent + 1); }
+function prevReview() { reviewGoTo(reviewCurrent - 1); }
+function startReviewAuto() { reviewTimer = setInterval(nextReview, 4000); }
+function stopReviewAuto() { clearInterval(reviewTimer); }
+function resetReviewAuto() { stopReviewAuto(); startReviewAuto(); }
+
+// Mouse drag
+reviewTrack.addEventListener('mousedown', (e) => {
+    reviewIsDragging = true;
+    reviewStartX = e.pageX;
+    stopReviewAuto();
+    reviewTrack.style.transition = 'none';
 });
 
-finBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    switchFilter(financeFilter, finBtn);
+reviewTrack.addEventListener('mouseup', (e) => {
+    if (!reviewIsDragging) return;
+    reviewIsDragging = false;
+    const diff = reviewStartX - e.pageX;
+    reviewTrack.style.transition = 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
+    if (diff > 50) nextReview();
+    else if (diff < -50) prevReview();
+    else reviewGoTo(reviewCurrent); // snap back if drag too small
+    resetReviewAuto();
 });
 
-marketBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    switchFilter(marketingFilter, marketBtn);
+reviewTrack.addEventListener('mouseleave', () => {
+    if (reviewIsDragging) {
+        reviewIsDragging = false;
+        reviewTrack.style.transition = 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
+        reviewGoTo(reviewCurrent);
+        resetReviewAuto();
+    }
 });
 
-edBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    switchFilter(edTechFilter, edBtn);
+// Touch drag (mobile)
+reviewTrack.addEventListener('touchstart', (e) => {
+    reviewIsDragging = true;
+    reviewStartX = e.touches[0].pageX;
+    stopReviewAuto();
+    reviewTrack.style.transition = 'none';
 });
+
+reviewTrack.addEventListener('touchend', (e) => {
+    if (!reviewIsDragging) return;
+    reviewIsDragging = false;
+    const diff = reviewStartX - e.changedTouches[0].pageX;
+    reviewTrack.style.transition = 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
+    if (diff > 50) nextReview();
+    else if (diff < -50) prevReview();
+    else reviewGoTo(reviewCurrent);
+    resetReviewAuto();
+});
+
+startReviewAuto();

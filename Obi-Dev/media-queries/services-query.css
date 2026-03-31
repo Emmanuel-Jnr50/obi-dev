@@ -1,3 +1,13 @@
+@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+:root {
+    --main-color: #fdf9cf;
+    --background-color: #141413;
+    --border-color: #262525;
+    --small-text-color: #B6B5AF;
+}
+
+
 @media (min-width: 300px) and (max-width: 685px) {
     /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
 
@@ -7,25 +17,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Unbounded;
+    font-family: Campton;
+    -webkit-tap-highlight-color: transparent;
 }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    -webkit-overflow-scrolling: touch;
 }
 * button {
     cursor: pointer;
 }
 body {
     overflow-x: hidden;
-    background-color: #141413;
+    background-color: var(--background-color);
 }
 body::-webkit-scrollbar {
     width: 4px;
 }
 body::-webkit-scrollbar-thumb {
     width: 4px;
-    background-color: #FDF9CF;
+    background-color: var(--main-color);
     border-radius: 10px 0px 0px 10px;
 }
 @keyframes flicker {
@@ -84,7 +96,7 @@ nav {
     margin: 0px 0px 28px 0px;
     padding: 10px 15px 10px 15px;
     gap: 15px;
-    background-color: #141413;
+    background-color: var(--background-color);
     position: relative;
     top: 0px;
     width: 100%;
@@ -109,7 +121,7 @@ nav .logo img {
     height: 20px;
 }
 nav .logo h2 {
-    color: #FDF9CF;
+    color: var(--main-color);
     /* font-family: Syne; */
     font-size: 15px;
     padding-bottom: 5px;
@@ -131,7 +143,7 @@ nav .logo h2 {
 }
 .menu-bar .links span i {
     width: 20px;
-    border-bottom: 1px solid #FDF9CF;
+    border-bottom: 1px solid var(--main-color);
     opacity: 0;
     transition: 400ms;
     position: absolute;
@@ -139,7 +151,7 @@ nav .logo h2 {
 }
 .menu-bar .links a{
     display: block;
-    color: #FDF9CF;
+    color: var(--main-color);
     text-decoration: none;
     padding: 22.5px 0;
     font-weight: 400;
@@ -184,10 +196,15 @@ nav .menu-btn {
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 15px;
     border-radius: 8px;
+    transition: 400ms;
 }
 nav .menu-btn img {
     width: 30px;
     display: block;
+}
+nav .menu-btn:active {
+    transform: scale(0.9);
+    opacity: 0.8;
 }
 nav .phone-menu {
     position: absolute;
@@ -195,14 +212,14 @@ nav .phone-menu {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -15px;
-    background-color: #141413;
+    background-color: var(--background-color);
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
     top: 75px;
     visibility: hidden;
     transition: 400ms;
     opacity: 0;
-    background-color: #141413;
+    background-color: var(--background-color);
 }
 nav .phone-menu .links2 span {
     display: flex;
@@ -216,7 +233,7 @@ nav .phone-menu .links2 span {
 }
 nav .phone-menu .links2 span i {
     width: 20px;
-    border-bottom: 1px solid #FDF9CF;
+    border-bottom: 1px solid var(--main-color);
     opacity: 0;
     transition: 400ms;
     position: absolute;
@@ -226,7 +243,7 @@ nav .phone-menu .links2 span i {
 }
 nav .phone-menu .links2 a{
     display: block;
-    color: #FDF9CF;
+    color: var(--main-color);
     text-decoration: none;
     padding: 15px 0;
     font-weight: 400;
@@ -244,7 +261,7 @@ nav .phone-menu .links2 span:hover i{
 nav .phone-menu .links2 span:hover a {
     padding-left: 0px;
     transform: scale(1.1);
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 
 nav .phone-menu.active {
@@ -264,10 +281,10 @@ nav .phone-menu.active {
     margin-bottom: 85px;
 }
 .hero .left h2 {
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 23px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 700;
     width: 80%;
     padding-bottom: 30px;
 }
@@ -299,7 +316,7 @@ nav .phone-menu.active {
 .carousel .first p {
     font-size: 30px;
     font-weight: 600;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .carousel .first p:nth-child(2) {
     color: transparent;
@@ -325,17 +342,22 @@ nav .phone-menu.active {
     margin-top: 85px;
     flex-wrap: wrap;
     padding: 0 15px;
+    position: relative;
 }
 .services .service-cards .card {
+    position: sticky;
+    top: 100px;
     width: 100%;
     padding: 20px 20px;
     box-shadow: inset 0px 0px 20px #ffffff12;
     border-radius: 10px;
+    background-color: var(--background-color);
+    transform-origin: top center;
 }
 .services .service-cards .card h3 {
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 25px;
-    width: 80%;
+    width: 90%;
     line-height: 30px;
 }
 .services .service-cards .card .extras {
@@ -355,7 +377,7 @@ nav .phone-menu.active {
     transition: 300ms;
 }
 .services .service-cards .card .extras p:hover {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .services .service-cards .card .extras p img {
     width: 10px;
@@ -378,7 +400,7 @@ nav .phone-menu.active {
     transition: 300ms;
 }
 .services .service-cards .card:hover span a {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .services .service-cards .card:hover span a img {
     padding-left: 10px;
@@ -389,14 +411,14 @@ nav .phone-menu.active {
     position: relative;
 }
 .carousel1 p {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     color: #212121;
 }
 .carousel2 p {
-    color: #FDF9CF;
-    font-size: 25px;
-    font-weight: 600;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
 }
 .carousel1 {
     padding: 15px 0;
@@ -466,7 +488,7 @@ nav .phone-menu.active {
     justify-content: center;
     align-items: center;
     transform: translateX(-50%);
-    top: -1%;background-color: #FDF9CF;
+    top: -1%;background-color: var(--main-color);
     border-radius: 50%;
 }
 .lets-connect button {
@@ -528,12 +550,12 @@ nav .phone-menu.active {
 .pricing .header .head>span {
     border: 1px solid #39383894;
     display: flex;
-    width: 160px;
+    width: 140px;
     justify-content: center;
     align-items: center;
     padding: 12px 18px;
     border-radius: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 12px;
     gap: 10px;
     margin-bottom: 30px;
@@ -546,20 +568,21 @@ nav .phone-menu.active {
 .pricing .header .head span i {
     height: 8px;
     width: 8px;
-    background-color: #FDF9CF;
+    background-color: var(--main-color);
     border-radius: 50%;
     animation: flicker 2s linear infinite;
 }
 .pricing .header .head h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 500;
-    color: #FDF9CF;
+    font-weight: 600;
+    color: var(--main-color);
     width: 100%;
+    padding: 0 30px;
 }
 .pricing .header h2 span {
     color: transparent;
-    -webkit-text-stroke: 1px #FDF9CF;
+    -webkit-text-stroke: 1px var(--main-color);
 }
 .price-cards {
     display: flex;
@@ -572,22 +595,22 @@ nav .phone-menu.active {
 .price-cards .card {
     /* width: 500px; */
     box-shadow: inset 0px 0px 15px #ffffff15;
-    padding: 50px 30px;
+    padding: 45px 30px;
     width: 100%;
-    border-radius: 110px;
+    border-radius: 90px;
 }
 .price-cards .card h3 {
     font-weight: 600;
     font-size: 18px;
     text-align: center;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding-bottom: 25px;
 }
 .price-cards .card h4 {
     text-align: center;
     font-size: 45px;
     font-weight: 600;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .price-cards .card h4 span {
     font-size: 15px;
@@ -607,7 +630,7 @@ nav .phone-menu.active {
     font-size: 14px;
 }
 .card .content ul li::marker {
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 20px;
 }
 
@@ -630,7 +653,7 @@ nav .phone-menu.active {
     border-radius: 50%;
     border: 1px solid #39383894;
     background-color: transparent;
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 14px;
     font-weight: 500;
     padding-top: 40px;
@@ -643,7 +666,7 @@ nav .phone-menu.active {
     position: absolute;
     top: 20px;
     left: 55px;
-    stroke: #FDF9CF;
+    stroke: var(--main-color);
     transition: 400ms;
 }
 .price-cards .card .connect-btn span {
@@ -688,12 +711,12 @@ nav .phone-menu.active {
     transform: translateX(-50%);
     border: 1px solid #39383894;
     display: flex;
-    width: 100%;
+    width: 85%;
     justify-content: center;
     align-items: center;
     padding: 12px 15px;
     border-radius: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 12px;
     gap: 10px;
     margin-bottom: 30px;
@@ -704,20 +727,20 @@ nav .phone-menu.active {
 .companies .header span i {
     height: 8px;
     width: 8px;
-    background-color: #FDF9CF;
+    background-color: var(--main-color);
     border-radius: 50%;
     animation: flicker 2s linear infinite;
 }
 .companies .header h2 {
     font-size: 53px;
     font-weight: 500;
-    color: #FDF9CF;
+    color: var(--main-color);
     /* width: 95%; */
     text-align: center;
 }
 .companies .header h2 span {
     color: transparent;
-    -webkit-text-stroke: 1px #FDF9CF;
+    -webkit-text-stroke: 1px var(--main-color);
 }
 .companies .list {
     display: flex;
@@ -753,18 +776,18 @@ nav .phone-menu.active {
 .contact .head h2 {
     font-size: 40px;
     line-height: 50px;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding-bottom: 30px;
 }
 .contact .head h3 {
     border: 1px solid #39383894;
     font-size: 18px;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding: 15px 20px;
     text-align: center;
     justify-content: center;
     border-radius: 40px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     margin: 0 0px;
@@ -793,7 +816,8 @@ nav .phone-menu.active {
     display: block;
     text-decoration: none;
     font-size: 14px;
-    color: #FDF9CF;
+    font-weight: 500;
+    color: var(--main-color);
 }
 .contact .contact-form .left .other-social {
     display: grid;
@@ -813,7 +837,7 @@ nav .phone-menu.active {
     transition: 300ms;
 }
 .contact .contact-form .left .other-social button:hover {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .contact .contact-form .form {
     display: flex;
@@ -868,7 +892,7 @@ nav .phone-menu.active {
     width: 185px;
     padding: 20px;
     font-weight: 600;
-    color: #FDF9CF;
+    color: var(--main-color);
     background-color: transparent;
     border: 1px solid #39383894;
     border-radius: 5px;
@@ -900,11 +924,11 @@ nav .phone-menu.active {
     margin-bottom: 20px;
 }
 .contact .bottom p span {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .contact .bottom>a {
     font-size: 18px;
-    color: #FDF9CF;
+    color: var(--main-color);
     margin-bottom: 20px;
     /* width: fit-content; */
 }
@@ -923,7 +947,7 @@ nav .phone-menu.active {
 }
 
 @media (min-width: 1279px) and (max-width: 1440px) {
-    /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- var(--main-color),background - var(--background-color), border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
@@ -942,7 +966,7 @@ html {
 }
 body {
     overflow-x: hidden;
-    background-color: #141413;
+    background-color: var(--background-color);
     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
@@ -950,7 +974,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
     width: 4px;
-    background-color: #FDF9CF;
+    background-color: var(--main-color);
     border-radius: 10px 0px 0px 10px;
 }
 @keyframes flicker {
@@ -1007,7 +1031,7 @@ nav {
     display: flex;
     margin: 0px 10px 28px 10px;
     gap: 15px;
-    background-color: #141413;
+    background-color: var(--background-color);
     position: relative;
     top: 30px;
     width: 100%;
@@ -1029,7 +1053,7 @@ nav .logo img {
     height: 20px;
 }
 nav .logo h2 {
-    color: #FDF9CF;
+    color: var(--main-color);
     /* font-family: Syne; */
     font-size: 14px;
     padding-bottom: 5px;
@@ -1054,7 +1078,7 @@ nav .logo h2 {
 }
 .menu-bar .links span i {
     width: 20px;
-    border-bottom: 1px solid #FDF9CF;
+    border-bottom: 1px solid var(--main-color);
     opacity: 0;
     transition: 400ms;
     position: absolute;
@@ -1062,7 +1086,7 @@ nav .logo h2 {
 }
 .menu-bar .links a{
     display: block;
-    color: #FDF9CF;
+    color: var(--main-color);
     text-decoration: none;
     padding: 22.5px 0;
     font-weight: 400;
@@ -1113,7 +1137,7 @@ nav .phone-menu {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -25px;
-    background-color: #141413;
+    background-color: var(--background-color);
     padding: 10px 30px 30px 30px;
     border-radius: 20px;
     visibility: hidden;
@@ -1128,7 +1152,7 @@ nav .phone-menu .links2 span {
 }
 nav .phone-menu .links2 span i {
     width: 20px;
-    border-bottom: 1px solid #FDF9CF;
+    border-bottom: 1px solid var(--main-color);
     opacity: 0;
     transition: 400ms;
     position: absolute;
@@ -1149,7 +1173,7 @@ nav .phone-menu .links2 span:hover i{
 
 nav .phone-menu .links2 span:hover a {
     padding-left: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 nav .phone-menu.active {
     visibility: visible;
@@ -1166,7 +1190,7 @@ nav .phone-menu.active {
     margin-bottom: 100px;
 }
 .hero .left h2 {
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 46px;
     line-height: 56px;
     font-weight: 500;
@@ -1201,7 +1225,7 @@ nav .phone-menu.active {
 .carousel .first p {
     font-size: 163px;
     font-weight: 600;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .carousel .first p:nth-child(2) {
     color: transparent;
@@ -1256,7 +1280,7 @@ nav .phone-menu.active {
     transition: 300ms;
 }
 .services .service-cards .card .extras p:hover {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .services .service-cards .card .extras p img {
     width: 10px;
@@ -1278,7 +1302,7 @@ nav .phone-menu.active {
     transition: 300ms;
 }
 .services .service-cards .card:hover span a {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .services .service-cards .card:hover span a img {
     padding-left: 10px;
@@ -1294,7 +1318,7 @@ nav .phone-menu.active {
     color: #212121;
 }
 .carousel2 p {
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 35px;
     font-weight: 600;
 }
@@ -1366,7 +1390,7 @@ nav .phone-menu.active {
     justify-content: center;
     align-items: center;
     transform: translateX(-50%);
-    top: -30%;background-color: #FDF9CF;
+    top: -30%;background-color: var(--main-color);
     border-radius: 50%;
 }
 .lets-connect button {
@@ -1433,7 +1457,7 @@ nav .phone-menu.active {
     align-items: center;
     padding: 12px 18px;
     border-radius: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 14px;
     gap: 10px;
     margin-bottom: 30px;
@@ -1446,21 +1470,21 @@ nav .phone-menu.active {
 .pricing .header .head span i {
     height: 8px;
     width: 8px;
-    background-color: #FDF9CF;
+    background-color: var(--main-color);
     border-radius: 50%;
     animation: flicker 2s linear infinite;
 }
 .pricing .header .head h2 {
     font-size: 46px;
     font-weight: 500;
-    color: #FDF9CF;
+    color: var(--main-color);
     width: 100%;
     text-align: center;
     padding: 0 250px;
 }
 .pricing .header h2 span {
     color: transparent;
-    -webkit-text-stroke: 1px #FDF9CF;
+    -webkit-text-stroke: 1px var(--main-color);
 }
 .price-cards {
     display: flex;
@@ -1479,14 +1503,14 @@ nav .phone-menu.active {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding-bottom: 30px;
 }
 .price-cards .card h4 {
     text-align: center;
     font-size: 50px;
     font-weight: 600;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .price-cards .card h4 span {
     font-size: 15px;
@@ -1506,7 +1530,7 @@ nav .phone-menu.active {
     font-size: 15px;
 }
 .card .content ul li::marker {
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 20px;
 }
 
@@ -1529,7 +1553,7 @@ nav .phone-menu.active {
     border-radius: 50%;
     border: 1px solid #39383894;
     background-color: transparent;
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 16px;
     font-weight: 500;
     padding-top: 40px;
@@ -1542,7 +1566,7 @@ nav .phone-menu.active {
     position: absolute;
     top: 30px;
     left: 60px;
-    stroke: #FDF9CF;
+    stroke: var(--main-color);
     transition: 400ms;
 }
 .price-cards .card .connect-btn span {
@@ -1592,7 +1616,7 @@ nav .phone-menu.active {
     align-items: center;
     padding: 12px 18px;
     border-radius: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
     font-size: 14px;
     gap: 10px;
     margin-bottom: 30px;
@@ -1603,20 +1627,20 @@ nav .phone-menu.active {
 .companies .header span i {
     height: 8px;
     width: 8px;
-    background-color: #FDF9CF;
+    background-color: var(--main-color);
     border-radius: 50%;
     animation: flicker 2s linear infinite;
 }
 .companies .header h2 {
     font-size: 53px;
     font-weight: 500;
-    color: #FDF9CF;
+    color: var(--main-color);
     /* width: 95%; */
     text-align: center;
 }
 .companies .header h2 span {
     color: transparent;
-    -webkit-text-stroke: 1px #FDF9CF;
+    -webkit-text-stroke: 1px var(--main-color);
 }
 .companies .list {
     display: flex;
@@ -1647,13 +1671,13 @@ nav .phone-menu.active {
 .contact .head h2 {
     font-size: 150px;
     line-height: 150px;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding-bottom: 40px;
 }
 .contact .head h3 {
     border: 1px solid #39383894;
     font-size: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding: 15px 20px;
     text-align: center;
     justify-content: center;
@@ -1686,7 +1710,7 @@ nav .phone-menu.active {
     display: block;
     text-decoration: none;
     font-size: 19px;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .contact .contact-form .left .other-social {
     display: grid;
@@ -1706,7 +1730,7 @@ nav .phone-menu.active {
     transition: 300ms;
 }
 .contact .contact-form .left .other-social button:hover {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .contact .contact-form .form {
     display: flex;
@@ -1760,7 +1784,7 @@ nav .phone-menu.active {
     width: 215px;
     padding: 20px;
     font-weight: 600;
-    color: #FDF9CF;
+    color: var(--main-color);
     background-color: transparent;
     border: 1px solid #39383894;
     border-radius: 5px;
@@ -1790,11 +1814,11 @@ nav .phone-menu.active {
     gap: 5px;
 }
 .contact .bottom p span {
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .contact .bottom>a {
     font-size: 18px;
-    color: #FDF9CF;
+    color: var(--main-color);
     /* width: fit-content; */
 }
 .contact .bottom span {
@@ -1815,7 +1839,7 @@ nav .phone-menu.active {
     display: flex;
     margin: 0px 10px 28px 10px;
     gap: 15px;
-    background-color: #141413;
+    background-color: var(--background-color);
     position: relative;
     top: 30px;
     width: 100%;
@@ -1837,7 +1861,7 @@ nav .logo img {
     height: 20px;
 }
 nav .logo h2 {
-    color: #FDF9CF;
+    color: var(--main-color);
     /* font-family: Syne; */
     font-size: 14px;
     padding-bottom: 5px;
@@ -1862,7 +1886,7 @@ nav .logo h2 {
 }
 .menu-bar .links span i {
     width: 20px;
-    border-bottom: 1px solid #FDF9CF;
+    border-bottom: 1px solid var(--main-color);
     opacity: 0;
     transition: 400ms;
     position: absolute;
@@ -1870,7 +1894,7 @@ nav .logo h2 {
 }
 .menu-bar .links a{
     display: block;
-    color: #FDF9CF;
+    color: var(--main-color);
     text-decoration: none;
     padding: 22.5px 0;
     font-weight: 400;
@@ -1921,7 +1945,7 @@ nav .phone-menu {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -25px;
-    background-color: #141413;
+    background-color: var(--background-color);
     padding: 10px 30px 30px 30px;
     border-radius: 20px;
     visibility: hidden;
@@ -1936,7 +1960,7 @@ nav .phone-menu .links2 span {
 }
 nav .phone-menu .links2 span i {
     width: 20px;
-    border-bottom: 1px solid #FDF9CF;
+    border-bottom: 1px solid var(--main-color);
     opacity: 0;
     transition: 400ms;
     position: absolute;
@@ -1957,7 +1981,7 @@ nav .phone-menu .links2 span:hover i{
 
 nav .phone-menu .links2 span:hover a {
     padding-left: 30px;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 nav .phone-menu.active {
     visibility: visible;

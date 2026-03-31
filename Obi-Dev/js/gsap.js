@@ -320,21 +320,21 @@ gsap.from(".project-section .header>span , .project-section .header h2", {
   },
   y: -100,       // move from below
   opacity: 0,   // start invisible
-  duration: 3.0,
+  duration: 2.5,
   ease: "power3.out",
   stagger: 0.5
 });
 
 gsap.from(".project-section .head, .project-section .projects", {
   scrollTrigger: {
-    trigger: ".project-section .head , .project-section .projects",     // element to watc
+    trigger: ".project-section .head , .project-section",     // element to watc
     start: "top 60%",      // when element hits 80% of viewport
     toggleActions: "play none none none" 
     // play | pause | reverse | reset
   },
   y: -100,       // move from below
   opacity: 0,   // start invisible
-  duration: 4.0,
+  duration: 3.0,
   ease: "power3.out",
   stagger: 0.5
 });

@@ -1,13 +1,23 @@
+@import url('https://fonts.cdnfonts.com/css/campton');  
+:root {
+    --main-color: #fdf9cf;
+    --background-color: #141413;
+    --border-color: #262525;
+    --small-text-color: #B6B5AF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
 @media (min-width: 300px) and (max-width: 685px) {
     /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
 
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Unbounded;
+    font-family: Campton;
 }
 html {
     scroll-behavior: smooth;
@@ -285,7 +295,7 @@ nav .phone-menu.active {
 .project-section {
     margin: 0 15px;
     margin-top: 45px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .project-section .header {
     text-align: center;
@@ -296,7 +306,7 @@ nav .phone-menu.active {
     transform: translateX(-50%);
     border: 1px solid #39383894;
     display: flex;
-    width: 165px;
+    width: 145px;
     justify-content: center;
     align-items: center;
     padding: 12px 18px;
@@ -319,7 +329,7 @@ nav .phone-menu.active {
 .project-section .header h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 700;
     color: #FDF9CF;
     /* width: 95%; */
     text-align: center;
@@ -333,7 +343,6 @@ nav .phone-menu.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 35px;
     border-bottom: 1px solid #393838a5;
     margin-top: 100px;
     padding: 0px 2px 25px 2px;
@@ -341,7 +350,8 @@ nav .phone-menu.active {
 .project-section .head p {
     color: #FDF9CF;
     font-size: 13px;
-    margin-bottom: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
 }
 .project-section .head .links {
     display: flex;
@@ -352,6 +362,7 @@ nav .phone-menu.active {
     text-decoration: none;
     color: #B6B5AF;
     font-size: 13px;
+    font-weight: 500;
 }
 .project-section .head .links a:nth-child(1) {
     color: #FDF9CF;
@@ -362,7 +373,7 @@ nav .phone-menu.active {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
-    margin-top: 55px;
+    margin-top: 45px;
     /* transform: translateY(70px); */
     transition: opacity 0.4s transform 0.4s;
     position: relative;
@@ -376,51 +387,60 @@ nav .phone-menu.active {
     height: 400px;
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
 }
 .project-section .projects .two {
     width: 100%;
-    height: 300px;
+    height: 31vh;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
-.project-section .projects .one img {
+.project-section .projects .one>img {
     width: 100%;
+    transition: 400ms;
 }
-.project-section .projects .two img {
-    width: 110% !important;
+.project-section .projects .two>img {
+    width: 100% !important;
+    transition: 400ms;
 }
 .project-section .projects .one .info {
     position: absolute;
     top: 15px;
     left: 15px;
-    width: 92%;
-    height: 92%;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
     background-color: #fdf9cff6;
     backdrop-filter: blur(10px);
     scale: 0;
     opacity: 0;
     transition: 400ms;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px #24242412;
 }
 .project-section .projects .two .info {
     position: absolute;
     top: 15px;
     left: 15px;
-    width: 91%;
-    height: 270px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
     background-color: #fdf9cff6;
     backdrop-filter: blur(10px);
     scale: 0;
     opacity: 0;
+    border-radius: 15px;
     transition: 400ms;
+    box-shadow: inset 0px 0px 10px #24242412;
 }
-.project-section .projects .info span{
+.project-section .projects .info span.date{
     position: absolute;
     right: 25px;
     top: 25px;
 }
+
 .project-section .projects .info .name {
     position: absolute;
     text-align: center;
@@ -434,12 +454,27 @@ nav .phone-menu.active {
     font-size: 20px;
 }
 .project-section .projects .info .name p {
-    background-color: #141413;
-    color: #FDF9CF;
     font-size: 12px;
-    margin: 0 60px;
-    padding: 10px;
-    border-radius: 20px;
+    margin: 0 0px;
+}
+.project-section .projects .info .name a:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+.project-section .projects .info .name a {
+    color: #FDF9CF;
+    border-radius: 25px;
+    display: flex;
+    background-color: #141413;
+    gap: 0px;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 65px;
+    transition: 300ms;
+}
+.project-section .projects .info .name img {
+    width: 14px !important;
+    opacity: 1 !important;
 }
 .projects .one:hover .info{
     scale: 1;
@@ -449,14 +484,21 @@ nav .phone-menu.active {
     scale: 1;
     opacity: 1;
 }
+.projects .one:hover img {
+    opacity: 0.7;
+}
+.projects .two:hover img {
+    opacity: 0.7;
+}
 
 
 .companies {
     /* height: 170vh; */
     margin: 0px 15px;
     border-radius: 30px;
-    padding: 65px 15px 65px 15px;
+    padding: 45px 15px 45px 15px;
     margin-bottom: 25px;
+    display: none;
 }
 .companies .header {
     text-align: center;
@@ -467,7 +509,7 @@ nav .phone-menu.active {
     transform: translateX(-50%);
     border: 1px solid #39383894;
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     padding: 12px 15px;
@@ -543,7 +585,7 @@ nav .phone-menu.active {
     text-align: center;
     justify-content: center;
     border-radius: 40px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     margin: 0 0px;
@@ -572,6 +614,7 @@ nav .phone-menu.active {
     display: block;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 500;
     color: #FDF9CF;
 }
 .contact .contact-form .left .other-social {

@@ -405,7 +405,7 @@ body::-webkit-scrollbar-thumb {
 .about-section .more-info .image img {
     width: 830px;
     margin-left: -80px;
-    transform: rotate(-2deg);
+    /* transform: rotate(-2deg); */
     margin-top: -30px;
 }
 .about-section .more-info .info {
