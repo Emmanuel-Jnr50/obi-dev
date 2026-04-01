@@ -410,10 +410,10 @@ nav .phone-menu.active {
     gap: 10px !important;
     font-weight: 500;
     margin-bottom: 0px;
-    font-family: Satoshi !important;   
+    font-family: Satoshi !important; 
 }
 .skill-set .base img {
-    height: 25px;
+    height: 20px;
 }
 .project-details .right {
     display: flex;

@@ -62,6 +62,10 @@ body::-webkit-scrollbar-thumb {
         opacity: 0,5;
     }
 }
+
+.web-info {
+    display: none;
+}
 .preloader {
     display: flex;
     justify-content: center;
@@ -1990,6 +1994,9 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 10px 0px 0px 10px;
 }
+.main {
+    display: none;
+}
 @keyframes flicker {
     0% {
         opacity: 0;
@@ -3760,7 +3767,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-@media (min-width: 1441px) and (max-width: 1570px) {
+@media (min-width: 1441px) {
 /* headers- var(--main-color),background - var(--background-color), border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
@@ -3782,6 +3789,9 @@ body {
     overflow-x: hidden;
     background-color: var(--background-color);
     scroll-behavior: smooth;
+}
+.main {
+    display:none;
 }
 body::-webkit-scrollbar {
     width: 4px;

@@ -28,6 +28,29 @@ body::-webkit-scrollbar-thumb {
     background-color: #FDF9CF;
     border-radius: 10px 0px 0px 10px;
 }
+.web-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+.web-info img {
+    width: 500px;
+    /* animation: bounce 4s linear infinite; */
+}
+.web-info h2 {
+    color: #FDF9CF;
+    font-size: 30px;
+    font-family: Campton;
+}
+.web-info h3 {
+    color: #B6B5AF;
+    font-size: 22px;
+    font-family: Campton;
+    font-weight: 600;
+}
 @keyframes flicker {
     0% {
         opacity: 0;
