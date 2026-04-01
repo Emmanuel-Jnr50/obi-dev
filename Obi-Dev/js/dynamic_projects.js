@@ -34,6 +34,7 @@ const projects = {
   project2: {
     name: "BuyTree",
     service: "Web Design, E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     date: "June 22nd, 2024",
     client: "G-Unique Fashion Stores",
     info: `<h4>Description:</h4>
@@ -46,24 +47,45 @@ const projects = {
     typography: `<h4>Typography & Colors:</h4>
                 <p>We used the elegant font of name "Poppins" to create a bold yet playful design, also displaying our message clearly.<br><br>
                 <i style="background-color: #F4BB3C;></i><i style="background-color: #F4FB3C;"></i>
-                <i></i></p>`
+                <i></i></p>`,
+    imgsection: `<div class="image"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
+                <div class="image two"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
+                <div class="image two"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
+                <div class="image"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>
+                <div class="image gif"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
+    relatedimg: "/img/mockup portfolio-2.png",
+    relatedname: `<h3>GoHub Prayer App</h3>
+                  <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
+    relatedimgtwo: "/img/buytree mock.png",
+    relatednametwo: `<h3>BuyTree - Online Store</h3>
+                  <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`
   },
   project3: {
     name: "Fidelity Bank App",
     service: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
+    servicetwo: "Mobile App Design, User Experience Research, UI/UX Design",
     date: "January 2025",
     client: "Fidelity Bank PLC",
-    info: `<h4>Description:</h4>
-            <p >YourPet is an interactive <b style="color: #FDF9CF;">virtual pet sanctuary</b> designed to let users adopt, care for, and bond with digital pets. <br><br> The platform features a <b style="color: #FDF9CF;">clean UI</b>, smooth animations, <b style="color: #FDF9CF;">daily task systems</b>, and customizable pet interactions. <br><br>Built with a focus on user experience and emotional engagement, YourPet combines playful design with structured functionality to create a relaxing and gamified environment</p>`,
-    image1: "img/temnix-home-graphic.png",
-    image2: "img/temnix-about-graphic.png",
-    image3: "img/temnix-projects-graphic.png",
-    image4: "img/temnix-servic-graphic.png",
-    image5: "img/temnix-contact-graphic.png",
+    info: `<h4 style="padding-top: 10px;">Description:</h4>
+            <p style="padding-bottom: 20px;">A modern <b style="color: #FDF9CF;">mobile banking redesign</b> focused on clarity, accessibility, and a smoother user experience. <br><br>
+                This concept redesign reimagines the <b style="color: #FDF9CF;">Fidelity Bank</b> mobile app with a cleaner <b style="color: #FDF9CF;">visual system</b>, improved <b style="color: #FDF9CF;">information hierarchy</b>, and a more <b style="color: #FDF9CF;">intuitive interface</b> for everyday banking tasks. <br><br> The goal was to simplify how users interact with key financial features while creating a more polished and user-friendly digital experience. <br><br>
+                By refining layout structure, <b style="color: #FDF9CF;">typography</b>, spacing, and <b style="color: #FDF9CF;">visual balance</b>, the redesign aims to make account management, navigation, and financial insights easier to understand <b style="color: #FDF9CF;">at a glance</b>.
+            </p>`,
     typography: `<h4>Typography & Colors:</h4>
                 <p>We used the elegant font of name "Poppins" to create a bold yet playful design, also displaying our message clearly.<br><br>
                 <i style="background-color: #F4BB3C;></i><i style="background-color: #F4FB3C;"></i>
-                <i></i></p>`
+                <i></i></p>`,
+    imgsection: `<div class="image"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
+                <div class="image two"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
+                <div class="image two"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
+                <div class="image"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>
+                <div class="image gif"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
+    relatedimg: "/img/mockup portfolio-2.png",
+    relatedname: `<h3>GoHub Prayer App</h3>
+                  <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
+    relatedimgtwo: "/img/buytree mock.png",
+    relatednametwo: `<h3>BuyTree - Online Store</h3>
+                  <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`
   }, 
   project4: {
     name: "TEMNIX Labs",
@@ -214,18 +236,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const project = projects[projectId];
 
   if (project) {
-    document.getElementById('projectImgOne').src = project.image1;
-    document.getElementById('projectImgTwo').src = project.image2;
-    document.getElementById('projectImgThree').src = project.image3;
-    document.getElementById('projectImgFour').src = project.image4;
-    document.getElementById('projectImgFive').src = project.image5;
     document.getElementById('projectName').textContent = project.name;
     document.getElementById('projectDate').textContent = project.date;
     document.getElementById('projectService').textContent = project.service;
+    document.getElementById('projectServiceTwo').textContent = project.servicetwo;
     document.getElementById('projectDescription').innerHTML = project.info;
     document.getElementById('projectClient').textContent = project.client;
     document.getElementById('projectTypography').innerHTML = project.typography;
     document.getElementById('projectLink').href = project.link;
+    document.getElementById('projectImgSection').innerHTML = project.imgsection;
+    document.getElementById('relatedName').innerHTML = project.relatedname;
+    document.getElementById('relatedImage').src = project.relatedimg;
+    document.getElementById('relatedNameTwo').innerHTML = project.relatednametwo;
+    document.getElementById('relatedImageTwo').src = project.relatedimgtwo;
     
     // document.getElementById('productOldPrice').textContent = `₦${product.oldPrice.toLocaleString()} NGN`;
   } else {

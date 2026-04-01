@@ -387,23 +387,68 @@ nav .phone-menu.active {
     padding: 16px;
     font-weight: 600;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
+}
+.skill-set {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+.skill-set .base {
+    border: 1px solid #39383894;
+    display: flex !important;
+    width: fit-content;
+    justify-content: center;
+    align-items: center !important;
+    padding: 8px 12px !important;
+    border-radius: 30px;
+    color: var(--main-color);
+    font-size: 10.2px;
+    gap: 10px !important;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-family: Satoshi !important;   
+}
+.skill-set .base img {
+    height: 25px;
 }
 .project-details .right {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    gap: 15px;
 }
 .project-details .right .image {
     width: 100%;
     height: fit-content;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     border-radius: 20px;
     display: flex;
 }
 .project-details .right .image img {
-    width: 120%;
+    width: 100%;
+}
+.project-details .right .image.two {
+    width: calc(50% - 7.5px);
+}
+.project-details .right .image.gif {
+    background-image: url(../img/animated-mockup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.project-details .right .image.gif img {
+    width: 45vw;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px 0px rgb(0, 0, 0, 0.1);
 }
 .project-details .right div:nth-child(5) {
     display: block;
@@ -448,11 +493,14 @@ nav .phone-menu.active {
 }
 .related-projects .two {
     width: 100%;
-    height: 31vh;
+    height: fit-content;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    display: none;
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .related-projects .one img {
     width: 100%;
@@ -466,6 +514,19 @@ nav .phone-menu.active {
     left: 15px;
     width: 91%;
     height: 92.5%;
+    background-color: #fdf9cff6;
+    backdrop-filter: blur(10px);
+    scale: 0;
+    opacity: 0;
+    transition: 400ms;
+    border-radius: 15px;
+}
+.related-projects .two .info {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
     background-color: #fdf9cff6;
     backdrop-filter: blur(10px);
     scale: 0;
@@ -512,6 +573,10 @@ nav .phone-menu.active {
     padding: 10px 0;
 }
 .related-projects .one:hover .info{
+    scale: 1;
+    opacity: 1;
+}
+.related-projects .two:hover .info{
     scale: 1;
     opacity: 1;
 }
@@ -569,6 +634,7 @@ nav .phone-menu.active {
     display: block;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 500;
     color: #FDF9CF;
 }
 .contact .contact-form .left .other-social {
