@@ -79,6 +79,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(2px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
+    font-family: Campton;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;

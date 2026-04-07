@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const projectId = urlParams.get('id');
 
 const projects = {
-  project1: {
+  temnixlabs: {
     name: "TEMNIX Labs",
     service: "Web Design, Software Enginnering, Online Web Service, Front-End Developement, UI/UX Design",
     servicetwo: "Web Design, Front-End Developement, UI/UX Design",
@@ -56,7 +56,7 @@ const projects = {
     relatednametwo: `<h3>BuyTree - Online Store</h3>
                   <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`
   },
-  project2: {
+  buytree: {
     name: "BuyTree",
     service: "Web Design, E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
@@ -110,7 +110,7 @@ const projects = {
                   <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`,
     livelink: "https://buy-tree.vercel.app/"
   },
-  project3: {
+  fidelityapp: {
     name: "Fidelity Bank App",
     service: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
     servicetwo: "Mobile App Design, User Experience Research, UI/UX Design",
