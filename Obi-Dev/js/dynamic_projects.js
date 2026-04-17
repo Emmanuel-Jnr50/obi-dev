@@ -60,7 +60,7 @@ const projects = {
     name: "BuyTree",
     service: "Web Design, E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
-    date: "June 22nd, 2024",
+    date: "April 01, 2026",
     client: "Temnix Labs & BuyTree NG",
     info: `<h4>Description:</h4>
             <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
@@ -97,18 +97,15 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
-                <div class="image two"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
-                <div class="image two"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
-                <div class="image"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>
-                <div class="image gif"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
+    imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>
+                <div class="image"><img src="/img/buy-tree-dashboard.png" alt="" id="projectImgOne"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
     relatedimgtwo: "/img/buytree mock.png",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
                   <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`,
-    livelink: "https://buy-tree.vercel.app/"
+    livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
   },
   fidelityapp: {
     name: "Fidelity Bank App",
