@@ -172,7 +172,7 @@ gsap.from(".services .header>span , .services .header .navigate h2", {
 gsap.from(".services .connect-btn", {
   scrollTrigger: {
     trigger: ".services .connect-btn",     // element to watch
-    start: "top 70%",      // when element hits 80% of viewport
+    start: "top 85%",      // when element hits 80% of viewport
     toggleActions: "play none none none" 
     // play | pause | reverse | reset
   },

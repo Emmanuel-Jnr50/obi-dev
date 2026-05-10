@@ -422,6 +422,29 @@ nav .phone-menu.active {
     margin-bottom: 30px;
     gap: 15px;
 }
+.project-details .right span  {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.project-details .right h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FDF9CF;
+    width: 0px;
+    padding-bottom: 25px;
+}
+.project-details .right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+.project-details .right ul li {
+    color: #B6B5AF;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
 .project-details .right .image {
     width: 100%;
     height: fit-content;

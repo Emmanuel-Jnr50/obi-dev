@@ -119,10 +119,20 @@ const projects = {
                 By refining layout structure, <b style="color: #FDF9CF;">typography</b>, spacing, and <b style="color: #FDF9CF;">visual balance</b>, the redesign aims to make account management, navigation, and financial insights easier to understand <b style="color: #FDF9CF;">at a glance</b>.
 
                 </p>
+
             
             `
             ,
     imgsection: `<div class="image"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
+                <span>
+                <h4>Problem:</h4>
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia!</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia!</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia!</li>
+                    </ul>
+                </span>
+                
                 <div class="image two"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
                 <div class="image two"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
                 <div class="image"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>

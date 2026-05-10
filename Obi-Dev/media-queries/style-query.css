@@ -645,6 +645,9 @@ body::-webkit-scrollbar-thumb {
     bottom: 100px;
     left: 0px;
 }
+.resume .content.hide {
+    display: none;
+}
 .resume .content:hover {
     transform: scale(1.02);
 }

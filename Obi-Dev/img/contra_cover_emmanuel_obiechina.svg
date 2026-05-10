@@ -1,0 +1,74 @@
+<svg width="1360" height="480" viewBox="0 0 680 240" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Contra profile cover for Emmanuel Obiechina</title>
+  <desc>Minimal dark cover banner for Emmanuel Obiechina aka Obi-Dev on Contra.</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Syne:wght@700;800&display=swap');
+      .cover-bg { fill: #0E0E0E; }
+      .grid-line { stroke: #1E1E1E; stroke-width: 0.5; }
+      .accent-line { stroke: #C8F060; stroke-width: 1; }
+      .dot { fill: #2A2A2A; }
+      .dot-accent { fill: #C8F060; }
+      .tag-bg { fill: #1A1A1A; }
+      .tag-border { stroke: #2E2E2E; stroke-width: 0.5; fill: none; }
+      .label { font-family: 'DM Mono', monospace; font-size: 10px; fill: #555; font-weight: 300; letter-spacing: 0.08em; }
+      .name { font-family: 'Syne', sans-serif; font-size: 36px; fill: #F5F5F2; font-weight: 800; letter-spacing: -0.02em; }
+      .role-tag { font-family: 'DM Mono', monospace; font-size: 10px; fill: #C8F060; font-weight: 400; letter-spacing: 0.12em; }
+      .bracket { font-family: 'DM Mono', monospace; font-size: 13px; fill: #333; font-weight: 300; }
+    </style>
+  </defs>
+
+  <rect width="680" height="240" class="cover-bg" rx="0"/>
+
+  <line x1="80" y1="0" x2="80" y2="240" class="grid-line"/>
+  <line x1="160" y1="0" x2="160" y2="240" class="grid-line"/>
+  <line x1="240" y1="0" x2="240" y2="240" class="grid-line"/>
+  <line x1="320" y1="0" x2="320" y2="240" class="grid-line"/>
+  <line x1="400" y1="0" x2="400" y2="240" class="grid-line"/>
+  <line x1="480" y1="0" x2="480" y2="240" class="grid-line"/>
+  <line x1="560" y1="0" x2="560" y2="240" class="grid-line"/>
+  <line x1="640" y1="0" x2="640" y2="240" class="grid-line"/>
+
+  <line x1="0" y1="60" x2="680" y2="60" class="grid-line"/>
+  <line x1="0" y1="120" x2="680" y2="120" class="grid-line"/>
+  <line x1="0" y1="180" x2="680" y2="180" class="grid-line"/>
+
+  <line x1="56" y1="72" x2="56" y2="168" class="accent-line"/>
+
+  <circle cx="480" cy="60" r="2" class="dot"/>
+  <circle cx="560" cy="60" r="2" class="dot"/>
+  <circle cx="640" cy="60" r="2" class="dot"/>
+  <circle cx="480" cy="120" r="2" class="dot"/>
+  <circle cx="560" cy="120" r="2" class="dot"/>
+  <circle cx="640" cy="120" r="2" class="dot"/>
+  <circle cx="480" cy="180" r="2" class="dot"/>
+  <circle cx="560" cy="180" r="2" class="dot"/>
+  <circle cx="640" cy="180" r="2" class="dot"/>
+  <circle cx="560" cy="120" r="3.5" class="dot-accent"/>
+
+  <text x="68" y="92" class="bracket">{</text>
+  <text x="82" y="89" class="label">AVAILABLE FOR WORK</text>
+
+  <text x="80" y="138" class="name">Obi-Dev.</text>
+
+  <rect x="80" y="150" width="110" height="22" rx="3" class="tag-bg"/>
+  <rect x="80" y="150" width="110" height="22" rx="3" class="tag-border"/>
+  <text x="135" y="165" text-anchor="middle" class="role-tag">FRONT-END</text>
+
+  <rect x="198" y="150" width="102" height="22" rx="3" class="tag-bg"/>
+  <rect x="198" y="150" width="102" height="22" rx="3" class="tag-border"/>
+  <text x="249" y="165" text-anchor="middle" class="role-tag">UI / UX</text>
+
+  <rect x="308" y="150" width="120" height="22" rx="3" class="tag-bg"/>
+  <rect x="308" y="150" width="120" height="22" rx="3" class="tag-border"/>
+  <text x="368" y="165" text-anchor="middle" class="role-tag">WEB DESIGN</text>
+
+  <text x="80" y="198" class="label">FIGMA  ·  HTML / CSS  ·  REACT  ·  JS</text>
+  <text x="68" y="175" class="bracket">}</text>
+
+  <text x="610" y="210" text-anchor="middle" style="font-family:'DM Mono',monospace;font-size:88px;fill:#161616;font-weight:400;letter-spacing:-0.04em;">01</text>
+
+  <text x="638" y="52" text-anchor="end" class="label">CONTRA.COM</text>
+  <text x="638" y="66" text-anchor="end" class="label">@EMMANUEOBIECHINA</text>
+</svg>
