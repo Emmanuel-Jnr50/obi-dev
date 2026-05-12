@@ -730,14 +730,15 @@ nav .phone-menu.active {
     border: 1px solid #39383894;
     font-size: 30px;
     color: #FDF9CF;
-    padding: 15px 20px;
+    padding: 15px 100px;
     text-align: center;
     justify-content: center;
     border-radius: 40px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     justify-content: center;
-    margin: 0 400px;
+    margin: 0 auto;
+    width: fit-content;
 }
 .contact .contact-form {
     padding: 100px 50px;
@@ -760,25 +761,34 @@ nav .phone-menu.active {
 .contact .contact-form .left a {
     padding-bottom: 30px;
     display: block;
+    font-weight: 500;
     text-decoration: none;
     font-size: 19px;
     color: #FDF9CF;
 }
 .contact .contact-form .left .other-social {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 300px;
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 500px;
+    margin-top: 25px;
 }
 .contact .contact-form .left .other-social button {
     padding: 12px 15px;
     font-size: 16px;
-    width: 150px;
+    width: fit-content;
     color: #b6b5afed;
     border-radius: 30px;
     background-color: transparent;
     border: 1px solid #39383894;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contact .contact-form .left .other-social button img {
+    width: 18px;
     transition: 300ms;
 }
 .contact .contact-form .left .other-social button:hover {
@@ -883,3 +893,5 @@ nav .phone-menu.active {
     color: #b6b5afed;
     text-decoration: none;
 }
+
+
