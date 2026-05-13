@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Unbounded;
+    font-family: Campton;
 }
 html {
     scroll-behavior: smooth;
@@ -78,10 +78,12 @@ body::-webkit-scrollbar-thumb {
 }
 nav {
     display: flex;
-    margin: 0px 10px 28px 10px;
+    margin: 0px 0px 28px 0px;
+    padding: 0px 0px 0px 10px;
     gap: 15px;
     background-color: #141413;
     position: relative;
+    justify-content: center;
     top: 30px;
     width: 100%;
     z-index: 100;
@@ -93,8 +95,10 @@ nav .logo {
     gap: 5px;
     padding: 10px 20px;
     /* border: 1px solid white; */
-    border-radius: 8px;
+    border-radius: 16px;
     box-shadow: inset 0px 0px 20px #ffffff12;
+    width: 10%;
+    justify-content: center;
 }
 nav .logo img {
     height: 20px;
@@ -109,12 +113,14 @@ nav .logo h2 {
 .menu-bar {
     padding: 10px 30px;
     /* border: 1px solid white; */
-    border-radius: 8px;
+    border-radius: 16px;
     box-shadow: inset 0px 0px 20px #ffffff12;
+    width: 75%;
 }
 .menu-bar .links {
     display: flex;
-    gap: 67px;
+    gap: 100px;
+    justify-content: center;
 }
 .menu-bar .links span {
     display: flex;
@@ -135,8 +141,9 @@ nav .logo h2 {
     text-decoration: none;
     padding: 22.5px 0;
     font-weight: 400;
-    font-size: 13.7px;
+    font-size: 14px;
     transition: padding 400ms, color 300ms;
+    text-align: center;
 }
 nav .icons {
     display: flex;
@@ -145,7 +152,8 @@ nav .icons {
     justify-content: center;
     padding: 10px 20px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 8px;
+    border-radius: 16px;
+    width: 15%;
 }
 nav .icons span{
     display: flex;
@@ -171,39 +179,28 @@ nav.fixed {
     top:30px;            /* stays at same gap when fixed */
 }
 
-nav .menu-btn {
-    box-shadow: inset 0px 0px 20px #ffffff12;
-    padding: 15px;
-    border-radius: 8px;
-    display: none;
-}
 nav .menu-btn img {
-    width: 30px;
+    width: 25px;
+    display: none;
 }
 nav .phone-menu {
     position: absolute;
     z-index: 100;
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
-    margin-left: -15px;
+    margin-left: -25px;
     background-color: #141413;
-    padding: 20px 20px 20px 20px;
-    border-radius: 15px;
-    top: 75px;
+    padding: 10px 30px 30px 30px;
+    border-radius: 20px;
     visibility: hidden;
+    transform: translateY(40px);
     transition: 400ms;
-    opacity: 0;
-    background-color: #141413;
 }
 nav .phone-menu .links2 span {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #39383829;
+    border-bottom: 1px solid #39383894;
     gap: 10px;
-    justify-content: center;
-    /* text-align: center; */
-    padding: 0 10px;
-    position: relative;
 }
 nav .phone-menu .links2 span i {
     width: 20px;
@@ -211,21 +208,15 @@ nav .phone-menu .links2 span i {
     opacity: 0;
     transition: 400ms;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
 }
 nav .phone-menu .links2 a{
     display: block;
-    color: #FDF9CF;
+    color: #B6B5AF;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 22.5px 0;
     font-weight: 400;
-    font-size: 13px;
-    transition: padding 400ms, color 300ms, transform 300ms;
-}
-nav .phone-menu .links2 span:nth-child(1) {
-    border-top: 1px solid #39383829;
+    font-size: 16px;
+    transition: padding 400ms, color 300ms;
 }
 
 nav .phone-menu .links2 span:hover i{
@@ -233,34 +224,34 @@ nav .phone-menu .links2 span:hover i{
 }
 
 nav .phone-menu .links2 span:hover a {
-    padding-left: 0px;
-    transform: scale(1.1);
+    padding-left: 30px;
     color: #FDF9CF;
 }
-
 nav .phone-menu.active {
     visibility: visible;
     transform: translateY(0px);
-    opacity: 1;
 }
-
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
 .project-section {
     margin: 100px;
     margin-top: 120px;
 }
 .project-section .header {
     text-align: center;
-    padding: 0 200px;
+    /* padding: 0 200px; */
 }
 .project-section .header>span {
     margin-left: 50%;
     transform: translateX(-50%);
     border: 1px solid #39383894;
     display: flex;
-    width: 235px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 12px 18px;
+    padding: 12px 30px;
     border-radius: 30px;
     color: #FDF9CF;
     font-size: 14px;
@@ -279,7 +270,7 @@ nav .phone-menu.active {
 }
 .project-section .header h2 {
     font-size: 53px;
-    font-weight: 500;
+    font-weight: 700;
     color: #FDF9CF;
     /* width: 95%; */
     text-align: center;
@@ -303,10 +294,10 @@ nav .phone-menu.active {
 .project-details {
     margin-top: 100px;
     display: flex;
-    gap: 55px;
+    justify-content: space-between;
 }
 .project-details .left {
-    width: 420px;
+    width: 33%;
 }
 .project-details .left h3 {
     font-size: 25px;
@@ -367,14 +358,17 @@ nav .phone-menu.active {
 .project-details .right {
     display: flex;
     flex-direction: column;
+    width: 55%;
 }
 .project-details .right .image {
-    width: 925px;
-    height: 600px;
+    width: 100%;
+    height: fit-content;
     overflow: hidden;
     margin-bottom: 30px;
+    border-radius: 40px;
 }
 .project-details .right .image img {
+    border-radius: 40px;
     width: 100%;
 }
 .typo p i {
@@ -493,14 +487,15 @@ nav .phone-menu.active {
     border: 1px solid #39383894;
     font-size: 30px;
     color: #FDF9CF;
-    padding: 15px 20px;
+    padding: 15px 100px;
     text-align: center;
     justify-content: center;
     border-radius: 40px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     justify-content: center;
-    margin: 0 400px;
+    margin: 0 auto;
+    width: fit-content;
 }
 .contact .contact-form {
     padding: 100px 50px;
@@ -523,25 +518,34 @@ nav .phone-menu.active {
 .contact .contact-form .left a {
     padding-bottom: 30px;
     display: block;
+    font-weight: 500;
     text-decoration: none;
     font-size: 19px;
     color: #FDF9CF;
 }
 .contact .contact-form .left .other-social {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 300px;
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 500px;
+    margin-top: 25px;
 }
 .contact .contact-form .left .other-social button {
     padding: 12px 15px;
     font-size: 16px;
-    width: 150px;
+    width: fit-content;
     color: #b6b5afed;
     border-radius: 30px;
     background-color: transparent;
     border: 1px solid #39383894;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contact .contact-form .left .other-social button img {
+    width: 18px;
     transition: 300ms;
 }
 .contact .contact-form .left .other-social button:hover {
@@ -646,3 +650,5 @@ nav .phone-menu.active {
     color: #b6b5afed;
     text-decoration: none;
 }
+
+

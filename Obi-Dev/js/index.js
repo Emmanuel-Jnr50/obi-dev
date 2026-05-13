@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Preloader
-    window.addEventListener('load', () => {
-        window.scrollTo(0, 0);
-        const preloader = document.getElementById('preloader');
-        preloader.style.opacity = '0';
-        preloader.style.visibility = 'hidden';
-        setTimeout(() => { preloader.remove(); }, 1000);
-    });
+    // window.addEventListener('load', () => {
+    //     window.scrollTo(0, 0);
+    //     const preloader = document.getElementById('preloader');
+    //     preloader.style.opacity = '0';
+    //     preloader.style.visibility = 'hidden';
+    //     setTimeout(() => { preloader.remove(); }, 1000);
+    // });
 
     // Hero slider
     const slides = document.querySelector('.slides-one');

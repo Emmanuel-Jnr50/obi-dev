@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Unbounded;
+    font-family: Campton;
     scroll-behavior: smooth;
 }
 html {
@@ -78,6 +78,10 @@ body::-webkit-scrollbar-thumb {
     -webkit-text-stroke: 1px white;
     letter-spacing: 20px;
 }
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
 nav {
     display: flex;
     margin: 0px 0px 28px 0px;
@@ -121,7 +125,7 @@ nav .logo h2 {
 }
 .menu-bar .links {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     justify-content: center;
 }
 .menu-bar .links span {
@@ -143,7 +147,7 @@ nav .logo h2 {
     text-decoration: none;
     padding: 22.5px 0;
     font-weight: 400;
-    font-size: 13.7px;
+    font-size: 14px;
     transition: padding 400ms, color 300ms;
     text-align: center;
 }
@@ -242,12 +246,14 @@ nav .phone-menu.active {
     align-items: end;
     gap: 40px;
     margin-bottom: 100px;
+    /* max-width: 1800px;
+    margin: 130px auto; */
 }
 .hero .left h2 {
     color: #FDF9CF;
     font-size: 52px;
     line-height: 62px;
-    font-weight: 500;
+    font-weight: 700;
     width: 600px;
     padding-bottom: 65px;
 }
@@ -256,9 +262,9 @@ nav .phone-menu.active {
 }
 .hero p {
     color: #b6b5af;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 27px;
-    margin-bottom: -15px;
+    margin-top: 0px;
 }
 
 .carousel {
@@ -278,7 +284,7 @@ nav .phone-menu.active {
 }
 .carousel .first p {
     font-size: 173px;
-    font-weight: 600;
+    font-weight: 800;
     color: #FDF9CF;
 }
 .carousel .first p:nth-child(2) {
@@ -301,20 +307,21 @@ nav .phone-menu.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     margin-top: 100px;
     flex-wrap: wrap;
 }
 .services .service-cards .card {
-    width: 450px;
+    width: calc(29.5%);
     padding: 30px 30px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 .services .service-cards .card h3 {
     color: #ededed;
     font-size: 35px;
-    width: 300px;
+    font-weight: 800;
+    width: 50%;
     line-height: 40px;
 }
 .services .service-cards .card .extras {
@@ -331,10 +338,12 @@ nav .phone-menu.active {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-weight: 500;
     transition: 300ms;
 }
 .services .service-cards .card .extras p:hover {
     color: #FDF9CF;
+    cursor: default;
 }
 .services .service-cards .card .extras p img {
     width: 10px;
@@ -506,10 +515,10 @@ nav .phone-menu.active {
 .pricing .header .head>span {
     border: 1px solid #39383894;
     display: flex;
-    width: 180px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 12px 18px;
+    padding: 12px 30px;
     border-radius: 30px;
     color: #FDF9CF;
     font-size: 14px;
@@ -530,9 +539,10 @@ nav .phone-menu.active {
 }
 .pricing .header .head h2 {
     font-size: 52px;
-    font-weight: 500;
+    font-weight: 700;
     color: #FDF9CF;
-    width: 800px;
+    width: 60%;
+    margin: 0 auto;
 }
 .pricing .header h2 span {
     color: transparent;
@@ -540,7 +550,7 @@ nav .phone-menu.active {
 }
 .price-cards {
     display: flex;
-    gap: 23px;
+    gap: 30px;
     justify-content: center;
     margin-top: 100px;
 }
@@ -549,7 +559,7 @@ nav .phone-menu.active {
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 50px 30px;
     width: 445px;
-    border-radius: 110px;
+    border-radius: 60px;
 }
 .price-cards .card h3 {
     font-weight: 600;
@@ -663,10 +673,10 @@ nav .phone-menu.active {
     transform: translateX(-50%);
     border: 1px solid #39383894;
     display: flex;
-    width: 440px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 12px 18px;
+    padding: 12px 30px;
     border-radius: 30px;
     color: #FDF9CF;
     font-size: 14px;
@@ -683,17 +693,6 @@ nav .phone-menu.active {
     border-radius: 50%;
     animation: flicker 2s linear infinite;
 }
-.companies .header h2 {
-    font-size: 53px;
-    font-weight: 500;
-    color: #FDF9CF;
-    /* width: 95%; */
-    text-align: center;
-}
-.companies .header h2 span {
-    color: transparent;
-    -webkit-text-stroke: 1px #FDF9CF;
-}
 .companies .list {
     display: flex;
     gap: 25px;
@@ -707,7 +706,11 @@ nav .phone-menu.active {
     display: flex;
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 1px solid #39383894;
+}
+.companies .list span img {
+    height: 32px;
 }
 .contact {
     /* height: 170vh; */
