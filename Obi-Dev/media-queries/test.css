@@ -5,22 +5,13 @@
 @import url('https://fonts.cdnfonts.com/css/campton');  
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
-
-:root {
-    --main-color: #fdf9cf;
-    --background-color: #ffffff;
-    --card-color: #f5f5f5;
-    --border-color: #262525;
-    --small-text-color: #838383;
-    --main-text-color: #000000;
-}
                 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: Campton;
     /* outline: 1px solid white; */
     -webkit-tap-highlight-color: transparent;
 }
@@ -101,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 }
 .hero {
     display: flex;
-    margin: 35px 16px 28px 16px;
+    margin: 35px 2px 28px 2px;
     gap: 15px;
     flex-direction: column;
 }
@@ -114,7 +105,6 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background-color: var(--card-color);
 }
 .hero .menu-bar .logo {
     display: flex;
@@ -125,10 +115,9 @@ body::-webkit-scrollbar-thumb {
 }
 .hero .menu-bar .logo img {
     height: 25px;
-    filter: invert(1) saturate(0);
 }
 .hero .menu-bar .logo h2 {
-    color: var(--main-text-color);
+    color: var(--main-color);
     /* font-family: Syne; */
     font-size: 20px;
     padding-bottom: 5px;
@@ -171,21 +160,18 @@ body::-webkit-scrollbar-thumb {
 
 .menu-bar.fixed {
     position:fixed;
-    left: 16px;
-    right: 16px;
+    left:0;
+    right:0;
     top: 2 0px;  
     z-index: 999;
-    width: calc(100% - 32px);
-    background-color: white;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);   
-    border: 1px solid #e7e7e7;
+    width: 100%;
+    background-color: var(--background-color);          /* stays at same gap when fixed */
 }
 
 .hero .menu-btn img {
     width: 30px;
     display: block;
     transition: 400ms;
-    filter: invert(1) saturate(0);
 }
 .hero .menu-btn img:active {
     transform: scale(0.9);
@@ -250,38 +236,36 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     border-radius: 25px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    background-color: var(--card-color);
 }
 .hero .about-me .available {
     border-radius: 35px;
-    /* box-shadow: inset 0px 0px 20px #00000012; */
-    padding: 14px 18px ;
-    color: var(--main-text-color);
+    box-shadow: inset 0px 0px 20px #ffffff12;
+    padding: 17px 25px ;
+    color: var(--main-color);
     font-weight: 300;
     display: flex;
     gap: 10px;
     align-items: center;
     width: fit-content;
     font-size: 12px;
-    background-color: var(--background-color);
 }
 .hero .about-me .available i {
-    height: 12px;
-    width: 12px;
-    background-color: #00c51a;
+    height: 10px;
+    width: 10px;
+    background-color: #aaff01;
     border-radius: 50%;
     animation: flicker 2s linear infinite;
 }
 .hero .about-me h3 {
     font-size: 15px;
-    color: var(--small-text-color);
+    color: var(--main-color);
     font-weight: 500;
     padding-top: 30px;
     padding-bottom: 25px;
 }
 .hero .about-me h2 {
     font-size: 25px;
-    color: var(--main-text-color);
+    color: var(--main-color);
     font-weight: 700;
     padding-bottom: 25px;
     width: 90%;
@@ -293,7 +277,7 @@ body::-webkit-scrollbar-thumb {
 }
 .hero .about-me>.arrow p {
     font-size: 16px;
-    color: var(--small-text-color);
+    color: #b6b5afed;
     font-weight: 400;
     padding-bottom: 30px;
     width: 95%;
@@ -318,11 +302,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 35px;
     color: transparent;
     font-weight: 600;
-    -webkit-text-stroke: 1.5px var(--main-text-color);
+    -webkit-text-stroke: 1.5px var(--main-color);
 }
 .hero .about-me .stats span p{
     font-size: 14px;
-    color: var(--small-text-color);
+    color: #b6b5afed;
     font-weight: 400;
     width: 100px;
     line-height: 22px;
@@ -653,6 +637,9 @@ body::-webkit-scrollbar-thumb {
     position: sticky;
     bottom: 100px;
     left: 0px;
+}
+.resume .content.hide {
+    display: none;
 }
 .resume .content:hover {
     transform: scale(1.02);

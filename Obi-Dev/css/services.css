@@ -505,12 +505,8 @@ nav .phone-menu.active {
 .lets-connect button:hover{color: #212121;}.lets-connect button:hover svg{stroke: #212121;}
 
 .pricing .header  {
-    display: flex;
-    align-items: start;
     text-align: center;
-    justify-content: space-between;
-    margin-left: -50%;
-    transform: translateX(50%);
+    margin: 0 auto;
 }
 .pricing .header .head>span {
     border: 1px solid #39383894;
@@ -541,7 +537,7 @@ nav .phone-menu.active {
     font-size: 52px;
     font-weight: 700;
     color: #FDF9CF;
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
 }
 .pricing .header h2 span {

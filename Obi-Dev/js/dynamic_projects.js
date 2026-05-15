@@ -69,7 +69,7 @@ const projects = {
 
             The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
             
-            <h4 style="margin-top: 40px;">Tools and Technologies Used:</h4>
+            <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
                 <div class="skill-set">
                   <span class="base">
                     <img src="/icons/html-5-svgrepo-com.svg" alt="">
@@ -97,8 +97,7 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>
-                <div class="image"><img src="/img/buy-tree-dashboard.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
