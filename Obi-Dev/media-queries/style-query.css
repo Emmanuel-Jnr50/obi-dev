@@ -4939,16 +4939,28 @@ body::-webkit-scrollbar-thumb {
 }
 .services .service-cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
     margin-top: 80px;
+    width: 300%;  /* ← this is the key change, makes track 3x the wrapper */
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
 }
+
 .services .service-cards .card {
-    width: calc(33% - 10px);
+    width: 33.333%;  /* ← 1/3 of the track = exactly 1 wrapper width */
+    flex-shrink: 0;
     padding: 30px 30px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 25px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.services .carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 .services .service-cards .card h3 {
     color: #ededed;
@@ -4959,7 +4971,7 @@ body::-webkit-scrollbar-thumb {
 }
 .services .service-cards .card .extras {
     margin-left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(-70%);
     margin-top: 30px;
     margin-bottom: 30px;
     
@@ -5396,19 +5408,32 @@ body::-webkit-scrollbar-thumb {
     color: transparent;
     -webkit-text-stroke: 1px #FDF9CF;
 }
+.client .testimonial-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
 .client .testimonial {
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    flex-shrink: 0;
+    flex-direction: row;  /* change from column to row */
+    gap: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 50px;
+    width: 300%;  /* 3 reviews — change if you have more */
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    overflow: hidden;
 }
+
 .client .testimonial .review {
-    padding: 40px;
+    padding: 30px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 25px;
-    width: 40%;
+    border-radius: 30px;
+    width: 33.333%;  /* 1/3 of track — change if you have more */
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 .client .testimonial .review .image {
     display: flex;
@@ -5573,6 +5598,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: start;
     margin-top: 70px;
+    flex-direction: column;
 }
 .blog .blog-content h3 {
     font-size: 18px;
@@ -5582,7 +5608,8 @@ body::-webkit-scrollbar-thumb {
     line-height: 25px;
 }
 .blog .blog-content .blog-posts {
-    width: 915px;
+    width: 100%;
+    margin-top: 80px;
 }
 .blog .blog-content .blog-posts .post {
     padding: 30px 0;
@@ -5645,8 +5672,8 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 .contact .head h2 {
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 100px;
+    line-height: 100px;
     color: #FDF9CF;
     padding-bottom: 40px;
 }
@@ -5654,7 +5681,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #39383894;
     font-size: 30px;
     color: #FDF9CF;
-    padding: 15px 100px;
+    padding: 15px 70px;
     text-align: center;
     justify-content: center;
     border-radius: 40px;
@@ -5671,6 +5698,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #39383894;
     border-radius: 30px;
     margin-top: 60px;
+    flex-direction: column;
 }
 .contact .contact-form .left {
     width: 400px;
@@ -5692,9 +5720,9 @@ body::-webkit-scrollbar-thumb {
 }
 .contact .contact-form .left .other-social {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
-    width: 500px;
+    width: 100%;
     margin-top: 25px;
 }
 .contact .contact-form .left .other-social button {
@@ -5721,11 +5749,12 @@ body::-webkit-scrollbar-thumb {
 .contact .contact-form .form {
     display: flex;
     flex-wrap: wrap;
-    width: 730px;
+    width: 100%;
     gap: 30px;
+    margin-top: 50px;
 }
 .contact .contact-form .form input:nth-child(1) {
-    width: 350px;
+    width: calc(50% - 15px);
     padding: 20px;
     height: 60px;
     background-color: transparent;
@@ -5733,7 +5762,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 .contact .contact-form .form input:nth-child(2) {
-    width: 350px;
+    width: calc(50% - 15px);
     padding: 20px;
     height: 60px;
     background-color: transparent;
