@@ -623,7 +623,7 @@ nav .phone-menu.active {
 .contact .head h3 {
     border: 1px solid #39383894;
     font-size: 18px;
-    color: #FDF9CF;
+    color: var(--main-color);
     padding: 15px 20px;
     text-align: center;
     justify-content: center;
@@ -631,7 +631,7 @@ nav .phone-menu.active {
     font-weight: 500;
     display: flex;
     justify-content: center;
-    margin: 0 0px;
+    margin: 0 auto;
 }
 .contact .contact-form {
     padding: 40px 15px;
@@ -658,7 +658,7 @@ nav .phone-menu.active {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    color: #FDF9CF;
+    color: var(--main-color);
 }
 .contact .contact-form .left .other-social {
     display: grid;
@@ -668,13 +668,20 @@ nav .phone-menu.active {
     margin-top: 10px;
 }
 .contact .contact-form .left .other-social button {
-    padding: 8px 8px;
+    padding: 8px 14px;
     font-size: 13px;
-    width: 130px;
+    width: fit-content;
     color: #b6b5afed;
     border-radius: 30px;
     background-color: transparent;
     border: 1px solid #39383894;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact .contact-form .left .other-social button img {
+    width: 16px;
     transition: 300ms;
 }
 .contact .contact-form .left .other-social button:hover {

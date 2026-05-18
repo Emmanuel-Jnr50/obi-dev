@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     margin: 35px 0px 28px 0px;
     gap: 25px;
-    height: calc(100vh - 56px);
+    height: fit-content;
 }
 #nav-spacer { height:0; width: 0px;position: absolute; transition: height 0.0s; }
 .hero .menu-bar {
