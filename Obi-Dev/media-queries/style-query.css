@@ -3362,7 +3362,7 @@ body::-webkit-scrollbar-thumb {
 
 .slides-one {
     display: flex;
-    width: 50vw;
+    width: 420px;
     height: 100%;
     transition: transform 0.8s ease; /* smoother + slower */
     /* margin-left: 100px; */
@@ -3374,7 +3374,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: inset 0px 0px 20px #ffffff12;
     user-select: none;
     cursor: grab;
-    width: 50vw;
+    width: 420px;
 }
 .slide-one .image {
     border-radius: 10px;
