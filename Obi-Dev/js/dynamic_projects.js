@@ -6,6 +6,7 @@ const projects = {
   temnixlabs: {
     name: "TEMNIX Labs",
     service: "Web Design, Software Enginnering, Online Web Service, Front-End Developement, UI/UX Design",
+    mainimg: "/img/temnix-home-graphic.png",
     servicetwo: "Web Design, Front-End Developement, UI/UX Design",
     date: "August 14th, 2025",
     client: "Temnix - Software Agency",
@@ -34,31 +35,44 @@ const projects = {
                   <img src="/icons/figma-svgrepo-com.svg" alt="">
                   <p>Figma</p>
               </span>
-            </div>
-            
-            
-            <h4 style="margin-top: 40px;">Typography & Colors:</h4>
-                <p>We used the elegant font of name "Poppins" to create a bold yet playful design, also displaying our message clearly.<br><br>
-                <span style="display: flex; gap: 10px">
-                  <i style="background-color: #8c8c8c; padding: 30px; border: 1.5px solid #f9fdcf91; border-radius: 4px;"></i><i style="background-color: #101010; padding: 30px; border: 1.5px solid #f9fdcf91; border-radius: 4px;"></i><i style="background-color: white; padding: 30px; border: 1.5px solid #f9fdcf91; border-radius: 4px;"></i>
-                </span>
-                </span>
-                </p>`,
-    imgsection: `<div class="image"><img src="/img/temnix-home-graphic.png" alt="" id="projectImgOne"></div>
-                <div class="image"><img src="img/temnix-about-graphic.png" alt="" id="projectImgTwo"></div>
-                <div class="image"><img src="img/temnix-projects-graphic.png" alt="" id="projectImgThree"></div>
-                <div class="image"><img src="img/temnix-servic-graphic.png" alt="" id="projectImgFour"></div>
-                <div class="image"><img src="img/temnix-contact-graphic.png" alt="" id="projectImgFive"></div>`,
+              <span class="base">
+                <img src="/img/tweenmax.png.cf27916e926fbb328ff214f66b4c8429.png" alt="">
+                <p>GSAP</p>
+              </span>
+            </div>`,
+    livelink: "https://www.temnix.com",
+    imgsection: `
+                <div class="image">
+                    <img src="/img/temnix-home-graphic.png" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="img/temnix-about-graphic.png" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="img/temnix-projects-graphic.png" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="img/temnix-servic-graphic.png" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="img/temnix-contact-graphic.png" alt="">
+                </div>
+            `,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
-                  <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
+                  <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
     relatedimgtwo: "/img/buytree mock.png",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
-                  <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`
+                  <a href="/project-details.html?id=project2" >Web Application</a>`
   },
   buytree: {
     name: "BuyTree",
     service: "Web Design, E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    mainimg: "/img/buy-tree-landing.png",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     date: "April 01, 2026",
     client: "Temnix Labs & BuyTree NG",
@@ -100,10 +114,10 @@ const projects = {
     imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
-                  <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
+                  <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
     relatedimgtwo: "/img/buytree mock.png",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
-                  <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`,
+                  <a href="/project-details.html?id=project2" >Web Application</a>`,
     livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
   },
   fidelityapp: {
@@ -112,7 +126,7 @@ const projects = {
     servicetwo: "Mobile App Design, User Experience Research, UI/UX Design",
     date: "January 2025",
     client: "Fidelity Bank PLC",
-    info: `<h4 style="padding-top: 10px;">Description:</h4>
+    info: `<h4 style="padding-top: 0px; font-size: 16px; font-weight: 600;">Description:</h4>
             <p style="padding-bottom: 20px;">A modern <b style="color: #FDF9CF;">mobile banking redesign</b> focused on clarity, accessibility, and a smoother user experience. <br><br>
                 This concept redesign reimagines the <b style="color: #FDF9CF;">Fidelity Bank</b> mobile app with a cleaner <b style="color: #FDF9CF;">visual system</b>, improved <b style="color: #FDF9CF;">information hierarchy</b>, and a more <b style="color: #FDF9CF;">intuitive interface</b> for everyday banking tasks. <br><br> The goal was to simplify how users interact with key financial features while creating a more polished and user-friendly digital experience. <br><br>
                 By refining layout structure, <b style="color: #FDF9CF;">typography</b>, spacing, and <b style="color: #FDF9CF;">visual balance</b>, the redesign aims to make account management, navigation, and financial insights easier to understand <b style="color: #FDF9CF;">at a glance</b>.
@@ -126,9 +140,9 @@ const projects = {
                 <span>
                 <h4>Problem:</h4>
                     <ul>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia!</li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia!</li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia!</li>
+                        <li>The existing banking experience felt cluttered and difficult to navigate for everyday users.</li>
+                        <li>Users needed a faster and more intuitive way to perform daily banking tasks.</li>
+                        <li>The app lacked a modern, seamless interface that supports smooth and efficient user interactions.</li>
                     </ul>
                 </span>
                 
@@ -138,10 +152,10 @@ const projects = {
                 <div class="image gif"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
-                  <a href="/project-details.html?id=project3" ></p>UI/UX Design</p></a>`,
+                  <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
     relatedimgtwo: "/img/buytree mock.png",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
-                  <a href="/project-details.html?id=project2" ></p>Web Application</p></a>`
+                  <a href="/project-details.html?id=project2" >Web Application</a>`
   }, 
 };
 
@@ -153,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (project) {
     document.getElementById('projectName').textContent = project.name;
     document.getElementById('projectDate').textContent = project.date;
+    document.getElementById('mainProjectImg').src = project.mainimg;
     document.getElementById('projectService').textContent = project.service;
     document.getElementById('projectServiceTwo').textContent = project.servicetwo;
     document.getElementById('projectDescription').innerHTML = project.info;
@@ -170,3 +185,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+// SCROLL STACK EFFECT
+
+const cards = document.querySelectorAll(".image");
+
+window.addEventListener("scroll", () => {
+
+    cards.forEach((card, index) => {
+
+        const rect = card.getBoundingClientRect();
+
+        // how close card is to top
+        const offset = rect.top;
+
+        // scale amount
+        let scale = 1;
+
+        if(offset < 100){
+            scale = 1 - Math.abs(offset) * 0.0005;
+        }
+
+        // limit scaling
+        scale = Math.max(scale, 0.9);
+
+        card.style.transform = `scale(${scale})`;
+
+    });
+
+});

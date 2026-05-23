@@ -291,6 +291,9 @@ nav .phone-menu.active {
     transform: translateX(-50%);
     line-height: 27px;
 }
+.project-section .mainimg {
+    display: none;
+}
 .project-details {
     margin-top: 100px;
     display: flex;
@@ -298,6 +301,11 @@ nav .phone-menu.active {
 }
 .project-details .left {
     width: 33%;
+    position: sticky;
+    top: 150px;
+    left: 0;
+    height: 125vh;
+    /* overflow: hidden; */
 }
 .project-details .left h3 {
     font-size: 25px;
@@ -353,9 +361,9 @@ nav .phone-menu.active {
     box-shadow: inset 0px 0px 20px #ffffff12;
     font-size: 16px;
     color: #FDF9CF;
-    width: 175px;
+    width: fit-content;
     font-weight: 600;
-    padding: 18px;
+    padding: 18px 30px;
     border-radius: 30px;
     margin-top: 50px;
     display: flex;
@@ -371,13 +379,17 @@ nav .phone-menu.active {
     width: 100%;
     height: fit-content;
     overflow: hidden;
-    margin-bottom: 30px;
-    border-radius: 40px;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
     position: sticky;
     top: 150px;
+    transform-origin: top center;
+    transition: transform 0.2s ease-out;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    /* scale: 0.95; */
 }
 .project-details .right .image img {
-    border-radius: 40px;
+    border-radius: 20px;
     width: 100%;
 }
 .skill-set {
@@ -443,34 +455,45 @@ nav .phone-menu.active {
     margin-bottom: 150px;
 }
 .related-projects .one {
-    width: 28%;
-    height: 550px;
+    width: calc(40% - 112.5px);
+    height: 600px;
     overflow: hidden;
     position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .related-projects .two {
-    width: 49%;
-    height: 550px;
+    width: calc(60% - 112.5px);
+    height: 600px;
     overflow: hidden;
     position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .related-projects .one img {
-    width: 500px;
+    width: 100%;
+    margin-top: 50px;
 }
 .related-projects .two img {
-    width: 850px;
+    width: 100%;
 }
-.related-projects .one .info {
+.related-projects .info {
     position: absolute;
     top: 25px;
     left: 25px;
-    width: 400px;
-    height: 505px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
     background-color: #fdf9cff6;
     backdrop-filter: blur(10px);
     scale: 0;
     opacity: 0;
     transition: 400ms;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
 }
 .related-projects .info span{
     position: absolute;
@@ -486,7 +509,7 @@ nav .phone-menu.active {
     transform: translateX(-50%) translateY(-50%);
 }
 .related-projects .info .name h3 {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     font-size: 25px;
 }
 .related-projects .info .name p {
@@ -496,8 +519,23 @@ nav .phone-menu.active {
     margin: 0 105px;
     padding: 10px;
     border-radius: 20px;
+    font-weight: 600;
+}
+.related-projects .info .name a {
+    background-color: #141413;
+    color: #FDF9CF;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
 }
 .related-projects .one:hover .info{
+    scale: 1;
+    opacity: 1;
+}
+.related-projects .two:hover .info{
     scale: 1;
     opacity: 1;
 }

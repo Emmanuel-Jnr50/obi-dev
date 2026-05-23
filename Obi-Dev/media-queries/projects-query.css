@@ -1082,7 +1082,7 @@ nav .phone-menu.active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     margin-top: 45px;
     /* transform: translateY(70px); */
     transition: opacity 0.4s transform 0.4s;
@@ -1093,8 +1093,8 @@ nav .phone-menu.active {
     width: 100%;
 }
 .project-section .projects .one {
-    width: calc(50% - 17.5px);
-    height: 300px;
+    width: calc(50% - 10px);
+    height: 320px;
     overflow: hidden;
     position: relative;
     border-radius: 25px;

@@ -340,6 +340,14 @@ gsap.from(".project-section .head, .project-section .projects", {
 });
 
 
+
+
+
+
+
+
+
+// NAV SPACER EFFECT
 document.addEventListener('DOMContentLoaded', () => {
       const nav = document.getElementById('site-nav');
       const spacer = document.getElementById('nav-spacer');
