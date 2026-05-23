@@ -2405,17 +2405,17 @@ nav .phone-menu.active {
 }
 .project-section .projects .one {
     width: calc(33.33% - 16.66px);
-    height: 400px;
+    height: 420px;
     overflow: hidden;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-section .projects .two {
     width: calc(50% - 12.5px);
-    height: 45vh;
+    height: 50vh;
     overflow: hidden;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-section .projects .one img {
     width: 100%;

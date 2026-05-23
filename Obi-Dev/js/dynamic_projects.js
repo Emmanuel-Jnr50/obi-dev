@@ -136,7 +136,7 @@ const projects = {
             
             `
             ,
-    imgsection: `<div class="image"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
+    imgsection: `<div class="image" style="position: relative; top: 0px;"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
                 <span>
                 <h4>Problem:</h4>
                     <ul>
@@ -146,10 +146,10 @@ const projects = {
                     </ul>
                 </span>
                 
-                <div class="image two"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
-                <div class="image two"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
-                <div class="image"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>
-                <div class="image gif"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
+                <div class="image two" style="position: relative; top: 0px;"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
+                <div class="image two" style="position: relative; top: 0px;"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
+                <div class="image" style="position: relative; top: 0px;"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>
+                <div class="image gif" style="position: relative; top: 0px;"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
