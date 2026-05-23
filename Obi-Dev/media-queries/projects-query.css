@@ -391,7 +391,7 @@ nav .phone-menu.active {
 }
 .project-section .projects .two {
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     overflow: hidden;
     position: relative;
     /* display: flex;
@@ -1465,7 +1465,7 @@ nav .phone-menu.active {
 }
 
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1000px) and (max-width: 1280px) {
     /* headers- var(--main-color),background - #141413, border- #262525, small texts- #B6B5AF*/
 
     @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
