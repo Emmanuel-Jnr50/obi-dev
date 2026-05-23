@@ -125,6 +125,7 @@ const projects = {
     service: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
     servicetwo: "Mobile App Design, User Experience Research, UI/UX Design",
     date: "January 2025",
+    mainimg: "/img/Fidelity UI Redesign.png",
     client: "Fidelity Bank PLC",
     info: `<h4 style="padding-top: 0px; font-size: 16px; font-weight: 600;">Description:</h4>
             <p style="padding-bottom: 20px;">A modern <b style="color: #FDF9CF;">mobile banking redesign</b> focused on clarity, accessibility, and a smoother user experience. <br><br>

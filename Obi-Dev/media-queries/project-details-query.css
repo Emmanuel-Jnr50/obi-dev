@@ -324,13 +324,13 @@ nav .phone-menu.active {
     display: block;
     width: 100%;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .project-details {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 55px;
+    gap: 5px;
 }
 .project-details .left {
     width: 100%;
@@ -396,8 +396,8 @@ nav .phone-menu.active {
     box-shadow: inset 0px 0px 20px #ffffff12;
     font-size: 14px;
     color: #FDF9CF;
-    width: 125px;
-    padding: 16px;
+    width: fit-content;
+    padding: 16px 30px;
     font-weight: 600;
     border-radius: 30px;
     margin-top: 0px;
@@ -435,6 +435,7 @@ nav .phone-menu.active {
     margin-bottom: 30px;
     gap: 15px;
     width: 100%;
+    margin-top: -200px;
 }
 .project-details .right span  {
     margin-top: 20px;
