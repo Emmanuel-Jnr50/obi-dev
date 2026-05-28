@@ -1771,17 +1771,17 @@ nav .phone-menu.active {
 }
 .project-section .projects .one {
     width: calc(50% - 12.5px);
-    height: 60vh;
+    height: 55vh;
     overflow: hidden;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-section .projects .two {
     width: 100%;
     height: 550px;
     overflow: hidden;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-section .projects .one img {
     width: 100%;
