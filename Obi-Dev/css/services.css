@@ -254,11 +254,11 @@ nav .phone-menu.active {
     font-size: 52px;
     line-height: 62px;
     font-weight: 700;
-    width: 600px;
+    width: 85%;
     padding-bottom: 65px;
 }
 .hero .left img {
-    width: 745px;
+    width: 845px;
 }
 .hero p {
     color: #b6b5af;
@@ -554,7 +554,7 @@ nav .phone-menu.active {
     /* width: 500px; */
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 50px 30px;
-    width: 445px;
+    width: calc(33.33% - 100px);
     border-radius: 60px;
 }
 .price-cards .card h3 {
@@ -696,7 +696,7 @@ nav .phone-menu.active {
     justify-content: center;
 }
 .companies .list span {
-    width: 260px;
+    width: calc(20% - 30px);
     justify-content: center;
     align-items: center;
     display: flex;

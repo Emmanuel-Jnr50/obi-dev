@@ -311,11 +311,11 @@ nav .phone-menu.active {
     display: flex;
     justify-content: center;
     animation: 50s carousel infinite linear;
-    gap: 20px;
+    gap: 15px;
 }
 .carousel .first p {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 700;
     color: var(--main-color);
 }
 .carousel .first p:nth-child(2) {
@@ -350,7 +350,7 @@ nav .phone-menu.active {
     width: 100%;
     padding: 20px 20px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: var(--background-color);
     transform-origin: top center;
 }
@@ -407,7 +407,7 @@ nav .phone-menu.active {
 }
 
 .slanted-text {
-    margin: 90px 0 50px 0;
+    margin: 90px 0 150px 0;
     position: relative;
 }
 .carousel1 p {
@@ -417,7 +417,7 @@ nav .phone-menu.active {
 }
 .carousel2 p {
     color: var(--main-color);
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
 }
 .carousel1 {
@@ -452,7 +452,7 @@ nav .phone-menu.active {
     /* transform: rotate(-5deg); */
     position: relative;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     white-space: nowrap;
     animation: 50s carousel infinite linear;
 }
@@ -597,7 +597,7 @@ nav .phone-menu.active {
     box-shadow: inset 0px 0px 15px #ffffff15;
     padding: 45px 30px;
     width: 100%;
-    border-radius: 90px;
+    border-radius: 60px;
 }
 .price-cards .card h3 {
     font-weight: 600;
@@ -760,7 +760,7 @@ nav .phone-menu.active {
     height: 100px;
 }
 .companies .list span img{
-    height: 40px;
+    height: 25px;
 }
 .contact {
     /* height: 170vh; */
@@ -1229,10 +1229,10 @@ nav .phone-menu.active {
 }
 .hero .left h2 {
     color: var(--main-color);
-    font-size: 23px;
+    font-size: 25px;
     line-height: 32px;
     font-weight: 700;
-    width: 80%;
+    width: 50%;
     padding-bottom: 30px;
 }
 .hero .left img {
@@ -1258,11 +1258,11 @@ nav .phone-menu.active {
     display: flex;
     justify-content: center;
     animation: 50s carousel infinite linear;
-    gap: 20px;
+    gap: 10px;
 }
 .carousel .first p {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 700;
     color: var(--main-color);
 }
 .carousel .first p:nth-child(2) {
@@ -1297,7 +1297,7 @@ nav .phone-menu.active {
     width: 100%;
     padding: 20px 20px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--background-color);
     transform-origin: top center;
 }
@@ -1354,7 +1354,7 @@ nav .phone-menu.active {
 }
 
 .slanted-text {
-    margin: 90px 0 50px 0;
+    margin: 90px 0 150px 0;
     position: relative;
 }
 .carousel1 p {
@@ -1520,11 +1520,11 @@ nav .phone-menu.active {
     animation: flicker 2s linear infinite;
 }
 .pricing .header .head h2 {
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 600;
     color: var(--main-color);
-    width: 100%;
+    width: 70%;
     padding: 0 30px;
 }
 .pricing .header h2 span {
@@ -1654,19 +1654,19 @@ nav .phone-menu.active {
     margin-bottom: 35px;
 }
 .companies .header>span {
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 0%;
+    transform: translateX(0%);
     border: 1px solid #39383894;
     display: flex;
-    width: 85%;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 12px 15px;
+    padding: 12px 30px;
     border-radius: 30px;
     color: var(--main-color);
     font-size: 12px;
     gap: 10px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
 }
 .companies .header span h3 {
     font-weight: 500;
@@ -1692,7 +1692,7 @@ nav .phone-menu.active {
 .companies .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -1702,12 +1702,12 @@ nav .phone-menu.active {
     align-items: center;
     display: flex;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    padding: 50px;
-    border-radius: 10px;
+    padding: 50px 60px;
+    border-radius: 15px;
     height: 100px;
 }
 .companies .list span img{
-    height: 40px;
+    height: 25px;
 }
 .contact {
     /* height: 170vh; */
@@ -2160,7 +2160,8 @@ nav .phone-menu.active {
     margin: 80px;
     margin-top: 130px;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: start;
     gap: 40px;
     margin-bottom: 100px;
     /* max-width: 1800px;
@@ -2175,11 +2176,11 @@ nav .phone-menu.active {
     padding-bottom: 55px;
 }
 .hero .left img {
-    width: 355px;
+    width: 100%;
 }
 .hero p {
     color: #b6b5af;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     margin-top: 0px;
     width: 80%;
@@ -2201,8 +2202,8 @@ nav .phone-menu.active {
     gap: 10px;
 }
 .carousel .first p {
-    font-size: 153px;
-    font-weight: 800;
+    font-size: 123px;
+    font-weight: 700;
     color: #FDF9CF;
 }
 .carousel .first p:nth-child(2) {
@@ -2233,7 +2234,7 @@ nav .phone-menu.active {
     width: calc(50% - 15px);
     padding: 30px 30px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .services .service-cards .card h3 {
     color: #ededed;
@@ -2453,7 +2454,7 @@ nav .phone-menu.active {
 }
 .pricing .header .head h2 {
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 600;
     color: #FDF9CF;
     width: 60%;
     margin: 0 auto;
@@ -2610,13 +2611,13 @@ nav .phone-menu.active {
 }
 .companies .list {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 .companies .list span {
-    width: 300px;
+    width: 25%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -2626,7 +2627,7 @@ nav .phone-menu.active {
     border: 1px solid #39383894;
 }
 .companies .list span img {
-    height: px;
+    height: 28px;
 }
 .contact {
     /* height: 170vh; */
@@ -3069,12 +3070,12 @@ nav .phone-menu.active {
     color: var(--main-color);
     font-size: 46px;
     line-height: 56px;
-    font-weight: 600;
-    width: 550px;
+    font-weight: 700;
+    width: 95%;
     padding-bottom: 65px;
 }
 .hero .left img {
-    width: 100%;
+    width: 650px;
 }
 .hero p {
     color: #b6b5af;
@@ -3088,7 +3089,7 @@ nav .phone-menu.active {
     overflow: hidden;
     position: relative;
     display: flex;
-    gap: 10px;
+    gap: 0px;
     /* animation: 20s carousel infinite linear; */
     /* margin-top: 100px; */
 }
@@ -3100,7 +3101,7 @@ nav .phone-menu.active {
 }
 .carousel .first p {
     font-size: 163px;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--main-color);
 }
 .carousel .first p:nth-child(2) {
@@ -3131,12 +3132,12 @@ nav .phone-menu.active {
     width: 30%;
     padding: 30px 30px;
     box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 .services .service-cards .card h3 {
     color: #ededed;
     font-size: 35px;
-    width: 300px;
+    width: 65%;
     line-height: 40px;
 }
 .services .service-cards .card .extras {
@@ -3190,13 +3191,13 @@ nav .phone-menu.active {
 }
 .carousel1 p {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
     color: #212121;
 }
 .carousel2 p {
     color: var(--main-color);
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .carousel1 {
     padding: 35px 0;
@@ -3318,12 +3319,12 @@ nav .phone-menu.active {
 .lets-connect button:hover{color: #212121;}.lets-connect button:hover svg{stroke: #212121;}
 
 .pricing .header  {
-    display: flex;
+    display: block;
     align-items: start;
     text-align: center;
     justify-content: space-between;
-    margin-left: 0%;
-    transform: translateX(0%);
+    margin: 0 auto;
+    width: 90%;
 }
 .pricing .header .head>span {
     border: 1px solid #39383894;
@@ -3352,9 +3353,9 @@ nav .phone-menu.active {
 }
 .pricing .header .head h2 {
     font-size: 46px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--main-color);
-    width: 100%;
+    width: 80%;
     text-align: center;
     padding: 0 250px;
 }
@@ -3364,7 +3365,7 @@ nav .phone-menu.active {
 }
 .price-cards {
     display: flex;
-    gap: 23px;
+    gap: 25px;
     justify-content: center;
     margin-top: 100px;
 }
@@ -3372,21 +3373,21 @@ nav .phone-menu.active {
     /* width: 500px; */
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 50px 30px;
-    width: 28%;
-    border-radius: 110px;
+    width: calc(33.33% - 85px);
+    border-radius: 60px;
 }
 .price-cards .card h3 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
-    color: var(--main-color);
+    color: #FDF9CF;
     padding-bottom: 30px;
 }
 .price-cards .card h4 {
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 600;
-    color: var(--main-color);
+    color: #FDF9CF;
 }
 .price-cards .card h4 span {
     font-size: 15px;
@@ -3403,10 +3404,10 @@ nav .phone-menu.active {
 .card .content li {
     padding: 10px 0;
     color: #b6b5af;
-    font-size: 15px;
+    font-size: 16px;
 }
 .card .content ul li::marker {
-    color: var(--main-color);
+    color: #FDF9CF;
     font-size: 20px;
 }
 
@@ -3429,7 +3430,7 @@ nav .phone-menu.active {
     border-radius: 50%;
     border: 1px solid #39383894;
     background-color: transparent;
-    color: var(--main-color);
+    color: #FDF9CF;
     font-size: 16px;
     font-weight: 500;
     padding-top: 40px;
@@ -3442,7 +3443,7 @@ nav .phone-menu.active {
     position: absolute;
     top: 30px;
     left: 60px;
-    stroke: var(--main-color);
+    stroke: #FDF9CF;
     transition: 400ms;
 }
 .price-cards .card .connect-btn span {
@@ -3487,10 +3488,10 @@ nav .phone-menu.active {
     transform: translateX(-50%);
     border: 1px solid #39383894;
     display: flex;
-    width: 440px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 12px 18px;
+    padding: 12px 30px;
     border-radius: 30px;
     color: var(--main-color);
     font-size: 14px;
@@ -3531,7 +3532,7 @@ nav .phone-menu.active {
     display: flex;
     box-shadow: inset 0px 0px 20px #ffffff12;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .contact {
     /* height: 170vh; */
@@ -3545,23 +3546,24 @@ nav .phone-menu.active {
     text-align: center;
 }
 .contact .head h2 {
-    font-size: 150px;
-    line-height: 150px;
-    color: var(--main-color);
+    font-size: 130px;
+    line-height: 130px;
+    color: #FDF9CF;
     padding-bottom: 40px;
 }
 .contact .head h3 {
     border: 1px solid #39383894;
     font-size: 30px;
-    color: var(--main-color);
-    padding: 15px 20px;
+    color: #FDF9CF;
+    padding: 15px 100px;
     text-align: center;
     justify-content: center;
     border-radius: 40px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     justify-content: center;
-    margin: 0 400px;
+    margin: 0 auto;
+    width: fit-content;
 }
 .contact .contact-form {
     padding: 100px 50px;
@@ -3572,7 +3574,7 @@ nav .phone-menu.active {
     margin-top: 60px;
 }
 .contact .contact-form .left {
-    width: 400px;
+    width: 35%;
 }
 .contact .contact-form .left h3 {
     font-weight: 400;
@@ -3584,38 +3586,47 @@ nav .phone-menu.active {
 .contact .contact-form .left a {
     padding-bottom: 30px;
     display: block;
+    font-weight: 500;
     text-decoration: none;
     font-size: 19px;
-    color: var(--main-color);
+    color: #FDF9CF;
 }
 .contact .contact-form .left .other-social {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 300px;
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
 }
 .contact .contact-form .left .other-social button {
     padding: 12px 15px;
     font-size: 16px;
-    width: 150px;
+    width: fit-content;
     color: #b6b5afed;
     border-radius: 30px;
     background-color: transparent;
     border: 1px solid #39383894;
     transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contact .contact-form .left .other-social button img {
+    width: 18px;
+    transition: 300ms;
 }
 .contact .contact-form .left .other-social button:hover {
-    color: var(--main-color);
+    color: #FDF9CF;
 }
 .contact .contact-form .form {
     display: flex;
     flex-wrap: wrap;
-    width: 730px;
+    width: 60%;
     gap: 30px;
 }
 .contact .contact-form .form input:nth-child(1) {
-    width: 350px;
+    width: calc(50% - 15px);
     padding: 20px;
     height: 60px;
     background-color: transparent;
@@ -3623,7 +3634,7 @@ nav .phone-menu.active {
     border-radius: 5px;
 }
 .contact .contact-form .form input:nth-child(2) {
-    width: 350px;
+    width: calc(50% - 15px);
     padding: 20px;
     height: 60px;
     background-color: transparent;
@@ -3660,7 +3671,7 @@ nav .phone-menu.active {
     width: 215px;
     padding: 20px;
     font-weight: 600;
-    color: var(--main-color);
+    color: #FDF9CF;
     background-color: transparent;
     border: 1px solid #39383894;
     border-radius: 5px;
@@ -3690,11 +3701,11 @@ nav .phone-menu.active {
     gap: 5px;
 }
 .contact .bottom p span {
-    color: var(--main-color);
+    color: #FDF9CF;
 }
 .contact .bottom>a {
     font-size: 18px;
-    color: var(--main-color);
+    color: #FDF9CF;
     /* width: fit-content; */
 }
 .contact .bottom span {
@@ -3708,159 +3719,5 @@ nav .phone-menu.active {
     text-decoration: none;
 }
 
-}
 
-@media (min-width: 1441px) and (max-width: 1590px) {
-    nav {
-    display: flex;
-    margin: 0px 10px 28px 10px;
-    gap: 15px;
-    background-color: var(--background-color);
-    position: relative;
-    top: 30px;
-    width: 100%;
-    z-index: 100;
-    will-change: transform, opacity;
-}
-nav .logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 10px 20px;
-    /* border: 1px solid white; */
-    border-radius: 8px;
-    box-shadow: inset 0px 0px 20px #ffffff12;
-    width: 11%;
-    justify-content: center;
-}
-nav .logo img {
-    height: 20px;
-}
-nav .logo h2 {
-    color: var(--main-color);
-    /* font-family: Syne; */
-    font-size: 14px;
-    padding-bottom: 5px;
-    margin-bottom: -5px;
-}
-.menu-bar {
-    padding: 10px 30px;
-    /* border: 1px solid white; */
-    border-radius: 8px;
-    box-shadow: inset 0px 0px 20px #ffffff12;
-    width: 68%;
-}
-.menu-bar .links {
-    display: flex;
-    gap: 47px;
-    justify-content: center;
-}
-.menu-bar .links span {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.menu-bar .links span i {
-    width: 20px;
-    border-bottom: 1px solid var(--main-color);
-    opacity: 0;
-    transition: 400ms;
-    position: absolute;
-    display: none;
-}
-.menu-bar .links a{
-    display: block;
-    color: var(--main-color);
-    text-decoration: none;
-    padding: 22.5px 0;
-    font-weight: 400;
-    font-size: 13px;
-    transition: padding 400ms, color 300ms;
-}
-nav .icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    padding: 10px 20px;
-    box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 8px;
-    width: 18%;
-}
-nav .icons span{
-    display: flex;
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 0px 20px #ffffff12;
-    border-radius: 50%;
-    cursor: pointer;
-}
-nav .icons span img{
-    width: 16px;
-    filter: invert(1);
-}
-
-#nav-spacer { height:0; transition: height 0.0s; }
-
-nav.fixed {
-    position:fixed;
-    left:0;
-    right:0;
-    top:30px;            /* stays at same gap when fixed */
-}
-
-nav .menu-btn img {
-    width: 25px;
-    display: none;
-}
-nav .phone-menu {
-    position: absolute;
-    z-index: 100;
-    box-shadow: inset 0px 0px 20px #ffffff12;
-    width: 100%;
-    margin-left: -25px;
-    background-color: var(--background-color);
-    padding: 10px 30px 30px 30px;
-    border-radius: 20px;
-    visibility: hidden;
-    transform: translateY(40px);
-    transition: 400ms;
-}
-nav .phone-menu .links2 span {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #39383894;
-    gap: 10px;
-}
-nav .phone-menu .links2 span i {
-    width: 20px;
-    border-bottom: 1px solid var(--main-color);
-    opacity: 0;
-    transition: 400ms;
-    position: absolute;
-}
-nav .phone-menu .links2 a{
-    display: block;
-    color: #B6B5AF;
-    text-decoration: none;
-    padding: 22.5px 0;
-    font-weight: 400;
-    font-size: 16px;
-    transition: padding 400ms, color 300ms;
-}
-
-nav .phone-menu .links2 span:hover i{
-    opacity: 1;
-}
-
-nav .phone-menu .links2 span:hover a {
-    padding-left: 30px;
-    color: var(--main-color);
-}
-nav .phone-menu.active {
-    visibility: visible;
-    transform: translateY(0px);
-}
 }
