@@ -72,7 +72,7 @@ const projects = {
   buytree: {
     name: "BuyTree",
     service: "Web Design, E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
-    mainimg: "/img/buy-tree-landing.png",
+    mainimg: "/img/buy-tree-landing-full.png",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     date: "April 01, 2026",
     client: "Temnix Labs & BuyTree NG",
@@ -112,12 +112,12 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
-    relatedimg: "/img/mockup portfolio-2.png",
-    relatedname: `<h3>GoHub Prayer App</h3>
-                  <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
-    relatedimgtwo: "/img/buytree mock.png",
-    relatednametwo: `<h3>BuyTree - Online Store</h3>
-                  <a href="/project-details.html?id=project2" >Web Application</a>`,
+    // relatedimg: "/img/mockup portfolio-2.png",
+    // relatedname: `<h3>GoHub Prayer App</h3>
+    //               <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
+    // relatedimgtwo: "/img/buytree mock.png",
+    // relatednametwo: `<h3>BuyTree - Online Store</h3>
+    //               <a href="/project-details.html?id=project2" >Web Application</a>`,
     livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
   },
   fidelityapp: {
@@ -187,31 +187,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// SCROLL STACK EFFECT
+// // SCROLL STACK EFFECT
 
-const cards = document.querySelectorAll(".image");
+// const cards = document.querySelectorAll(".image");
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    cards.forEach((card, index) => {
+//     cards.forEach((card, index) => {
 
-        const rect = card.getBoundingClientRect();
+//         const rect = card.getBoundingClientRect();
 
-        // how close card is to top
-        const offset = rect.top;
+//         // how close card is to top
+//         const offset = rect.top;
 
-        // scale amount
-        let scale = 1;
+//         // scale amount
+//         let scale = 1;
 
-        if(offset < 100){
-            scale = 1 - Math.abs(offset) * 0.0005;
-        }
+//         if(offset < 100){
+//             scale = 1 - Math.abs(offset) * 0.0005;
+//         }
 
-        // limit scaling
-        scale = Math.max(scale, 0.9);
+//         // limit scaling
+//         scale = Math.max(scale, 0.9);
 
-        card.style.transform = `scale(${scale})`;
+//         card.style.transform = `scale(${scale})`;
 
-    });
+//     });
 
-});
+// });

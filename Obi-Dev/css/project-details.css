@@ -477,6 +477,45 @@ nav .phone-menu.active {
     padding: 14px 25px;
     margin-right: 10px;
 }
+
+.project-pictures {
+    overflow-x: hidden;
+}
+.project-pictures .head {
+
+}
+
+.project-pictures .head {
+    text-align: left;
+    border-bottom: 1px solid #413f3f94;
+    margin: 0 100px;
+    margin-bottom: 10px;
+    margin-top: 200px;
+}
+.project-pictures .head h2 {
+    font-size: 35px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #FDF9CF;
+}
+
+.project-pictures .screenshots {
+    display: flex;
+    margin: 0 100px;
+    gap: 25px;
+    margin-top: 50px;
+}
+.project-pictures .screenshots .image {
+    width: 550px;
+    height: 400px;
+    margin-bottom: 150px;
+}
+.project-pictures .screenshots .image img {
+    width: 550px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
 .related-projects .head {
     text-align: center;
     border-bottom: 1px solid #413f3f94;
