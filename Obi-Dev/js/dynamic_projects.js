@@ -45,22 +45,6 @@ const projects = {
                 <div class="image">
                     <img src="/img/temnix-home-graphic.png" alt="">
                 </div>
-
-                <div class="image">
-                    <img src="img/temnix-about-graphic.png" alt="">
-                </div>
-
-                <div class="image">
-                    <img src="img/temnix-projects-graphic.png" alt="">
-                </div>
-
-                <div class="image">
-                    <img src="img/temnix-servic-graphic.png" alt="">
-                </div>
-
-                <div class="image">
-                    <img src="img/temnix-contact-graphic.png" alt="">
-                </div>
             `,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
@@ -137,20 +121,7 @@ const projects = {
             
             `
             ,
-    imgsection: `<div class="image" style="position: relative; top: 0px;"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>
-                <span>
-                <h4>Problem:</h4>
-                    <ul>
-                        <li>The existing banking experience felt cluttered and difficult to navigate for everyday users.</li>
-                        <li>Users needed a faster and more intuitive way to perform daily banking tasks.</li>
-                        <li>The app lacked a modern, seamless interface that supports smooth and efficient user interactions.</li>
-                    </ul>
-                </span>
-                
-                <div class="image two" style="position: relative; top: 0px;"><img src="/img/before-fidelity.png" alt="" id="projectImgTwo"></div>
-                <div class="image two" style="position: relative; top: 0px;"><img src="/img/after-fidelity.png" alt="" id="projectImgThree"></div>
-                <div class="image" style="position: relative; top: 0px;"><img src="/img/multiple-mockup.png" alt="" id="projectImgFour"></div>
-                <div class="image gif" style="position: relative; top: 0px;"><img src="/img/Dashboard.gif" alt="" id="projectImgFive"></div>`,
+    imgsection: `<div class="image" style="position: relative; top: 0px;"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,

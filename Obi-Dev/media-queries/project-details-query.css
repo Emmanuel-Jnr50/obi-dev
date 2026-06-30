@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 @media (min-width: 300px) and (max-width: 450px) {
     /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
@@ -334,6 +335,8 @@ nav .phone-menu.active {
 }
 .project-details .left {
     width: 100%;
+    height: fit-content;
+    margin-bottom: 0px !important;
 }
 .project-details .left h3 {
     font-size: 22px;
@@ -423,7 +426,7 @@ nav .phone-menu.active {
     gap: 10px !important;
     font-weight: 500;
     margin-bottom: 0px;
-    font-family: Satoshi !important; 
+    font-family: Google Sans !important; 
 }
 .skill-set .base img {
     height: 20px;
@@ -436,6 +439,7 @@ nav .phone-menu.active {
     gap: 15px;
     width: 100%;
     margin-top: -200px;
+    height: fit-content;
 }
 .project-details .right span  {
     margin-top: 20px;
@@ -501,12 +505,12 @@ nav .phone-menu.active {
     border-bottom: 1px solid #413f3f94;
     margin: 0 16px;
     margin-bottom: 10px;
-    margin-top: 180px;
+    margin-top: 100px;
 }
 .project-pictures .head h2 {
-    font-size: 25px;
+    font-size: 24px;
     padding-bottom: 25px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FDF9CF;
 }
 .project-pictures .screenshots {
@@ -1345,7 +1349,7 @@ nav .phone-menu.active {
 .project-pictures .head h2 {
     font-size: 30px;
     padding-bottom: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FDF9CF;
 }
 .project-pictures .screenshots {
@@ -2189,7 +2193,7 @@ nav .phone-menu.active {
 .project-pictures .head h2 {
     font-size: 35px;
     padding-bottom: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FDF9CF;
 }
 .project-pictures .screenshots {
@@ -2815,7 +2819,7 @@ nav .phone-menu.active {
 .project-pictures .head h2 {
     font-size: 35px;
     padding-bottom: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FDF9CF;
 }
 
