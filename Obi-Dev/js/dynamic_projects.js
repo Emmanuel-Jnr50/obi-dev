@@ -46,6 +46,11 @@ const projects = {
                     <img src="/img/temnix-home-graphic.png" alt="">
                 </div>
             `,
+    screenshotone: "/img/temnix-home-graphic.png",
+    screenshottwo: "/img/temnix-about-graphic.png",
+    screenshotthree: "/img/temnix-servic-graphic.png",
+    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfive: "/img/temnix-projects-graphic.png",
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
@@ -96,6 +101,11 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
+    screenshotone: "/img/Hero Section.png",
+    screenshottwo: "/img/What We Offer Section.png",
+    screenshotthree: "/img/How It Works Section.png",
+    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfive: "/img/temnix-footer-graphic.png",
     // relatedimg: "/img/mockup portfolio-2.png",
     // relatedname: `<h3>GoHub Prayer App</h3>
     //               <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
@@ -146,6 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('projectClient').textContent = project.client;
     document.getElementById('projectLink').href = project.livelink;
     document.getElementById('projectImgSection').innerHTML = project.imgsection;
+    document.getElementById('screenshotOne').src = project.screenshotone;
+    document.getElementById('screenshotTwo').src = project.screenshottwo;
+    document.getElementById('screenshotThree').src = project.screenshotthree;
+    document.getElementById('screenshotFour').src = project.screenshotfour;
+    document.getElementById('screenshotFive').src = project.screenshotfive;
     document.getElementById('relatedName').innerHTML = project.relatedname;
     document.getElementById('relatedImage').src = project.relatedimg;
     document.getElementById('relatedNameTwo').innerHTML = project.relatednametwo;

@@ -232,3 +232,33 @@ startReviewAuto();
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const screenshots = document.getElementById('projectScreenshots');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const images = screenshots.querySelectorAll('.pic');
+
+    function getStep() {
+        const gap = parseFloat(getComputedStyle(screenshots).gap) || 0;
+        return images[0].getBoundingClientRect().width + gap;
+    }
+
+    function updateButtons() {
+        const maxScroll = screenshots.scrollWidth - screenshots.clientWidth;
+        prevBtn.disabled = screenshots.scrollLeft <= 0;
+        nextBtn.disabled = screenshots.scrollLeft >= maxScroll - 1;
+    }
+
+    nextBtn.addEventListener('click', function () {
+        screenshots.scrollBy({ left: getStep(), behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', function () {
+        screenshots.scrollBy({ left: -getStep(), behavior: 'smooth' });
+    });
+
+    screenshots.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+
+    updateButtons();
+});
