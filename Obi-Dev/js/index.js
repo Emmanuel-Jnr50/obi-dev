@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Hero slider
     const slides = document.querySelector('.slides-one');
     const slideCount = document.querySelectorAll('.slide-one').length;
-    const nextBtn = document.querySelector('.next');
-    const prevBtn = document.querySelector('.prev');
+    const nextsBtn = document.querySelector('.next');
+    const previousBtn = document.querySelector('.prev');
 
     let index = 0;
     let startX = 0;
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, 5000); }
     function stopAutoSlide() { clearInterval(autoSlideInterval); }
 
-    nextBtn.addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
-    prevBtn.addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
+    nextsBtn.addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
+    previousBtn.addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
 
     slides.addEventListener('mousedown', (e) => { isDragging = true; startX = e.pageX; stopAutoSlide(); slides.style.transition = "none"; });
     slides.addEventListener('mouseup', (e) => {
@@ -108,39 +108,72 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".reel").forEach(reel => observer.observe(reel));
 
 
-  // Services carousel
-    const track = document.querySelector('.services .service-cards');
-    const serviceCards = document.querySelectorAll('.services .service-cards .card');
-    const total = serviceCards.length;
-    let current = 0;
-    let autoTimer;
+// Services carousel
+const track = document.querySelector('.services .service-cards');
+const wrapper = document.querySelector('.carousel-wrapper');
+const servicesSection = document.querySelector('.services');
+const serviceCards = document.querySelectorAll('.services .service-cards .card');
+const total = serviceCards.length;
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+let current = 0;
+let autoTimer;
 
-    console.log('track:', track);
-    console.log('serviceCards:', serviceCards);
-    console.log('total cards found:', total);
-    console.log('next-btn:', document.getElementById('next-btn'));
-    console.log('prev-btn:', document.getElementById('prev-btn'));
-    console.log('carousel-wrapper:', document.querySelector('.carousel-wrapper'));
+function getStep() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return serviceCards[0].getBoundingClientRect().width + gap;
+}
 
-    function goTo(i) {
-        current = (i + total) % total;
-        const wrapper = document.querySelector('.carousel-wrapper');
-        const cardWidth = wrapper.offsetWidth;
-        console.log('goTo called — index:', current, '| cardWidth:', cardWidth, '| translateX:', -(current * cardWidth));
-        track.style.transform = `translateX(-${current * cardWidth}px)`;
+function getVisibleCount() {
+    const raw = getComputedStyle(servicesSection).getPropertyValue('--visible').trim();
+    const parsed = parseInt(raw, 10);
+    return Number.isNaN(parsed) ? 1 : Math.max(1, parsed);
+}
+
+function getMaxIndex() {
+    return Math.max(0, total - getVisibleCount());
+}
+
+function updateButtons() {
+    const maxIndex = getMaxIndex();
+    prevBtn.classList.toggle('disabled', current <= 0);
+    nextBtn.classList.toggle('disabled', current >= maxIndex);
+}
+
+function goTo(i, wrap = true) {
+    const maxIndex = getMaxIndex();
+
+    if (i > maxIndex) {
+        current = wrap ? 0 : maxIndex;
+    } else if (i < 0) {
+        current = wrap ? maxIndex : 0;
+    } else {
+        current = i;
     }
 
-    function nextCard() { goTo(current + 1); }
-    function prevCard() { goTo(current - 1); }
-    function startAuto() { autoTimer = setInterval(nextCard, 4000); }
-    function resetAuto() { clearInterval(autoTimer); startAuto(); }
+    const step = getStep();
+    track.style.transform = `translateX(-${current * step}px)`;
+    updateButtons();
+}
 
-    document.getElementById('next-btn').addEventListener('click', () => { nextCard(); resetAuto(); });
-    document.getElementById('prev-btn').addEventListener('click', () => { prevCard(); resetAuto(); });
+function nextCard() { goTo(current + 1); }
+function prevCard() { goTo(current - 1); }
+function startAuto() { autoTimer = setInterval(nextCard, 4000); }
+function resetAuto() { clearInterval(autoTimer); startAuto(); }
 
-    window.addEventListener('resize', () => goTo(current));
+nextBtn.addEventListener('click', () => { nextCard(); resetAuto(); });
+prevBtn.addEventListener('click', () => { prevCard(); resetAuto(); });
 
-    startAuto();
+window.addEventListener('resize', () => goTo(current, false));
+
+// Clean, transition-free initial position
+track.style.transition = 'none';
+goTo(0, false);
+requestAnimationFrame(() => {
+    track.style.transition = 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
+});
+
+startAuto();
 
 });
 
@@ -160,7 +193,11 @@ function scrollToTop(event) {
     requestAnimationFrame(animateScroll);
 }
 
+
+// REVIEW SLIDER
 const reviewTrack = document.querySelector('.client .testimonial');
+const reviewWrapper = document.querySelector('.testimonial-wrapper');
+const reviewSection = document.querySelector('.client');
 const reviews = document.querySelectorAll('.client .testimonial .review');
 const reviewTotal = reviews.length;
 let reviewCurrent = 0;
@@ -168,16 +205,39 @@ let reviewTimer;
 let reviewStartX = 0;
 let reviewIsDragging = false;
 
-function reviewGoTo(i) {
-    reviewCurrent = (i + reviewTotal) % reviewTotal;
-    const wrapper = document.querySelector('.testimonial-wrapper');
-    const width = wrapper.offsetWidth;
-    reviewTrack.style.transform = `translateX(-${reviewCurrent * width}px)`;
+function getReviewStep() {
+    const gap = parseFloat(getComputedStyle(reviewTrack).gap) || 0;
+    return reviews[0].getBoundingClientRect().width + 30;
+}
+
+function getVisibleCount() {
+    const raw = getComputedStyle(reviewSection).getPropertyValue('--visible').trim();
+    const parsed = parseInt(raw, 20);
+    return Number.isNaN(parsed) ? 1 : Math.max(1, parsed);
+}
+
+function getMaxIndex() {
+    return Math.max(0, reviewTotal - getVisibleCount());
+}
+
+function reviewGoTo(i, wrap = true) {
+    const maxIndex = getMaxIndex();
+
+    if (i > maxIndex) {
+        reviewCurrent = wrap ? 0 : maxIndex;
+    } else if (i < 0) {
+        reviewCurrent = wrap ? maxIndex : 0;
+    } else {
+        reviewCurrent = i;
+    }
+
+    const step = getReviewStep();
+    reviewTrack.style.transform = `translateX(-${reviewCurrent * step}px)`;
 }
 
 function nextReview() { reviewGoTo(reviewCurrent + 1); }
 function prevReview() { reviewGoTo(reviewCurrent - 1); }
-function startReviewAuto() { reviewTimer = setInterval(nextReview, 4000); }
+function startReviewAuto() { reviewTimer = setInterval(nextReview, 3500); }
 function stopReviewAuto() { clearInterval(reviewTimer); }
 function resetReviewAuto() { stopReviewAuto(); startReviewAuto(); }
 
@@ -196,7 +256,7 @@ reviewTrack.addEventListener('mouseup', (e) => {
     reviewTrack.style.transition = 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
     if (diff > 50) nextReview();
     else if (diff < -50) prevReview();
-    else reviewGoTo(reviewCurrent); // snap back if drag too small
+    else reviewGoTo(reviewCurrent);
     resetReviewAuto();
 });
 
@@ -228,37 +288,14 @@ reviewTrack.addEventListener('touchend', (e) => {
     resetReviewAuto();
 });
 
-startReviewAuto();
+// On resize, clamp (don't wrap) so we don't jump to 0 just because the window changed
+window.addEventListener('resize', () => reviewGoTo(reviewCurrent, false));
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const screenshots = document.getElementById('projectScreenshots');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const images = screenshots.querySelectorAll('.pic');
-
-    function getStep() {
-        const gap = parseFloat(getComputedStyle(screenshots).gap) || 0;
-        return images[0].getBoundingClientRect().width + gap;
-    }
-
-    function updateButtons() {
-        const maxScroll = screenshots.scrollWidth - screenshots.clientWidth;
-        prevBtn.disabled = screenshots.scrollLeft <= 0;
-        nextBtn.disabled = screenshots.scrollLeft >= maxScroll - 1;
-    }
-
-    nextBtn.addEventListener('click', function () {
-        screenshots.scrollBy({ left: getStep(), behavior: 'smooth' });
-    });
-
-    prevBtn.addEventListener('click', function () {
-        screenshots.scrollBy({ left: -getStep(), behavior: 'smooth' });
-    });
-
-    screenshots.addEventListener('scroll', updateButtons);
-    window.addEventListener('resize', updateButtons);
-
-    updateButtons();
+// Force a clean, transition-free initial position on load
+reviewTrack.style.transition = 'none';
+reviewGoTo(0, false);
+requestAnimationFrame(() => {
+    reviewTrack.style.transition = 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
 });
+
+startReviewAuto();

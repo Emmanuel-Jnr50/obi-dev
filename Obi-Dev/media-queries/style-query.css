@@ -1532,14 +1532,13 @@ body::-webkit-scrollbar-thumb {
 .client .testimonial {
     display: flex;
     flex-direction: row;  /* change from column to row */
-    gap: 0;
+    gap: 30px;
     justify-content: flex-start;
     align-items: stretch;
     margin-top: 50px;
     width: 300%;  /* 3 reviews — change if you have more */
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
-    overflow: hidden;
 }
 
 .client .testimonial .review {
@@ -3509,14 +3508,13 @@ body::-webkit-scrollbar-thumb {
 .client .testimonial {
     display: flex;
     flex-direction: row;  /* change from column to row */
-    gap: 0;
+    gap: 30px;
     justify-content: flex-start;
     align-items: stretch;
     margin-top: 50px;
     width: 300%;  /* 3 reviews — change if you have more */
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
-    overflow: hidden;
 }
 
 .client .testimonial .review {
@@ -5425,14 +5423,13 @@ body::-webkit-scrollbar-thumb {
 .client .testimonial {
     display: flex;
     flex-direction: row;  /* change from column to row */
-    gap: 0;
+    gap: 30px;
     justify-content: flex-start;
     align-items: stretch;
     margin-top: 50px;
     width: 300%;  /* 3 reviews — change if you have more */
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
-    overflow: hidden;
 }
 
 .client .testimonial .review {
@@ -6778,14 +6775,24 @@ body::-webkit-scrollbar-thumb {
 .lets-connect button:hover{color: #212121;}.lets-connect button:hover svg{stroke: #212121;}
 
 .services {
-    /* height: 170vh; */
     border: 1px solid #39383894;
     margin: 0px 10px;
     border-radius: 30px;
     padding: 100px 90px 100px 90px;
     margin-bottom: 25px;
-    /* overflow: hidden; */
+
+    --visible: 1;
+    --gap: 20px;
 }
+
+@media (min-width: 768px) {
+    .services { --visible: 2; --gap: 25px; }
+}
+
+@media (min-width: 1200px) {
+    .services { --visible: 3; --gap: 30px; }
+}
+
 .services .header>span {
     border: 1px solid #39383894;
     display: flex;
@@ -6843,15 +6850,27 @@ body::-webkit-scrollbar-thumb {
     width: 15px;
     color: #b6b5afed;
 }
+.services .header .navigate .left-right span.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
 .services .service-cards {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap: var(--gap);
     margin-top: 80px;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services .service-cards .card {
-    width: 40%;
+    flex-shrink: 0;
+    width: calc((100% - var(--gap) * (var(--visible) - 1)) / var(--visible));
     padding: 30px 30px;
     box-shadow: inset 0px 0px 20px #ffffff12;
     border-radius: 25px;
@@ -6867,7 +6886,6 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(-40%);
     margin-top: 30px;
     margin-bottom: 30px;
-    
 }
 .services .service-cards .card .extras p{
     text-align: left;
@@ -6885,9 +6903,6 @@ body::-webkit-scrollbar-thumb {
 .services .service-cards .card .extras p img {
     width: 10px;
 }
-/* .services .service-cards .card span {
-    border-top: 1px solid #39383840;
-} */
 .services .service-cards .card span a{
     border-top: 1px solid #39383894;
     display: flex;
@@ -6907,6 +6922,7 @@ body::-webkit-scrollbar-thumb {
 .services .service-cards .card:hover span a img {
     padding-left: 10px;
 }
+
 
 .services .connect-btn {
     height: 180px;
@@ -7255,13 +7271,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .client {
-    /* height: 170vh; */
     border: 1px solid #39383894;
     margin: 0px 10px;
     border-radius: 30px;
     padding: 100px 90px 100px 90px;
     margin-bottom: 25px;
+
+    --visible: 1;   /* how many cards show at once — mobile default */
+    --gap: 20px;
 }
+
+@media (min-width: 768px) {
+    .client { --visible: 2; --gap: 25px; }
+}
+
+@media (min-width: 1200px) {
+    .client { --visible: 3; --gap: 30px; }
+}
+
 .client .header {
     text-align: center;
     padding: 0 300px;
@@ -7292,29 +7319,38 @@ body::-webkit-scrollbar-thumb {
     animation: flicker 2s linear infinite;
 }
 .client .header h2 {
-    font-size: 46px;
+    font-size: 53px;
     font-weight: 600;
     color: #FDF9CF;
-    /* width: 95%; */
     text-align: center;
 }
 .client .header h2 span {
     color: transparent;
     -webkit-text-stroke: 1px #FDF9CF;
 }
+
+.testimonial-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
 .client .testimonial {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    gap: var(--gap);
     align-items: center;
     margin-top: 80px;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .client .testimonial .review {
     padding: 40px;
     box-shadow: inset 0px 0px 20px #ffffff12;
     border-radius: 25px;
-    width: 40%;
+    flex-shrink: 0;
+    width: calc((100% - var(--gap) * (var(--visible) - 1)) / var(--visible));
 }
+
 .client .testimonial .review .image {
     display: flex;
     justify-content: space-between;
@@ -7366,7 +7402,6 @@ body::-webkit-scrollbar-thumb {
 .client .testimonial .review .info .rating img {
     width: 18px;
 }
-
 .blog {
     /* height: 170vh; */
     border: 1px solid #39383894;
