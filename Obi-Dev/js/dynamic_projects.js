@@ -6,9 +6,9 @@ const projects = {
   temnixlabs: {
     name: "TEMNIX Labs",
     service: "Web Design, Software Enginnering, Online Web Service, Front-End Developement, UI/UX Design",
-    mainimg: "/img/TEMNIX - MOCK.png",
+    mainimg: "/img/TEMNIX - TRIAL.png",
     servicetwo: "Web Design, Front-End Developement, UI/UX Design",
-    date: "August 14th, 2025",
+    date: "August, 2025",
     client: "Temnix - Software Agency",
     info: `<h4>Description:</h4>
             <p><b style="color: #FDF9CF;">Temnix Labs</b> is a clean, responsive <b style="color: #FDF9CF;">business website</b> built to showcase the brand's services with <b style="color: #FDF9CF;">clarity and professionalism</b>.<br><br>The website features a modern layout, smooth animations, mobile-first design, and an <b style="color: #FDF9CF;">intuitive user flow</b> that makes navigation simple for visitors.<br><br>The project emphasizes brand trust, visual balance, and <b style="color: #FDF9CF;">seamless interaction</b> across all devices.<br><br></p>
@@ -43,7 +43,7 @@ const projects = {
     livelink: "https://www.temnix.com",
     imgsection: `
                 <div class="image">
-                    <img src="/img/TEMNIX - MOCK.png" alt="">
+                    <img src="/img/TEMNIX - TRIAL.png" alt="">
                 </div>
             `,
     screenshotone: "/img/TEMNIX - HOME.png",
@@ -142,16 +142,18 @@ const projects = {
   govote: {
     name: "GO-Vote",
     service: "Web Application Design, Front-End Developement, UI/UX Design, Mobile Application",
-    mainimg: "/img/buy-tree-landing-full.png",
-    servicetwo: "Web Application, Front-End Developement, UI/UX Design",
-    date: "June 12, 2026",
+    mainimg: "/img/GOVOTE - MOCK.png",
+    servicetwo: "Web Application Development, Digital Voting System Development, Front-End Developement, UI/UX Design",
+    date: "June, 2026",
     client: "Godfrey Okoye University, Enugu",
     info: `<h4>Description:</h4>
-            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
-
-            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
-
-            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            <p>GoVote is  a <b style="color: #F9FDCF;">campus event engagement platform</b> is a mobile-first web application designed to <b style="color: #F9FDCF;">modernize</b> how schools and organizations manage competitions, audience participation, and event engagement. Built with a <b style="color: #F9FDCF;">focus on transparency, accessibility, and user experience,</b> the platform enables organizers to <b style="color: #F9FDCF;">host digital contests</b> where participants can showcase themselves, receive audience support, and compete fairly through a combination of <b style="color: #F9FDCF;">audience voting</b> and judges' scores. It also provides organizers with an <b style="color: #F9FDCF;">intuitive dashboard</b> to manage contestants, monitor engagement, track attendance, and oversee event activities <b style="color: #F9FDCF;">from a single platform.</b><br><br></p>
+            
+            <h4>Problem:</h4>
+            <p>Traditional campus events often rely on <b style="color: #F9FDCF;">paper ballots</b>, <b style="color: #F9FDCF;">manual attendance sheets</b>, and <b style="color: #F9FDCF;">time-consuming result compilation</b>, making the process inefficient, difficult to verify, and less engaging for participants. These methods can lead to <b style="color: #F9FDCF;">counting errors, delays, limited audience involvement, and poor transparency</b> .</p>
+            
+            <h4>Solution:</h4>
+            <p>The platform <b style="color: #F9FDCF;">digitizes</b> the entire event experience by <b style="color: #F9FDCF;">enabling secure audience voting</b>, electronic attendance tracking, and <b style="color: #F9FDCF;">fair results</b> through a balanced combination of judges' scores and audience participation. Contestants can easily <b style="color: #F9FDCF;">share their profiles to gather support</b> from anywhere, creating a <b style="color: #F9FDCF;">faster, more engaging, and transparent event experience</b> for both organizers and participants.</p>
             
             <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
                 <div class="skill-set">
@@ -180,13 +182,13 @@ const projects = {
                       <p>Figma</p>
                   </span>
                   <span class="base">
-                      <img src="/icons/figma-svgrepo-com.svg" alt="">
-                      <p>MySQL</p>
+                      <img src="/icons/mongo-svgrepo-com.svg" alt="">
+                      <p>MongoDB</p>
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
-    screenshotone: "/img/Hero Section.png",
+    imgsection: `<div class="image"><img src="/img/GOVOTE - MOCK.png" alt="" id="projectImgOne"></div>`,
+    screenshotone: "/img/GOVOTE - BW.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
     screenshotfour: "/img/temnix-contact-graphic.png",
