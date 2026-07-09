@@ -43,14 +43,14 @@ const projects = {
     livelink: "https://www.temnix.com",
     imgsection: `
                 <div class="image">
-                    <img src="/img/temnix-home-graphic.png" alt="">
+                    <img src="/img/TEMNIX - MOCK.png" alt="">
                 </div>
             `,
-    screenshotone: "/img/temnix-home-graphic.png",
-    screenshottwo: "/img/temnix-about-graphic.png",
-    screenshotthree: "/img/temnix-servic-graphic.png",
-    screenshotfour: "/img/temnix-contact-graphic.png",
-    screenshotfive: "/img/temnix-projects-graphic.png",
+    screenshotone: "/img/TEMNIX - HOME2.png",
+    screenshottwo: "/img/TEMNIX - ABOUT.png",
+    screenshotthree: "/img/TEMNIX - SERVICES.png",
+    screenshotfour: "/img/TEMNIX - PROJECTS.png",
+    screenshotfive: "/img/TEMNIX - CONTACT.png",
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
@@ -139,6 +139,212 @@ const projects = {
     relatednametwo: `<h3>BuyTree - Online Store</h3>
                   <a href="/project-details.html?id=project2" >Web Application</a>`
   }, 
+  govote: {
+    name: "GO-Vote",
+    service: "Web Application Design, Front-End Developement, UI/UX Design, Mobile Application",
+    mainimg: "/img/buy-tree-landing-full.png",
+    servicetwo: "Web Application, Front-End Developement, UI/UX Design",
+    date: "June 12, 2026",
+    client: "Godfrey Okoye University, Enugu",
+    info: `<h4>Description:</h4>
+            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
+
+            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
+
+            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            
+            <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
+                <div class="skill-set">
+                  <span class="base">
+                    <img src="/icons/html-5-svgrepo-com.svg" alt="">
+                    <p>HTML</p>
+                  </span>
+                  <span class="base">
+                    <img src="/icons/react-svgrepo-com.svg" alt="">
+                    <p>React js</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/css-3-svgrepo-com.svg" alt="">
+                      <p>CSS3</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/js-svgrepo-com.svg" alt="">
+                      <p>Javascript</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/tailwind-svgrepo-com.svg" alt="">
+                      <p>Tailwind CSS</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/figma-svgrepo-com.svg" alt="">
+                      <p>Figma</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/figma-svgrepo-com.svg" alt="">
+                      <p>MySQL</p>
+                  </span>
+                </div>
+            `,
+    imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
+    screenshotone: "/img/Hero Section.png",
+    screenshottwo: "/img/What We Offer Section.png",
+    screenshotthree: "/img/How It Works Section.png",
+    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfive: "/img/temnix-footer-graphic.png",
+    // relatedimg: "/img/mockup portfolio-2.png",
+    // relatedname: `<h3>GoHub Prayer App</h3>
+    //               <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
+    // relatedimgtwo: "/img/buytree mock.png",
+    // relatednametwo: `<h3>BuyTree - Online Store</h3>
+    //               <a href="/project-details.html?id=project2" >Web Application</a>`,
+    livelink: "www.govote.kesug.com"
+  },
+  nest: {
+    name: "Nest",
+    service: "Mobile App Development, SaaS Development, Full-Stack Developement, UI/UX Design",
+    mainimg: "/img/clippy-mock.png",
+    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    date: "May 25th, 2026",
+    client: "Personal Project",
+    info: `<h4>Description:</h4>
+            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
+
+            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
+
+            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            
+            <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
+                <div class="skill-set">
+                  <span class="base">
+                    <img src="/icons/react-svgrepo-com.svg" alt="">
+                    <p>React Native</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/css-3-svgrepo-com.svg" alt="">
+                      <p>CSS3</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/js-svgrepo-com.svg" alt="">
+                      <p>Javascript</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/tailwind-svgrepo-com.svg" alt="">
+                      <p>Tailwind CSS</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/figma-svgrepo-com.svg" alt="">
+                      <p>Figma</p>
+                  </span>
+                </div>
+            `,
+    imgsection: `<div class="image"><img src="/img/clippy-mock.png" alt="" id="projectImgOne"></div>`,
+    screenshotone: "/img/Hero Section.png",
+    screenshottwo: "/img/What We Offer Section.png",
+    screenshotthree: "/img/How It Works Section.png",
+    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfive: "/img/temnix-footer-graphic.png",
+    livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
+  },
+  facit: {
+    name: "FACIT - Faculty Website",
+    service: "Web Development & Design, Full-Stack Developement, UI/UX Design",
+    mainimg: "/img/FACIT - MOCK.png",
+    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    date: "July 2nd, 2026",
+    client: "Faculty Of Computing & Information Technology - Godfrey Okoye University",
+    info: `<h4>Description:</h4>
+            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
+
+            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
+
+            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            
+            <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
+                <div class="skill-set">
+                  <span class="base">
+                    <img src="/icons/html-5-svgrepo-com.svg" alt="">
+                    <p>HTML</p>
+                  </span>
+                  <span class="base">
+                    <img src="/icons/react-svgrepo-com.svg" alt="">
+                    <p>React js</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/css-3-svgrepo-com.svg" alt="">
+                      <p>CSS3</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/js-svgrepo-com.svg" alt="">
+                      <p>Javascript</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/tailwind-svgrepo-com.svg" alt="">
+                      <p>Tailwind CSS</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/figma-svgrepo-com.svg" alt="">
+                      <p>Figma</p>
+                  </span>
+                </div>
+            `,
+    imgsection: `<div class="image"><img src="/img/FACIT - MOCK.png" alt="" id="projectImgOne"></div>`,
+    screenshotone: "/img/FACIT - HOME.png",
+    screenshottwo: "/img/FACIT - ABOUT.png",
+    screenshotthree: "/img/How It Works Section.png",
+    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfive: "/img/temnix-footer-graphic.png",
+    livelink: "https://www.gofacit.com"
+  },
+  gunique: {
+    name: "G-Unique",
+    service: "Web Development & Design,Ecommerce Setup, Full-Stack Developement, UI/UX Design",
+    mainimg: "/img/clippy-mock.png",
+    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    date: "September, 2024",
+    client: "G-Unique Fashion Store",
+    info: `<h4>Description:</h4>
+            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
+
+            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
+
+            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            
+            <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
+                <div class="skill-set">
+                  <span class="base">
+                    <img src="/icons/html-5-svgrepo-com.svg" alt="">
+                    <p>HTML</p>
+                  </span>
+                  <span class="base">
+                    <img src="/icons/react-svgrepo-com.svg" alt="">
+                    <p>React js</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/css-3-svgrepo-com.svg" alt="">
+                      <p>CSS3</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/js-svgrepo-com.svg" alt="">
+                      <p>Javascript</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/tailwind-svgrepo-com.svg" alt="">
+                      <p>Tailwind CSS</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/figma-svgrepo-com.svg" alt="">
+                      <p>Figma</p>
+                  </span>
+                </div>
+            `,
+    imgsection: `<div class="image"><img src="/img/guniq-landing.png" alt="" id="projectImgOne"></div>`,
+    screenshotone: "/img/Hero Section.png",
+    screenshottwo: "/img/What We Offer Section.png",
+    screenshotthree: "/img/How It Works Section.png",
+    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfive: "/img/temnix-footer-graphic.png",
+    livelink: "https://www.gunique.com"
+  },
 };
 
 // projectName, projectService, projectDate, projectClient, projectDesciption, projectTypography
