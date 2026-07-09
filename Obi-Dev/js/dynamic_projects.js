@@ -6,7 +6,7 @@ const projects = {
   temnixlabs: {
     name: "TEMNIX Labs",
     service: "Web Design, Software Enginnering, Online Web Service, Front-End Developement, UI/UX Design",
-    mainimg: "/img/temnix-home-graphic.png",
+    mainimg: "/img/TEMNIX - MOCK.png",
     servicetwo: "Web Design, Front-End Developement, UI/UX Design",
     date: "August 14th, 2025",
     client: "Temnix - Software Agency",
