@@ -46,7 +46,7 @@ const projects = {
                     <img src="/img/TEMNIX - MOCK.png" alt="">
                 </div>
             `,
-    screenshotone: "/img/TEMNIX - HOME2.png",
+    screenshotone: "/img/TEMNIX - HOME.png",
     screenshottwo: "/img/TEMNIX - ABOUT.png",
     screenshotthree: "/img/TEMNIX - SERVICES.png",
     screenshotfour: "/img/TEMNIX - PROJECTS.png",
