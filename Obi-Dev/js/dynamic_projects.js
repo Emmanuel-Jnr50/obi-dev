@@ -5,9 +5,9 @@ const projectId = urlParams.get('id');
 const projects = {
   temnixlabs: {
     name: "TEMNIX Labs",
-    service: "Web Design, Software Enginnering, Online Web Service, Front-End Developement, UI/UX Design",
+    service: "Digital agency website showcasing modern services, trust, and premium design",
     mainimg: "/img/TEMNIX - TRIAL.png",
-    servicetwo: "Web Design, Front-End Developement, UI/UX Design",
+    servicetwo: "Web Design & Development, Front-End Developement, UI/UX Design, Product Design",
     date: "August, 2025",
     client: "Temnix - Software Agency",
     info: `<h4>Description:</h4>
@@ -60,10 +60,10 @@ const projects = {
   },
   buytree: {
     name: "BuyTree",
-    service: "Web Design, E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
-    mainimg: "/img/buy-tree-landing-full.png",
-    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
-    date: "April 01, 2026",
+    service: "Empowering Nigerian sellers with seamless online storefronts and intuitive commerce.",
+    mainimg: "/img/BUYTREE - MOCK.png",
+    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design, Product Design",
+    date: "April 01st, 2026",
     client: "Temnix Labs & BuyTree NG",
     info: `<h4>Description:</h4>
             <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
@@ -100,11 +100,11 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/buy-tree-landing-full.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/BUYTREE - MOCK.png" alt="" id="projectImgOne"></div>`,
     screenshotone: "/img/Hero Section.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
-    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotfour: "/img/BUYTREE - DASHBOARD.png",
     screenshotfive: "/img/temnix-footer-graphic.png",
     // relatedimg: "/img/mockup portfolio-2.png",
     // relatedname: `<h3>GoHub Prayer App</h3>
@@ -116,10 +116,10 @@ const projects = {
   },
   fidelityapp: {
     name: "Fidelity Bank App",
-    service: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
-    servicetwo: "Mobile App Design, User Experience Research, UI/UX Design",
+    service: "A modern mobile banking redesign focused on clarity, accessibility, and a smoother user experience.",
+    servicetwo: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
     date: "January 2025",
-    mainimg: "/img/Fidelity UI Redesign.png",
+    mainimg: "/img/FIDELITY - MOCK.png",
     client: "Fidelity Bank PLC",
     info: `<h4 style="padding-top: 0px; font-size: 16px; font-weight: 600;">Description:</h4>
             <p style="padding-bottom: 20px;">A modern <b style="color: #FDF9CF;">mobile banking redesign</b> focused on clarity, accessibility, and a smoother user experience. <br><br>
@@ -131,7 +131,7 @@ const projects = {
             
             `
             ,
-    imgsection: `<div class="image" style="position: relative; top: 0px;"><img src="/img/casestudy-workaround.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/FIDELITY - MOCK.png" alt="" id="projectImgOne"></div>`,
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
@@ -202,18 +202,21 @@ const projects = {
     livelink: "www.govote.kesug.com"
   },
   nest: {
-    name: "Nest",
-    service: "Mobile App Development, SaaS Development, Full-Stack Developement, UI/UX Design",
+    name: "Nest - Personal Content Organizer",
+    service: "Your personal space for collecting, organizing, and finding valuable content whenever you need it.",
     mainimg: "/img/clippy-mock.png",
-    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
-    date: "May 25th, 2026",
+    servicetwo: "UI/UX Design, Mobile App Design, Product Design, User Experience Research, Interaction Design",
+    date: "May 10th, 2026",
     client: "Personal Project",
     info: `<h4>Description:</h4>
-            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
+            <p >Nest is a <b style="color: #F9FDCF;">mobile-first application</b> that helps users <b style="color: #F9FDCF;">save, organize, and revisit digital content</b> such as articles, links, videos, notes, and other online resources in <b style="color: #F9FDCF;">one centralized workspace</b>.</p>
 
-            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
+            <h4>Problem</h4>
+            <p>People save <b style="color: #F9FDCF;">valuable content</b> across browsers, social media, messaging apps, and note-taking tools, <b style="color: #F9FDCF;">making it difficult</b> to stay organized and find important information later. As a result, <b style="color: #F9FDCF;">useful resources are often forgotten or lost</b>.</p>
 
-            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            <h4>Solution</h4>
+            <p>Nest <b style="color: #F9FDCF;">solves</b> this problem by providing a simple, intuitive platform where users can <b style="color: #F9FDCF;">save content from any source</b>, categorize it into collections, and <b style="color: #F9FDCF;">retrieve it quickly</b> when needed. The app emphasizes user-friendly design, <b style="color: #F9FDCF;">personalized workspaces</b>, and seamless access across devices.</p>
+
             
             <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
                 <div class="skill-set">
@@ -248,18 +251,14 @@ const projects = {
     livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
   },
   facit: {
-    name: "FACIT - Faculty Website",
-    service: "Web Development & Design, Full-Stack Developement, UI/UX Design",
+    name: "FACIT - Computing Faculty Website",
+    service: "Modern responsive faculty website delivering accessible academic resources and engaging campus community.",
     mainimg: "/img/FACIT - MOCK.png",
-    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    servicetwo: "Web Development & Design, Full-Stack Developement, UI/UX Design",
     date: "July 2nd, 2026",
     client: "Faculty Of Computing & Information Technology - Godfrey Okoye University",
     info: `<h4>Description:</h4>
-            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
-
-            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
-
-            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            <p>A <b style="color: #F9FDCF;">modern</b>, <b style="color: #F9FDCF;">responsive</b> website redesign for the Faculty Of Computing & Information Technology at Godfrey Okoye University. <br><br>The project focuses on <b style="color: #F9FDCF;">enhancing user experience</b>, improving <b style="color: #F9FDCF;">information accessibility</b>, and creating a <b style="color: #F9FDCF;">visually appealing</b> online presence for the faculty. The design incorporates <b style="color: #F9FDCF;">clear navigation, modern design elements</b>, and <b style="color: #F9FDCF;">interactive features</b> to engage students, faculty, and visitors effectively.</p>
             
             <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
                 <div class="skill-set">
