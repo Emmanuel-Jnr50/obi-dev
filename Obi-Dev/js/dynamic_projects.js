@@ -46,6 +46,11 @@ const projects = {
                     <img src="/img/TEMNIX - TRIAL.png" alt="">
                 </div>
             `,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
+                <div class="pic"><img src="" alt="" id="screenshotThree"></div>
+                <div class="pic"><img src="" alt="" id="screenshotFour"></div>
+                <div class="pic"><img src="" alt="" id="screenshotFive"></div>`,
     screenshotone: "/img/TEMNIX - HOME.png",
     screenshottwo: "/img/TEMNIX - ABOUT.png",
     screenshotthree: "/img/TEMNIX - SERVICES.png",
@@ -101,6 +106,10 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/BUYTREE - MOCK.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
+                <div class="pic"><img src="" alt="" id="screenshotThree"></div>
+                <div class="pic"><img src="" alt="" id="screenshotFour"></div>`,
     screenshotone: "/img/Hero Section.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
@@ -132,6 +141,14 @@ const projects = {
             `
             ,
     imgsection: `<div class="image"><img src="/img/FIDELITY - MOCK.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
+                <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
+    screenshotone: "/img/Hero Section.png",
+    screenshottwo: "/img/What We Offer Section.png",
+    screenshotthree: "/img/How It Works Section.png",
+    screenshotfour: "/img/BUYTREE - DASHBOARD.png",
+    screenshotfive: "/img/temnix-footer-graphic.png",
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
@@ -188,6 +205,7 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/GOVOTE - MOCK.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>`,
     screenshotone: "/img/GOVOTE - BW.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
@@ -243,6 +261,9 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/clippy-mock.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
+                <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
     screenshotone: "/img/Hero Section.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
@@ -289,6 +310,8 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/FACIT - MOCK.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>`,
     screenshotone: "/img/FACIT - HOME.png",
     screenshottwo: "/img/FACIT - ABOUT.png",
     screenshotthree: "/img/How It Works Section.png",
@@ -339,11 +362,14 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/guniq-landing.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
+                <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
     screenshotone: "/img/Hero Section.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
-    screenshotfour: "/img/temnix-contact-graphic.png",
-    screenshotfive: "/img/temnix-footer-graphic.png",
+    screenshotfour: "/img/What We Offer Section.png",
+    screenshotfive: "/img/How It Works Section.png",
     livelink: "https://www.gunique.com"
   },
 };
@@ -363,6 +389,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('projectClient').textContent = project.client;
     document.getElementById('projectLink').href = project.livelink;
     document.getElementById('projectImgSection').innerHTML = project.imgsection;
+    document.getElementById('projectScreenshots').innerHTML = project.projectscreenshots;
     document.getElementById('screenshotOne').src = project.screenshotone;
     document.getElementById('screenshotTwo').src = project.screenshottwo;
     document.getElementById('screenshotThree').src = project.screenshotthree;
