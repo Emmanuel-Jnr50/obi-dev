@@ -188,12 +188,10 @@
         </div>
 
         <div class="lightbox-overlay" id="lightboxOverlay">
-            <div class="lightbox-content">
-                <div class="lightbox-image-wrapper" id="lightboxImageWrapper">
-                    <img src="" alt="" id="lightboxImage" draggable="false">
-                </div>
-                <button class="lightbox-close" id="lightboxClose">Close</button>
+            <div class="lightbox-image-wrapper" id="lightboxImageWrapper">
+                <img src="" alt="" id="lightboxImage" draggable="false">
             </div>
+            <button class="lightbox-close" id="lightboxClose">Close</button>
         </div>
 
 
@@ -317,161 +315,163 @@
         }
 
         function initLightbox() {
-            const overlay = document.getElementById('lightboxOverlay');
-            const wrapper = document.getElementById('lightboxImageWrapper');
-            const lightboxImg = document.getElementById('lightboxImage');
-            const closeBtn = document.getElementById('lightboxClose');
-            const screenshots = document.getElementById('projectScreenshots');
+    const overlay = document.getElementById('lightboxOverlay');
+    const wrapper = document.getElementById('lightboxImageWrapper');
+    const lightboxImg = document.getElementById('lightboxImage');
+    const closeBtn = document.getElementById('lightboxClose');
+    const screenshots = document.getElementById('projectScreenshots');
 
-            if (!overlay || !wrapper || !lightboxImg || !closeBtn || !screenshots) {
-                console.warn('Lightbox elements not found yet');
-                return;
-            }
+    if (!overlay || !wrapper || !lightboxImg || !closeBtn || !screenshots) {
+        console.warn('Lightbox elements not found yet');
+        return;
+    }
 
-            let scale = 1;
-            let translateX = 0;
-            let translateY = 0;
-            let isDragging = false;
-            let dragStartX = 0;
-            let dragStartY = 0;
-            let lastPinchDist = null;
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let isDragging = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let lastPinchDist = null;
 
-            const MIN_SCALE = 1;
-            const MAX_SCALE = 4;
+    const MIN_SCALE = 1;
+    const MAX_SCALE = 4;
 
-            function applyTransform() {
-                lightboxImg.style.transform =
-                    `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-            }
+    function applyTransform() {
+        lightboxImg.style.transform =
+            `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
 
-            function resetTransform() {
-                scale = 1;
-                translateX = 0;
-                translateY = 0;
-                applyTransform();
-            }
+    function resetTransform() {
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+    }
 
-            function openLightbox(src, alt) {
-                lightboxImg.src = src;
-                lightboxImg.alt = alt || '';
-                resetTransform();
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
+    function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || '';
+        resetTransform();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 
-            function closeLightbox() {
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-                resetTransform();
-            }
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        resetTransform();
+    }
 
-            // Open on image click
-            screenshots.querySelectorAll('.pic img').forEach(function (img) {
-                img.addEventListener('click', function () {
-                    openLightbox(img.src, img.alt);
-                });
-            });
-
-            // Close on button click
-            closeBtn.addEventListener('click', closeLightbox);
-
-            // Close when clicking outside the image/content
-            overlay.addEventListener('click', function (e) {
-                if (e.target === overlay) closeLightbox();
-            });
-
-            // Close on Escape key
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && overlay.classList.contains('active')) {
-                    closeLightbox();
-                }
-            });
-
-            // ---- Mouse wheel zoom ----
-            wrapper.addEventListener('wheel', function (e) {
-                e.preventDefault();
-                const delta = e.deltaY < 0 ? 0.15 : -0.15;
-                scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale + delta));
-                if (scale === MIN_SCALE) { translateX = 0; translateY = 0; }
-                applyTransform();
-            }, { passive: false });
-
-            // ---- Double click to toggle zoom ----
-            wrapper.addEventListener('dblclick', function () {
-                if (scale === MIN_SCALE) {
-                    scale = 2;
-                } else {
-                    scale = MIN_SCALE;
-                    translateX = 0;
-                    translateY = 0;
-                }
-                applyTransform();
-            });
-
-            // ---- Drag to pan (mouse) ----
-            wrapper.addEventListener('mousedown', function (e) {
-                if (scale === MIN_SCALE) return;
-                isDragging = true;
-                wrapper.classList.add('grabbing');
-                dragStartX = e.clientX - translateX;
-                dragStartY = e.clientY - translateY;
-            });
-
-            window.addEventListener('mousemove', function (e) {
-                if (!isDragging) return;
-                translateX = e.clientX - dragStartX;
-                translateY = e.clientY - dragStartY;
-                applyTransform();
-            });
-
-            window.addEventListener('mouseup', function () {
-                isDragging = false;
-                wrapper.classList.remove('grabbing');
-            });
-
-            // ---- Touch: pinch to zoom + drag to pan ----
-            function touchDistance(touches) {
-                const dx = touches[0].clientX - touches[1].clientX;
-                const dy = touches[0].clientY - touches[1].clientY;
-                return Math.sqrt(dx * dx + dy * dy);
-            }
-
-            wrapper.addEventListener('touchstart', function (e) {
-                if (e.touches.length === 2) {
-                    lastPinchDist = touchDistance(e.touches);
-                } else if (e.touches.length === 1 && scale > MIN_SCALE) {
-                    isDragging = true;
-                    dragStartX = e.touches[0].clientX - translateX;
-                    dragStartY = e.touches[0].clientY - translateY;
-                }
-            }, { passive: false });
-
-            wrapper.addEventListener('touchmove', function (e) {
-                e.preventDefault();
-                if (e.touches.length === 2 && lastPinchDist !== null) {
-                    const newDist = touchDistance(e.touches);
-                    const delta = (newDist - lastPinchDist) * 0.01;
-                    scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale + delta));
-                    if (scale === MIN_SCALE) { translateX = 0; translateY = 0; }
-                    lastPinchDist = newDist;
-                    applyTransform();
-                } else if (e.touches.length === 1 && isDragging) {
-                    translateX = e.touches[0].clientX - dragStartX;
-                    translateY = e.touches[0].clientY - dragStartY;
-                    applyTransform();
-                }
-            }, { passive: false });
-
-            wrapper.addEventListener('touchend', function (e) {
-                if (e.touches.length < 2) lastPinchDist = null;
-                if (e.touches.length === 0) isDragging = false;
-            });
+    // Event delegation: one listener on the container catches clicks
+    // on any .pic img inside it, even ones injected/replaced later.
+    screenshots.addEventListener('click', function (e) {
+        const img = e.target.closest('.pic img');
+        if (img && img.getAttribute('src')) {
+            openLightbox(img.src, img.alt);
         }
+    });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            initScreenshotSlider();
-            initLightbox();
-        });
+    // Close on button click
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Close when clicking outside the image (on the overlay/wrapper background)
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay || e.target === wrapper) closeLightbox();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    // ---- Mouse wheel zoom ----
+    wrapper.addEventListener('wheel', function (e) {
+        e.preventDefault();
+        const delta = e.deltaY < 0 ? 0.15 : -0.15;
+        scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale + delta));
+        if (scale === MIN_SCALE) { translateX = 0; translateY = 0; }
+        applyTransform();
+    }, { passive: false });
+
+    // ---- Double click to toggle zoom ----
+    wrapper.addEventListener('dblclick', function () {
+        if (scale === MIN_SCALE) {
+            scale = 2;
+        } else {
+            scale = MIN_SCALE;
+            translateX = 0;
+            translateY = 0;
+        }
+        applyTransform();
+    });
+
+    // ---- Drag to pan (mouse) ----
+    wrapper.addEventListener('mousedown', function (e) {
+        if (scale === MIN_SCALE) return;
+        isDragging = true;
+        wrapper.classList.add('grabbing');
+        dragStartX = e.clientX - translateX;
+        dragStartY = e.clientY - translateY;
+    });
+
+    window.addEventListener('mousemove', function (e) {
+        if (!isDragging) return;
+        translateX = e.clientX - dragStartX;
+        translateY = e.clientY - dragStartY;
+        applyTransform();
+    });
+
+    window.addEventListener('mouseup', function () {
+        isDragging = false;
+        wrapper.classList.remove('grabbing');
+    });
+
+    // ---- Touch: pinch to zoom + drag to pan ----
+    function touchDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    wrapper.addEventListener('touchstart', function (e) {
+        if (e.touches.length === 2) {
+            lastPinchDist = touchDistance(e.touches);
+        } else if (e.touches.length === 1 && scale > MIN_SCALE) {
+            isDragging = true;
+            dragStartX = e.touches[0].clientX - translateX;
+            dragStartY = e.touches[0].clientY - translateY;
+        }
+    }, { passive: false });
+
+    wrapper.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+        if (e.touches.length === 2 && lastPinchDist !== null) {
+            const newDist = touchDistance(e.touches);
+            const delta = (newDist - lastPinchDist) * 0.01;
+            scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale + delta));
+            if (scale === MIN_SCALE) { translateX = 0; translateY = 0; }
+            lastPinchDist = newDist;
+            applyTransform();
+        } else if (e.touches.length === 1 && isDragging) {
+            translateX = e.touches[0].clientX - dragStartX;
+            translateY = e.touches[0].clientY - dragStartY;
+            applyTransform();
+        }
+    }, { passive: false });
+
+    wrapper.addEventListener('touchend', function (e) {
+        if (e.touches.length < 2) lastPinchDist = null;
+        if (e.touches.length === 0) isDragging = false;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    initScreenshotSlider();
+    initLightbox();
+});
     </script>
 
     <!-- SMOOTH SCROLL TO ANCHOR LINKS -->

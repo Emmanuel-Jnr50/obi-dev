@@ -128,7 +128,7 @@ const projects = {
     service: "A modern mobile banking redesign focused on clarity, accessibility, and a smoother user experience.",
     servicetwo: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
     date: "January 2025",
-    mainimg: "/img/FIDELITY - MOCK.png",
+    mainimg: "/img/fidelity pixel mock.png",
     client: "Fidelity Bank PLC",
     info: `<h4 style="padding-top: 0px; font-size: 16px; font-weight: 600;">Description:</h4>
             <p style="padding-bottom: 20px;">A modern <b style="color: #FDF9CF;">mobile banking redesign</b> focused on clarity, accessibility, and a smoother user experience. <br><br>
@@ -140,11 +140,9 @@ const projects = {
             
             `
             ,
-    imgsection: `<div class="image"><img src="/img/FIDELITY - MOCK.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
-                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
-                <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
-    screenshotone: "/img/Hero Section.png",
+    imgsection: `<div class="image"><img src="/img/fidelity pixel mock.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>`,
+    screenshotone: "/img/FIDELITY - DOUBLE.png",
     screenshottwo: "/img/What We Offer Section.png",
     screenshotthree: "/img/How It Works Section.png",
     screenshotfour: "/img/BUYTREE - DASHBOARD.png",
