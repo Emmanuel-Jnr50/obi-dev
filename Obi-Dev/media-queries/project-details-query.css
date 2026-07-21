@@ -416,10 +416,14 @@ nav .phone-menu.active {
     font-size: 14px;
     color: #FDF9CF;
     width: fit-content;
-    padding: 16px 30px;
+    padding: 16px 25px;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 15px;
     margin-top: 0px;
+}
+.project-details .left button img{
+    width: 22px;
+    /* margin-bottom: px; */
 }
 .skill-set {
     display: flex;
@@ -1289,10 +1293,14 @@ nav .phone-menu.active {
     font-size: 14px;
     color: #FDF9CF;
     width: fit-content;
-    padding: 16px 30px;
+    padding: 16px 25px;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 15px;
     margin-top: 30px;
+}
+.project-details .left button img{
+    width: 22px;
+    /* margin-bottom: px; */
 }
 .skill-set {
     display: flex;
@@ -2163,10 +2171,14 @@ nav .phone-menu.active {
     font-size: 14px;
     color: #FDF9CF;
     width: fit-content;
-    padding: 16px 30px;
+    padding: 16px 25px;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 15px;
     margin-top: 30px;
+}
+.project-details .left button img{
+    width: 22px;
+    /* margin-bottom: px; */
 }
 .skill-set {
     display: flex;
@@ -2909,9 +2921,13 @@ nav .phone-menu.active {
     font-size: 16px;
     color: #FDF9CF;
     width: 175px;
-    padding: 16px;
-    border-radius: 30px;
+    padding: 18px;
+    border-radius: 15px;
     margin-top: 30px;
+}
+.project-details .left button img{
+    width: 22px;
+    /* margin-bottom: px; */
 }
 .project-details .right {
     display: flex;
