@@ -214,10 +214,12 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/GOVOTE - MOCK.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>`,
-    screenshotone: "/img/GOVOTE - BW.png",
-    screenshottwo: "/img/What We Offer Section.png",
-    screenshotthree: "/img/How It Works Section.png",
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div> 
+                        <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div> 
+                        <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>`,
+    screenshotone: "/img/GOVOTE - SCREENS.png",
+    screenshottwo: "/img/GOVOTE- VOTES.png",
+    screenshotthree: "/img/GOVOTE - BW.png",
     screenshotfour: "/img/temnix-contact-graphic.png",
     screenshotfive: "/img/temnix-footer-graphic.png",
     // relatedimg: "/img/mockup portfolio-2.png",
