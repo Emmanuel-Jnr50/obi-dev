@@ -9,6 +9,8 @@ const projects = {
     mainimg: "/img/TEMNIX - TRIAL.png",
     servicetwo: "Web Design & Development, Front-End Developement, UI/UX Design, Product Design",
     date: "August, 2025",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #0bc90b; background-color: #29d42914;">Finished</p>`,
     client: "Temnix - Software Agency",
     info: `<h4>Description:</h4>
             <p><b style="color: #FDF9CF;">Temnix Labs</b> is a clean, responsive <b style="color: #FDF9CF;">business website</b> built to showcase the brand's services with <b style="color: #FDF9CF;">clarity and professionalism</b>.<br><br>The website features a modern layout, smooth animations, mobile-first design, and an <b style="color: #FDF9CF;">intuitive user flow</b> that makes navigation simple for visitors.<br><br>The project emphasizes brand trust, visual balance, and <b style="color: #FDF9CF;">seamless interaction</b> across all devices.<br><br></p>
@@ -69,6 +71,8 @@ const projects = {
     mainimg: "/img/BUYTREE - MOCK.png",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design, Product Design",
     date: "April 01st, 2026",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
     client: "Temnix Labs & BuyTree NG",
     info: `<h4>Description:</h4>
             <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
@@ -124,10 +128,13 @@ const projects = {
     livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
   },
   fidelityapp: {
+    title: "Obi-Dev | Fidelity Bank App",
     name: "Fidelity Bank App",
     service: "A modern mobile banking redesign focused on clarity, accessibility, and a smoother user experience.",
     servicetwo: "App Design, Redesign Casestudy, User Experience Research, Front-End Developement, UI/UX Design",
     date: "January 2025",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
     mainimg: "/img/fidelity pixel mock.png",
     client: "Fidelity Bank PLC",
     info: `<h4 style="padding-top: 0px; font-size: 16px; font-weight: 600;">Description:</h4>
@@ -141,9 +148,10 @@ const projects = {
             `
             ,
     imgsection: `<div class="image"><img src="/img/fidelity pixel mock.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>`,
+    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
+    <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>`,
     screenshotone: "/img/FIDELITY - DOUBLE.png",
-    screenshottwo: "/img/What We Offer Section.png",
+    screenshottwo: "/img/FIDELITY - MULTILPLE.png",
     screenshotthree: "/img/How It Works Section.png",
     screenshotfour: "/img/BUYTREE - DASHBOARD.png",
     screenshotfive: "/img/temnix-footer-graphic.png",
@@ -160,6 +168,8 @@ const projects = {
     mainimg: "/img/GOVOTE - MOCK.png",
     servicetwo: "Web Application Development, Digital Voting System Development, Front-End Developement, UI/UX Design",
     date: "June, 2026",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #0bc90b; background-color: #29d42914;">Finished</p>`,
     client: "Godfrey Okoye University, Enugu",
     info: `<h4>Description:</h4>
             <p>GoVote is  a <b style="color: #F9FDCF;">campus event engagement platform</b> is a mobile-first web application designed to <b style="color: #F9FDCF;">modernize</b> how schools and organizations manage competitions, audience participation, and event engagement. Built with a <b style="color: #F9FDCF;">focus on transparency, accessibility, and user experience,</b> the platform enables organizers to <b style="color: #F9FDCF;">host digital contests</b> where participants can showcase themselves, receive audience support, and compete fairly through a combination of <b style="color: #F9FDCF;">audience voting</b> and judges' scores. It also provides organizers with an <b style="color: #F9FDCF;">intuitive dashboard</b> to manage contestants, monitor engagement, track attendance, and oversee event activities <b style="color: #F9FDCF;">from a single platform.</b><br><br></p>
@@ -223,6 +233,8 @@ const projects = {
     mainimg: "/img/clippy-mock.png",
     servicetwo: "UI/UX Design, Mobile App Design, Product Design, User Experience Research, Interaction Design",
     date: "May 10th, 2026",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
     client: "Personal Project",
     info: `<h4>Description:</h4>
             <p >Nest is a <b style="color: #F9FDCF;">mobile-first application</b> that helps users <b style="color: #F9FDCF;">save, organize, and revisit digital content</b> such as articles, links, videos, notes, and other online resources in <b style="color: #F9FDCF;">one centralized workspace</b>.</p>
@@ -275,6 +287,8 @@ const projects = {
     mainimg: "/img/FACIT - MOCK.png",
     servicetwo: "Web Development & Design, Full-Stack Developement, UI/UX Design",
     date: "July 2nd, 2026",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
     client: "Faculty Of Computing & Information Technology - Godfrey Okoye University",
     info: `<h4>Description:</h4>
             <p>A <b style="color: #F9FDCF;">modern</b>, <b style="color: #F9FDCF;">responsive</b> website redesign for the Faculty Of Computing & Information Technology at Godfrey Okoye University. <br><br>The project focuses on <b style="color: #F9FDCF;">enhancing user experience</b>, improving <b style="color: #F9FDCF;">information accessibility</b>, and creating a <b style="color: #F9FDCF;">visually appealing</b> online presence for the faculty. The design incorporates <b style="color: #F9FDCF;">clear navigation, modern design elements</b>, and <b style="color: #F9FDCF;">interactive features</b> to engage students, faculty, and visitors effectively.</p>
@@ -315,7 +329,7 @@ const projects = {
     screenshotthree: "/img/How It Works Section.png",
     screenshotfour: "/img/temnix-contact-graphic.png",
     screenshotfive: "/img/temnix-footer-graphic.png",
-    livelink: "https://www.gofacit.com"
+    livelink: "https://emmanuel-jnr50.github.io/facit_website/"
   },
   gunique: {
     name: "G-Unique",
@@ -323,6 +337,8 @@ const projects = {
     mainimg: "/img/clippy-mock.png",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     date: "September, 2024",
+    status: `<h4>Status:</h4>
+            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
     client: "G-Unique Fashion Store",
     info: `<h4>Description:</h4>
             <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
@@ -378,8 +394,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const project = projects[projectId];
 
   if (project) {
+    document.getElementById('projectTitle').textContent = project.title;
     document.getElementById('projectName').textContent = project.name;
     document.getElementById('projectDate').textContent = project.date;
+    document.getElementById('projectStatus').innerHTML = project.status;
     document.getElementById('mainProjectImg').src = project.mainimg;
     document.getElementById('projectService').textContent = project.service;
     document.getElementById('projectServiceTwo').textContent = project.servicetwo;

@@ -54,12 +54,12 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes scaleOut {
     from {
-        scale: 0.5;
+        scale: 0.2;
         opacity: 1;
     }
     to {
         scale: 1;
-        opacity: 0,5;
+        opacity: 0;
     }
 }
 
@@ -83,9 +83,9 @@ body::-webkit-scrollbar-thumb {
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
-    height: 100vh;
+    height: 450px;
     width: 100%;
-    background-color: #C0B48C;
+    background-color: #c0b48cd7;
     border-radius: 100%;
     position:absolute;
 }
@@ -96,6 +96,20 @@ body::-webkit-scrollbar-thumb {
     -webkit-text-stroke: 1.5px white;
     letter-spacing: 5px;
     font-weight: 600;
+}
+.preloader img {
+    position: relative;
+    z-index: 2;
+    width: 55px;
+    animation: spinfast 1s linear infinite;
+}
+@keyframes spinfast {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 .hero {
     display: flex;
@@ -468,10 +482,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 23px;
     line-height: 32px;
     color: var(--main-color);
-    width: 100%;
+    width: 80%;
     margin-top: 40px;
     /* margin-right: -100px !important; */
-    font-weight: 600;
+    font-weight: 700;
 }
 .about-section .more-info .info h2 span {
     color: transparent;
@@ -599,9 +613,9 @@ body::-webkit-scrollbar-thumb {
 .resume .header h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--main-color);
-    width: 90%;
+    width: 80%;
 }
 .resume .header h2 span {
     color: transparent;
@@ -733,7 +747,7 @@ body::-webkit-scrollbar-thumb {
 .stack .header h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0 20px;
     color: var(--main-color);
     /* width: 90%; */
@@ -834,13 +848,13 @@ body::-webkit-scrollbar-thumb {
 }
 .carousel p {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     color: #212121;
 }
 .carousel2 p {
     color: var(--main-color);
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .carousel {
     padding: 15px 0;
@@ -995,9 +1009,9 @@ body::-webkit-scrollbar-thumb {
 .services .header h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--main-color);
-    width: 90%;
+    width: 80%;
     margin-bottom: 30px;
 }
 .services .header h2 span {
@@ -1278,7 +1292,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio .header h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--main-color);
     width: 90%;
 }
@@ -1514,7 +1528,7 @@ body::-webkit-scrollbar-thumb {
 .client .header h2 {
     font-size: 23px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--main-color);
     /* width: 95%; */
     text-align: center;
@@ -2036,7 +2050,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 .preloader {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -3944,7 +3958,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
     /* headers- var(--main-color),background - #141413, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
@@ -4006,7 +4020,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 .preloader {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -5939,7 +5953,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
 }
 .preloader {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -6314,7 +6328,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 .about-section .more-info .image {
-    width: 500px;
+    width: 520px;
     border-radius: 20px;
     height: 650px;
     overflow: hidden;
@@ -6329,7 +6343,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 0px;
 }
 .about-section .more-info .info h2 {
-    font-size: 48px;
+    font-size: 45px;
     color: #FDF9CF;
     width: 500px;
     margin-top: 20px;
@@ -6820,7 +6834,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 40%;
+    width: 50%;
 }
 .services .header h2 span {
     color: transparent;
@@ -6877,12 +6891,12 @@ body::-webkit-scrollbar-thumb {
 }
 .services .service-cards .card h3 {
     color: #ededed;
-    font-size: 35px;
+    font-size: 28px;
     width: 300px;
     line-height: 40px;
 }
 .services .service-cards .card .extras {
-    margin-left: 50%;
+    margin-left: 40%;
     transform: translateX(-40%);
     margin-top: 30px;
     margin-bottom: 30px;
@@ -7357,6 +7371,10 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     padding-bottom: 30px;
 }
+.client .testimonial .review .image img:nth-child(1) {
+    width: 60px;
+    border-radius: 50%;
+}
 .client .testimonial .review>h4 {
     color: #b6b5afed;
     font-size: 16px;
@@ -7370,14 +7388,16 @@ body::-webkit-scrollbar-thumb {
     color: #b6b5afed;
     font-size: 16px;
     font-weight: 400;
-    width: 90%;
+    width: 95%;
     margin-bottom: 40px;
     line-height: 23px;
 }
 .client .testimonial .review .info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: left;
 }
 .client .testimonial .review .info span:nth-child(1) h3{
     font-weight: 500;

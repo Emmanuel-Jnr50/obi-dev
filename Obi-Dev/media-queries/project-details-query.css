@@ -362,24 +362,24 @@ nav .phone-menu.active {
 .project-details .left span:nth-child(2) {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 0px;
     justify-content: left;
 }
 .project-details .left span:nth-child(3) {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 0px;
 }
 .project-details .left span:nth-child(4) {
     display: flex;
-    gap: 85px;
+    gap: 0px;
     align-items: start;
 }
 .project-details .left span h4 {
     font-size: 14px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 0px;
+    width: 100px;
 }
 .project-details .left span p {
     color: #B6B5AF;
@@ -387,11 +387,27 @@ nav .phone-menu.active {
     line-height: 20px;
     width: 100%;
 }
-.project-details .left span:nth-child(5) {
+
+.project-details .left span:nth-child(6) {
     display: block;
 }
-.project-details .left span:nth-child(5) h4 {
+.project-details .left span:nth-child(6) h4 {
     padding-bottom: 25px;
+}
+.project-details .status {
+    padding: 5px 20px !important;
+    border-radius: 20px;
+    width: fit-content !important;
+}
+.project-details .status {
+    padding: 5px 20px !important;
+    border-radius: 20px;
+    width: fit-content !important;
+    margin-left: -20px;
+}
+.project-details .left span:nth-child(5) {
+    align-items: center;
+    gap: 0px;
 }
 .project-details .left button {
     background-color: transparent;
@@ -1225,24 +1241,24 @@ nav .phone-menu.active {
 .project-details .left span:nth-child(2) {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 0px;
     justify-content: left;
 }
 .project-details .left span:nth-child(3) {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 0px;
 }
 .project-details .left span:nth-child(4) {
     display: flex;
-    gap: 85px;
+    gap: 0px;
     align-items: start;
 }
 .project-details .left span h4 {
     font-size: 14px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 0px;
+    width: 100px;
 }
 .project-details .left span p {
     color: #B6B5AF;
@@ -1250,10 +1266,20 @@ nav .phone-menu.active {
     line-height: 20px;
     width: 100%;
 }
+.project-details .status {
+    padding: 5px 20px !important;
+    border-radius: 20px;
+    width: fit-content !important;
+    margin-left: -20px;
+}
 .project-details .left span:nth-child(5) {
+    align-items: center;
+    gap: 0px;
+}
+.project-details .left span:nth-child(6) {
     display: block;
 }
-.project-details .left span:nth-child(5) h4 {
+.project-details .left span:nth-child(6) h4 {
     padding-bottom: 25px;
 }
 .project-details .left button {
@@ -2023,7 +2049,7 @@ nav .phone-menu.active {
     animation: flicker 2s linear infinite;
 }
 .project-section .header h2 {
-    font-size: 35px;
+    font-size: 40px;
     line-height: 32px;
     font-weight: 700;
     color: #FDF9CF;
@@ -2064,7 +2090,7 @@ nav .phone-menu.active {
     margin-bottom: 200px;
 }
 .project-details .left h3 {
-    font-size: 22px;
+    font-size: 25px;
     padding-bottom: 20px;
     border-bottom: 1px solid #413f3f94 ;
     color: #FDF9CF;
@@ -2072,7 +2098,7 @@ nav .phone-menu.active {
     margin-top: -100px;
 }
 .project-details .left .desc h4{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     color: #FDF9CF;
     width: 0px;
@@ -2080,44 +2106,55 @@ nav .phone-menu.active {
 .project-details .left span {
     display: flex;
     align-items: initial;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #413f3f94;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     gap: 0px;
 }
 .project-details .left span:nth-child(2) {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 0px;
     justify-content: left;
 }
 .project-details .left span:nth-child(3) {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 0px;
 }
 .project-details .left span:nth-child(4) {
     display: flex;
-    gap: 85px;
+    gap: 0px;
     align-items: start;
 }
 .project-details .left span h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 0px;
+    width: 100px;
 }
 .project-details .left span p {
     color: #B6B5AF;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     width: 100%;
 }
+.project-details .status {
+    padding: 5px 20px !important;
+    border-radius: 20px;
+    width: fit-content !important;
+    margin-left: -20px;
+}
 .project-details .left span:nth-child(5) {
+    align-items: center;
+    gap: 0px;
+}
+.project-details .left span:nth-child(6) {
     display: block;
 }
-.project-details .left span:nth-child(5) h4 {
-    padding-bottom: 25px;
+.project-details .left span:nth-child(6) h4 {
+    padding-bottom: 30px;
+    font-size: 20px;
 }
 .project-details .left button {
     background-color: transparent;
@@ -2451,10 +2488,11 @@ nav .phone-menu.active {
 }
 .contact .contact-form .left h3 {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
     color: #b6b5afed;
     padding-bottom: 20px;
+    width: 80%;
 }
 .contact .contact-form .left a {
     padding-bottom: 15px;
@@ -2842,11 +2880,27 @@ nav .phone-menu.active {
     line-height: 25px;
     width: 100%;
 }
+.project-details .status {
+    padding: 5px 20px !important;
+    border-radius: 20px;
+    width: fit-content !important;
+}
 .project-details .left span:nth-child(5) {
+    align-items: center;
+    gap: 20px;
+}
+.project-details .left span:nth-child(6) {
     display: block;
 }
-.project-details .left span:nth-child(5) h4 {
-    padding-bottom: 25px;
+.project-details .left span:nth-child(7) {
+    display: block;
+}
+.project-details .left span:nth-child(6) h4, .project-details .left span:nth-child(7) h4 {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 35px;
+    width: 100%;
 }
 .project-details .left button {
     background-color: transparent;
