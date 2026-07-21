@@ -160,7 +160,8 @@ const projects = {
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
     relatedimgtwo: "/img/buytree mock.png",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
-                  <a href="/project-details.html?id=project2" >Web Application</a>`
+    <a href="/project-details.html?id=project2" >Web Application</a>`,
+    livelink: "https://www.figma.com/design/QRAjxI8MffkKXmVGaDvQm1/Obi-Dev-Projects?node-id=11164-9420&t=UylEgfftl3fTtyEn-4"
   }, 
   govote: {
     name: "GO-Vote",
