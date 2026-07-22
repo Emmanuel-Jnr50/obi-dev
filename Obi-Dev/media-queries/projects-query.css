@@ -379,6 +379,10 @@ nav .phone-menu.active {
     /* opacity: 0; */
     width: 100%;
 }
+.project-section .head .links a.active {
+    color: #FDF9CF;
+    font-weight: 600;
+}
 .project-section .projects .one {
     width: 100%;
     height: fit-content;
@@ -1088,6 +1092,10 @@ nav .phone-menu.active {
     /* opacity: 0; */
     width: 100%;
 }
+.project-section .head .links a.active {
+    color: #FDF9CF;
+    font-weight: 600;
+}
 .project-section .projects .one {
     width: calc(50% - 10px);
     height: fit-content;
@@ -1765,6 +1773,10 @@ nav .phone-menu.active {
     opacity: 0; */
     max-width: 1000px;
 }
+.project-section .head .links a.active {
+    color: #FDF9CF;
+    font-weight: 600;
+}
 .project-section .projects .one {
     width: calc(50% - 12.5px);
     height: fit-content;
@@ -2381,7 +2393,10 @@ nav .phone-menu.active {
     font-size: 16px;
     font-weight: 500;
 }
-
+.project-section .head .links a.active {
+    color: #FDF9CF;
+    font-weight: 600;
+}
 .project-section .projects .filter {
     justify-content: left;
     display: flex;
