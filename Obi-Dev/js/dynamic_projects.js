@@ -216,11 +216,12 @@ const projects = {
     imgsection: `<div class="image"><img src="/img/GOVOTE - MOCK.png" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div> 
                         <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div> 
-                        <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>`,
+                        <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>
+                        <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotFour"></div>`,
     screenshotone: "/img/GOVOTE - SCREENS.png",
     screenshottwo: "/img/GOVOTE- VOTES.png",
-    screenshotthree: "/img/GOVOTE - BW.png",
-    screenshotfour: "/img/temnix-contact-graphic.png",
+    screenshotthree: "/img/GOVOTE - SCREENSLIGHT.png",
+    screenshotfour: "/img/GOVOTE - BW.png",
     screenshotfive: "/img/temnix-footer-graphic.png",
     // relatedimg: "/img/mockup portfolio-2.png",
     // relatedname: `<h3>GoHub Prayer App</h3>

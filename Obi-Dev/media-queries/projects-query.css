@@ -364,9 +364,6 @@ nav .phone-menu.active {
     font-size: 13px;
     font-weight: 500;
 }
-.project-section .head .links a:nth-child(1) {
-    color: #FDF9CF;
-}
 .project-section .projects .filter {
     justify-content: center;
     display: flex;
@@ -1075,9 +1072,7 @@ nav .phone-menu.active {
     font-size: 13px;
     font-weight: 500;
 }
-.project-section .head .links a:nth-child(1) {
-    color: #FDF9CF;
-}
+
 .project-section .projects .filter {
     justify-content: left;
     display: flex;
@@ -1751,9 +1746,7 @@ nav .phone-menu.active {
     font-size: 16px;
     font-weight: 500;
 }
-.project-section .head .links a:nth-child(1) {
-    color: #FDF9CF;
-}
+
 .project-section .projects .filter {
     justify-content: left;
     display: flex;
@@ -2388,9 +2381,7 @@ nav .phone-menu.active {
     font-size: 16px;
     font-weight: 500;
 }
-.project-section .head .links a:nth-child(1) {
-    color: #FDF9CF;
-}
+
 .project-section .projects .filter {
     justify-content: left;
     display: flex;

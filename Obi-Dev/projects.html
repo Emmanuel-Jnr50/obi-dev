@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="media-queries/projects-query.css">
     <link rel="icon" href="/img/obidev-logo.png" type="icon">
 </head>
+
 <body>
     <!-- <div class="preloader" id="preloader">
         <span></span>
@@ -59,7 +61,7 @@
                     <a href="/index.html?scrollTo=contact">Contact Us</a>
                 </span>
             </div>
-        </div> 
+        </div>
         <div class="icons">
             <span><img src="icons/facebook.svg" alt=""></span>
             <span><img src="icons/linkedin-svgrepo-com (1).svg" alt=""></span>
@@ -68,311 +70,238 @@
         </div>
 
         <div class="menu-btn" id="menubtn">
-                <img src="icons/menu-duo-lg-svgrepo-com (1).svg" alt="">
+            <img src="icons/menu-duo-lg-svgrepo-com (1).svg" alt="">
+        </div>
+        <div class="phone-menu" id="phonemenu">
+            <div class="links2">
+                <span class="linkx" onclick="window.location.href='/index.html?scrollTo=home'">
+                    <i></i>
+                    <a href="#home">Home</a>
+                </span>
+                <span class="linkx" onclick="window.location.href='index.html?scrollTo=about'">
+                    <i></i>
+                    <a href="#about">About Me</a>
+                </span>
+                <span class="linkx" onclick="location.href='/index.html?scrollTo=resume'">
+                    <i></i>
+                    <a href="#resume">Resume</a>
+                </span>
+                <span class="linkx" onclick="location.href='/projects.html'">
+                    <i></i>
+                    <a href="#portfolio">Projects</a>
+                </span>
+                <span class="linkx" onclick="location.href='/index.html?scrollTo=stack'">
+                    <i></i>
+                    <a href="#stack">Stack</a>
+                </span>
+                <span class="linkx" onclick="location.href='/services.html'">
+                    <i></i>
+                    <a href="#services">Services</a>
+                </span>
+                <span class="linkx" onclick="location.href='/index.html?scrollTo=client'">
+                    <i></i>
+                    <a href="#client">Client</a>
+                </span>
+                <span class="linkx" onclick="location.href='/index.html?scrollTo=insight'">
+                    <i></i>
+                    <a href="#insight">Insight</a>
+                </span>
+                <span class="linkx" onclick="location.href='/index.html?scrollTo=contact'">
+                    <i></i>
+                    <a href="#contact">Contact Us</a>
+                </span>
             </div>
-            <div class="phone-menu" id="phonemenu">
-                <div class="links2">
-                    <span class="linkx" onclick="window.location.href='/index.html?scrollTo=home'">
-                        <i></i>
-                        <a href="#home" >Home</a>
-                    </span>
-                    <span class="linkx" onclick="window.location.href='index.html?scrollTo=about'">
-                        <i></i>
-                        <a href="#about">About Me</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/index.html?scrollTo=resume'">
-                        <i></i>
-                        <a href="#resume">Resume</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/projects.html'">
-                        <i></i>
-                        <a href="#portfolio">Projects</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/index.html?scrollTo=stack'">
-                        <i></i>
-                        <a href="#stack">Stack</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/services.html'">
-                        <i></i>
-                        <a href="#services">Services</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/index.html?scrollTo=client'">
-                        <i></i>
-                        <a href="#client">Client</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/index.html?scrollTo=insight'">
-                        <i></i>
-                        <a href="#insight">Insight</a>
-                    </span>
-                    <span class="linkx" onclick="location.href='/index.html?scrollTo=contact'">
-                        <i></i>
-                        <a href="#contact">Contact Us</a>
-                    </span>
-                </div>
-            </div>
+        </div>
     </nav>
 
 
     <div class="main">
-    <div class="project-section">
-        <div class="header">
-            <span>
-                <i></i>
-                <h3>My Portfolio</h3>
-            </span>
+        <div class="project-section">
+            <div class="header">
+                <span>
+                    <i></i>
+                    <h3>My Portfolio</h3>
+                </span>
 
-            <h2>Helping digital brands scale <span>with design.</span></h2>
-        </div>
+                <h2>Helping digital brands scale <span>with design.</span></h2>
+            </div>
 
-       <div class="head">
-            <p>(2023-2026)</p>
-            <div class="links">
-                <a href="" id="showbtn">Show All</a>
-                <a href="" id="finbtn">Finance</a>
-                <a href="" id="marketbtn">Marketing</a>
-                <a href="" id="edbtn">Ed-Tech</a>
+            <div class="head">
+                <p>(2023-2026)</p>
+                <div class="links">
+                    <a href="#" data-filter="all">Show All</a>
+                    <a href="#" data-filter="finance">Finance</a>
+                    <a href="#" data-filter="marketing">Marketing</a>
+                    <a href="#" data-filter="edtech">Ed-Tech</a>
+                </div>
             </div>
-       </div>
 
-       <div class="projects">
-        <div class="filter" id="showall">
-            <!-- <div class="one">
-                <img src="img/fujiphilm-lWX55p_GBnE-unsplash.jpg" alt="" style="margin-top: -100px;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>YourPet - Virtual Pet Sanctuary</h3>
-                        <a href="project-details.html?id=project1"><p>Website Design</p></a>
+            <div class="projects">
+                <div class="filter" id="projectGrid">
+                    <div class="two" data-category="marketing">
+                        <img src="img/temnix-preview.png" alt="" style="width: 100%;">
+                        <div class="info">
+                            <span class="date">@2025</span>
+                            <div class="name">
+                                <h3>Temnix - Software<br> Agency Website</h3>
+                                <a href="/project-details.html?id=temnixlabs">
+                                    <p>Web Development</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two" data-category="finance marketing">
+                        <img src="img/buytree-preview.png" alt="" style="width: 100%;">
+                        <div class="info">
+                            <span class="date">@2025</span>
+                            <div class="name">
+                                <h3>BuyTree <br>(Ecommerce Hosting)</h3>
+                                <a href="/project-details.html?id=buytree">
+                                    <p>Web App Design</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one" data-category="finance">
+                        <img src="img/fidelity-mock.png" alt="">
+                        <div class="info">
+                            <span class="date">@2025</span>
+                            <div class="name">
+                                <h3>Fidelity Bank App <br>(Redesign Concept)</h3>
+                                <a href="/project-details.html?id=fidelityapp">
+                                    <p>Mobile Design</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one" data-category="edtech">
+                        <img src="img/govote-mock.png" alt="">
+                        <div class="info">
+                            <span class="date">@2025</span>
+                            <div class="name">
+                                <h3>GoVote - Student Voting</h3>
+                                <a href="/project-details.html?id=govote">
+                                    <p>Mobile Design</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one" data-category="marketing">
+                        <img src="img/clippy-mock.png" alt="">
+                        <div class="info">
+                            <span class="date">@2025</span>
+                            <div class="name">
+                                <h3>Nest - Content Organizer</h3>
+                                <a href="/project-details.html?id=nest">
+                                    <p>Mobile Development</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two" data-category="edtech">
+                        <img src="img/FACIT Landing.png" alt="" style="width: 100%;">
+                        <div class="info">
+                            <span class="date">@2026</span>
+                            <div class="name">
+                                <h3>FACIT - Computing Faculty Website</h3>
+                                <a href="/project-details.html?id=facit">
+                                    <p>Web Development</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two" data-category="marketing">
+                        <img src="img/guniq-landing.png" alt="" style="width: 100%;">
+                        <div class="info">
+                            <span class="date">@2026</span>
+                            <div class="name">
+                                <h3>G-Unique - Online Store</h3>
+                                <a href="/project-details.html?id=gunique">
+                                    <p>Web Development</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="one"> 
-                <img src="img/azwedo-l-lc-BDbuwiZi0fA-unsplash.jpg" alt="">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>G-Unique - Online Fashion Store</h3>
-                        <a href="/project-details.html?id=project2"><p>Website Design</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="one">
-                <img src="img/fujiphilm-Yyx3jkxY5NM-unsplash.jpg" alt="" style="margin-top: -100px;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>Clockin - Office Attendance System</h3>
-                        <a href="/project-details.html?id=project3"><p>UI/UX Design</p></a>
-                    </div>
-                </div>
-            </div> -->
-            <div class="two">
-                <img src="img/temnix-preview.png" alt="" style="width: 100%;">
-                <div class="info">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>Temnix - Software<br> Agency Website</h3>
-                        <a href="/project-details.html?id=temnixlabs"><p>Web Development</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="two">
-                <img src="img/buytree-preview.png" alt="" style="width: 100%; margin-top: 0px;">
-                <div class="info">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>BuyTree <br>(Ecommerce Hosting)</h3>
-                        <a href="/project-details.html?id=buytree"><p style="">Web App Design</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="one">
-                <img src="img/fidelity-mock.png" alt="" style="">
-                <div class="info">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>Fidelity Bank App <br>(Redesign Concept)</h3>
-                        <a href="/project-details.html?id=fidelityapp"><p>Mobile Design</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="one">
-                <img src="img/govote-mock.png" alt="" style="">
-                <div class="info">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>GoVote - Student Voting</h3>
-                        <a href="/project-details.html?id=govote"><p>Mobile Design</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="one">
-                <img src="img/clippy-mock.png" alt="" style="">
-                <div class="info">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>Nest - Content Organizer</h3>
-                        <a href="/project-details.html?id=nest"><p>Mobile Development</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="two">
-                <img src="img/FACIT Landing.png" alt="" style="width: 100%; margin-top: 0px;">
-                <div class="info">
-                    <span class="date">@2026</span>
-                    <div class="name">
-                        <h3>FACIT - Computing Faculty Website <br></h3>
-                        <a href="/project-details.html?id=facit"><p style="">Web Development</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="two">
-                <img src="img/guniq-landing.png" alt="" style="width: 100%; margin-top: 0px;">
-                <div class="info">
-                    <span class="date">@2026</span>
-                    <div class="name">
-                        <h3>G-Unique - Online Store <br></h3>
-                        <a href="/project-details.html?id=gunique"><p style="">Web Development</p></a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="one">
-                <img src="img/YogaPin.png" alt="" style="margin-left:-5px;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2024</span>
-                    <div class="name">
-                        <h3>Inboxly</h3>
-                        <p>UI/UX Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="one">
-                <img src="img/martin-pechy-iXHdGk8JVYU-unsplash.jpg" alt="" style="margin-top: -50px; margin-left: -20px;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>CryptoHound - Crypto Tracker App</h3>
-                        <p>Website Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="two">
-                <img src="img/temnix-project-mockup.png" alt="" style="width: 100%;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>BuyTree - Ecommerce Platform</h3>
-                        <a href="/project-details.html?id=project4"><p>Website Design</p></a>
-                    </div>
-                </div>
-            </div> 
-            <div class="two">
-                <img src="img/temnix-project-mockup.png" alt="" style="width: 100%;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>Inboxly - Email Organizer</h3>
-                        <a href="/project-details.html?id=project4"><p>Website Design</p></a>
-                    </div>
-                </div>
-            </div>  -->
         </div>
 
 
-        <!-- <div class="filter" id="finance">
-            <div class="two">
-                <img src="img/Untitled-1.png" alt="" style="width: 100%;">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>Temnix Labs - Software Agency</h3>
-                        <p>Website Design</p>
-                    </div>
-                </div>
+        <div class="companies">
+            <div class="header">
+                <span>
+                    <i></i>
+                    <h3>Worked With Global Largest Brands</h3>
+                </span>
             </div>
-            <div class="two">
-                <img src="img/dmitry-mashkin-YEe_kUk9BdQ-unsplash.jpg" alt="">
-                <div class="info" onclick="window.location.href='/project-details.html'">
-                    <span class="date">@2025</span>
-                    <div class="name">
-                        <h3>ANITA - Smart School System</h3>
-                        <p style="">UI/UX Design</p>
-                    </div>
-                </div>
+
+            <div class="list">
+                <span><img src="img/partner1.png" alt=""></span>
+                <span><img src="img/partner2.png" alt=""></span>
+                <span><img src="img/partner3.png" alt=""></span>
+                <span><img src="img/partner4.png" alt=""></span>
+                <span><img src="img/partner5.png" alt=""></span>
             </div>
-        </div> -->
-    </div>
-    </div>
-
-
-    <div class="companies">
-        <div class="header">
-            <span>
-                <i></i>
-                <h3>Worked With Global Largest Brands</h3>
-            </span>
         </div>
 
-        <div class="list">
-            <span><img src="img/partner1.png" alt=""></span>
-            <span><img src="img/partner2.png" alt=""></span>
-            <span><img src="img/partner3.png" alt=""></span>
-            <span><img src="img/partner4.png" alt=""></span>
-            <span><img src="img/partner5.png" alt=""></span>
-        </div>
-    </div>
-
-    <footer class="contact" id="contact">
-        <div class="head">
-            <h2>LET'S JUST TALK</h2>
+        <footer class="contact" id="contact">
+            <div class="head">
+                <h2>LET'S JUST TALK</h2>
                 <h3>Obidevsolutions@Gmail.Com</h3>
-        </div>
+            </div>
 
-        <div class="contact-form">
-            <div class="left">
-                <h3>Great! We're excited to hear from you and let's start something special together. Call us for any inquiry.</h3>
+            <div class="contact-form">
+                <div class="left">
+                    <h3>Great! We're excited to hear from you and let's start something special together. Call us for
+                        any inquiry.</h3>
 
-                <a href="">Plot 114, Riverside, Phase 2, Karu FHA, Abuja</a>
-                <a href="">(+234) 802-251-9015</a>
-                <a href=""> Obidevsolutions@Gmail.Com</a>
+                    <a href="">Plot 114, Riverside, Phase 2, Karu FHA, Abuja</a>
+                    <a href="">(+234) 802-251-9015</a>
+                    <a href=""> Obidevsolutions@Gmail.Com</a>
 
-                <div class="other-social">
-                    <button><img src="./icons/github-142-svgrepo-com (1).svg" alt="">GITHUB</button>
-                    <button><img src="./icons/linkedin-svgrepo-com (2).svg" alt="">LINKEDIN</button>
-                    <button><img src="./icons/instagram-167-svgrepo-com.svg" alt="">INSTAGRAM</button>
-                    <button><img src="./icons/behance-internet-media-svgrepo-com.svg" alt="">BEHANCE</button>
+                    <div class="other-social">
+                        <button><img src="./icons/github-142-svgrepo-com (1).svg" alt="">GITHUB</button>
+                        <button><img src="./icons/linkedin-svgrepo-com (2).svg" alt="">LINKEDIN</button>
+                        <button><img src="./icons/instagram-167-svgrepo-com.svg" alt="">INSTAGRAM</button>
+                        <button><img src="./icons/behance-internet-media-svgrepo-com.svg" alt="">BEHANCE</button>
+                    </div>
+                </div>
+                <div class="form">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>Send Message</button>
                 </div>
             </div>
-            <div class="form">
-                <input type="text" name="" id="" placeholder="Name">
-                <input type="email" name="" id="" placeholder="Email">
-                <input type="text" name="" id="" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <button>Send Message</button>
-            </div>
-        </div>
 
-        <div class="bottom">
-            <p>© 2024. All Rights Reserved<span>Disum.</span></p>
-            <a href="#home" onclick="srollToTop(event)">Back To Home</a>
-            <span>
-                <a href="">Terms & Conditions</a>
-                <a href="">Privacy Policy</a>
-            </span>
-        </div>
-    </footer>
+            <div class="bottom">
+                <p>© 2024. All Rights Reserved<span>Disum.</span></p>
+                <a href="#home" onclick="srollToTop(event)">Back To Home</a>
+                <span>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </span>
+            </div>
+        </footer>
     </div>
     <script>
-         window.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
             const targetId = params.get('scrollTo');
             if (targetId) {
-            setTimeout(() => {
-                const target = document.getElementById(targetId);
-                if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 300); // 0.2 seconds delay
+                setTimeout(() => {
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 300); // 0.2 seconds delay
             }
         });
 
@@ -380,15 +309,56 @@
         const phoneMenu = document.getElementById('phonemenu');
         const spans = document.querySelectorAll('.linkx');
 
-        menuBtn.addEventListener('click', function() {
+        menuBtn.addEventListener('click', function () {
             phoneMenu.classList.toggle('active');
         });
 
         spans.forEach(span => {
-            span.addEventListener('click', function() {
+            span.addEventListener('click', function () {
                 phoneMenu.classList.remove('active');
             });
         });
+
+        function initProjectFilter() {
+            const filterLinks = document.querySelectorAll('.project-section .links a');
+            const grid = document.getElementById('projectGrid');
+            const cards = grid.querySelectorAll('.one, .two');
+
+            filterLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const filter = this.dataset.filter;
+
+                    // Skip if this filter is already active
+                    if (this.classList.contains('active')) return;
+
+                    filterLinks.forEach(function (l) { l.classList.remove('active'); });
+                    this.classList.add('active');
+
+                    // Fade everything out first
+                    cards.forEach(function (card) { card.classList.add('fade-out'); });
+
+                    setTimeout(function () {
+                        cards.forEach(function (card) {
+                            const categories = (card.dataset.category || '').split(' ');
+                            const shouldShow = filter === 'all' || categories.includes(filter);
+                            card.style.display = shouldShow ? 'flex' : 'none';
+                        });
+
+                        // Let display change apply, then fade matching cards back in
+                        requestAnimationFrame(function () {
+                            cards.forEach(function (card) {
+                                if (card.style.display !== 'none') {
+                                    card.classList.remove('fade-out');
+                                }
+                            });
+                        });
+                    }, 300); // matches the fade-out transition duration in CSS
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initProjectFilter);
     </script>
     <script src="gsap/gsap.min.js"></script>
     <script src="gsap/ScrollTrigger.min.js"></script>
@@ -396,4 +366,5 @@
     <script src="js/index.js"></script>
     <script src="js/dynamic_projects.js"></script>
 </body>
+
 </html>

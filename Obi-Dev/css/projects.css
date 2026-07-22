@@ -289,7 +289,6 @@ nav .phone-menu.active {
 .project-section .head {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 35px;
     border-bottom: 1px solid #393838a5;
     margin-top: 100px;
     padding: 0px 2px 35px 2px;
@@ -309,10 +308,13 @@ nav .phone-menu.active {
     color: #B6B5AF;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
+    transition: color 250ms ease;
 }
-.project-section .head .links a:nth-child(1) {
+.project-section .head .links a.active {
     color: #FDF9CF;
 }
+
 .project-section .projects .filter {
     justify-content: left;
     display: flex;
@@ -320,16 +322,23 @@ nav .phone-menu.active {
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 55px;
-    /* transform: translateY(70px); */
-    transition: opacity 0.4s transform 0.4s;
-    position: relative;
-    /* top: 0; */
-    /* max-height: 0; */
-    /* opacity: 0; */
     width: 100%;
-    /* visibility: 0;
-    opacity: 0; */
 }
+
+.project-section .projects .one,
+.project-section .projects .two {
+    transition: opacity 300ms ease, transform 300ms ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-section .projects .one.fade-out,
+.project-section .projects .two.fade-out {
+    opacity: 0;
+    transform: scale(0.96);
+    pointer-events: none;
+}
+
 .project-section .projects .one {
     width: calc(33.33% - 16.66px);
     height: fit-content;
@@ -364,20 +373,7 @@ nav .phone-menu.active {
     width: 100%;
     border-radius: 15px;
 }
-.project-section .projects .one .info {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: calc(100% - 80px);
-    height: calc(100% - 80px);
-    background-color: #fdf9cfec;
-    backdrop-filter: blur(10px);
-    scale: 0;
-    opacity: 0;
-    transition: 400ms;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
-}
+.project-section .projects .one .info,
 .project-section .projects .two .info {
     position: absolute;
     top: 40px;
@@ -392,7 +388,7 @@ nav .phone-menu.active {
     border-radius: 20px;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
 }
-.project-section .projects .info span{
+.project-section .projects .info span {
     position: absolute;
     right: 25px;
     top: 25px;
@@ -422,19 +418,11 @@ nav .phone-menu.active {
 .project-section .projects .info .name a img {
     width: 50px;
 }
-.projects .one:hover .info{
+.projects .one:hover .info,
+.projects .two:hover .info {
     scale: 1;
     opacity: 1;
 }
-.projects .two:hover .info{
-    scale: 1;
-    opacity: 1;
-}
-.filter.show {
-    visibility: 1;
-    opacity: 1;
-}
-
 
 
 .companies {
