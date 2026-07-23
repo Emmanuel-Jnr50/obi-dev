@@ -335,15 +335,15 @@ const projects = {
     screenshotfive: "/img/temnix-footer-graphic.png",
     livelink: "https://emmanuel-jnr50.github.io/facit_website/"
   },
-  gunique: {
-    name: "G-Unique",
+  twist: {
+    name: "Twist®",
     service: "Web Development & Design,Ecommerce Setup, Full-Stack Developement, UI/UX Design",
     mainimg: "/img/clippy-mock.png",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
-    date: "September, 2024",
+    date: "July 23rd, 2026",
     status: `<h4>Status:</h4>
-            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
-    client: "G-Unique Fashion Store",
+            <p class="status" style="color: #2973d4; background-color: #2973d414;">Coming Soon</p>`,
+    client: "Obi-Dev Enterprise",
     info: `<h4>Description:</h4>
             <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
 
