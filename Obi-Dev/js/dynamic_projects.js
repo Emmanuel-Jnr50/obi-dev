@@ -338,7 +338,7 @@ const projects = {
   twist: {
     name: "Twist®",
     service: "Web Development & Design,Ecommerce Setup, Full-Stack Developement, UI/UX Design",
-    mainimg: "/img/clippy-mock.png",
+    mainimg: "/img/TWIST - TRIAL.png",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
     date: "July 23rd, 2026",
     status: `<h4>Status:</h4>
@@ -379,7 +379,7 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/guniq-landing.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.png" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
                 <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
                 <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
