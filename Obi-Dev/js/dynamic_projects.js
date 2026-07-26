@@ -149,10 +149,11 @@ const projects = {
             ,
     imgsection: `<div class="image"><img src="/img/fidelity pixel mock.png" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
-    <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>`,
-    screenshotone: "/img/FIDELITY - DOUBLE.png",
+    <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
+    <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>`,
+    screenshotone: "/img/FIDELITY - COMPARE.png",
     screenshottwo: "/img/FIDELITY - MULTILPLE.png",
-    screenshotthree: "/img/How It Works Section.png",
+    screenshotthree: "/img/FIDELITY - DOUBLE.png",
     screenshotfour: "/img/BUYTREE - DASHBOARD.png",
     screenshotfive: "/img/temnix-footer-graphic.png",
     relatedimg: "/img/mockup portfolio-2.png",
@@ -231,15 +232,15 @@ const projects = {
     //               <a href="/project-details.html?id=project2" >Web Application</a>`,
     livelink: "www.govote.kesug.com"
   },
-  nest: {
-    name: "Nest - Personal Content Organizer",
+  gohub: {
+    name: "GoHub - Online Prayer Library",
     service: "Your personal space for collecting, organizing, and finding valuable content whenever you need it.",
     mainimg: "/img/clippy-mock.png",
     servicetwo: "UI/UX Design, Mobile App Design, Product Design, User Experience Research, Interaction Design",
-    date: "May 10th, 2026",
+    date: "October 10th, 2025",
     status: `<h4>Status:</h4>
-            <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
-    client: "Personal Project",
+            <p class="status" style="color: #0bc90b; background-color: #29d42914;">Finished</p>`,
+    client: "Godfrey Okoye University & Temnix Labs",
     info: `<h4>Description:</h4>
             <p >Nest is a <b style="color: #F9FDCF;">mobile-first application</b> that helps users <b style="color: #F9FDCF;">save, organize, and revisit digital content</b> such as articles, links, videos, notes, and other online resources in <b style="color: #F9FDCF;">one centralized workspace</b>.</p>
 
@@ -380,14 +381,7 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
-                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
-                <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
-    screenshotone: "/img/Hero Section.png",
-    screenshottwo: "/img/What We Offer Section.png",
-    screenshotthree: "/img/How It Works Section.png",
-    screenshotfour: "/img/What We Offer Section.png",
-    screenshotfive: "/img/How It Works Section.png",
+    projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>`,
     livelink: "https://www.gunique.com"
   },
 };

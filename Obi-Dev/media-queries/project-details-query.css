@@ -299,7 +299,7 @@ nav .phone-menu.active {
     animation: flicker 2s linear infinite;
 }
 .project-section .header h2 {
-    font-size: 25px;
+    font-size: 28px;
     line-height: 32px;
     font-weight: 700;
     color: #FDF9CF;
@@ -383,8 +383,8 @@ nav .phone-menu.active {
 }
 .project-details .left span p {
     color: #B6B5AF;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    /* line-height: 20px; */
     width: 100%;
 }
 
@@ -1180,7 +1180,7 @@ nav .phone-menu.active {
     animation: flicker 2s linear infinite;
 }
 .project-section .header h2 {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 32px;
     font-weight: 700;
     color: #FDF9CF;
@@ -1259,15 +1259,15 @@ nav .phone-menu.active {
     align-items: start;
 }
 .project-details .left span h4 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 100px;
+    width: 120px;
 }
 .project-details .left span p {
     color: #B6B5AF;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    /* line-height: 20px; */
     width: 100%;
 }
 .project-details .status {
@@ -2136,31 +2136,31 @@ nav .phone-menu.active {
     align-items: start;
 }
 .project-details .left span h4 {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 100px;
+    width: 150px;
 }
 .project-details .left span p {
     color: #B6B5AF;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    /* line-height: 20px; */
     width: 100%;
 }
 .project-details .status {
     padding: 5px 20px !important;
     border-radius: 20px;
     width: fit-content !important;
-    margin-left: -20px;
+    margin-left: -50px;
 }
-.project-details .left span:nth-child(5) {
+.project-details .left span:nth-child(6) {
     align-items: center;
     gap: 0px;
 }
-.project-details .left span:nth-child(6) {
+.project-details .left span:nth-child(7) {
     display: block;
 }
-.project-details .left span:nth-child(6) h4 {
+.project-details .left span:nth-child(7) h4 {
     padding-bottom: 30px;
     font-size: 20px;
 }
