@@ -400,7 +400,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // document.getElementById('productOldPrice').textContent = `₦${product.oldPrice.toLocaleString()} NGN`;
   } else {
-    document.getElementById('projectDetails').innerHTML = `<p style="text-align: center; font-size: 30px; font-weight: bold; padding: 0 30px;">Product not found</p>`;
+    document.getElementById('projectDetails').innerHTML = `<p style="color:#f9fdcf; text-align: center; font-size: 30px; font-weight: bold; padding: 0 30px; margin-top: 150px;">Sorry, i'm still working on this 😅</p>`;
+    document.getElementById('projectImages').innerHTML = ``;
   }
 });
 
