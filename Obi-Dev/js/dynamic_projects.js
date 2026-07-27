@@ -4,6 +4,7 @@ const projectId = urlParams.get('id');
 
 const projects = {
   temnixlabs: {
+    title: "Obi-Dev | Temnix Labs",
     name: "TEMNIX Labs",
     service: "Digital agency website showcasing modern services, trust, and premium design",
     mainimg: "/img/TEMNIX - TRIAL.png",
@@ -66,6 +67,7 @@ const projects = {
                   <a href="/project-details.html?id=project2" >Web Application</a>`
   },
   buytree: {
+    title: "Obi-Dev | BuyTree",
     name: "BuyTree",
     service: "Empowering Nigerian sellers with seamless online storefronts and intuitive commerce.",
     mainimg: "/img/BUYTREE - MOCK.png",
@@ -165,6 +167,7 @@ const projects = {
     livelink: "https://www.figma.com/design/QRAjxI8MffkKXmVGaDvQm1/Obi-Dev-Projects?node-id=11164-9420&t=UylEgfftl3fTtyEn-4"
   }, 
   govote: {
+    title: "Obi-Dev | GoVote",
     name: "GO-Vote",
     service: "Web Application Design, Front-End Developement, UI/UX Design, Mobile Application",
     mainimg: "/img/GOVOTE - MOCK.png",
@@ -233,22 +236,21 @@ const projects = {
     livelink: "www.govote.kesug.com"
   },
   gohub: {
+    title: "Obi-Dev | GoHub",
     name: "GoHub - Online Prayer Library",
     service: "Your personal space for collecting, organizing, and finding valuable content whenever you need it.",
-    mainimg: "/img/clippy-mock.png",
+    mainimg: "/img/GOHUB - MOCK.png",
     servicetwo: "UI/UX Design, Mobile App Design, Product Design, User Experience Research, Interaction Design",
     date: "October 10th, 2025",
     status: `<h4>Status:</h4>
             <p class="status" style="color: #0bc90b; background-color: #29d42914;">Finished</p>`,
     client: "Godfrey Okoye University & Temnix Labs",
     info: `<h4>Description:</h4>
-            <p >Nest is a <b style="color: #F9FDCF;">mobile-first application</b> that helps users <b style="color: #F9FDCF;">save, organize, and revisit digital content</b> such as articles, links, videos, notes, and other online resources in <b style="color: #F9FDCF;">one centralized workspace</b>.</p>
-
-            <h4>Problem</h4>
-            <p>People save <b style="color: #F9FDCF;">valuable content</b> across browsers, social media, messaging apps, and note-taking tools, <b style="color: #F9FDCF;">making it difficult</b> to stay organized and find important information later. As a result, <b style="color: #F9FDCF;">useful resources are often forgotten or lost</b>.</p>
-
-            <h4>Solution</h4>
-            <p>Nest <b style="color: #F9FDCF;">solves</b> this problem by providing a simple, intuitive platform where users can <b style="color: #F9FDCF;">save content from any source</b>, categorize it into collections, and <b style="color: #F9FDCF;">retrieve it quickly</b> when needed. The app emphasizes user-friendly design, <b style="color: #F9FDCF;">personalized workspaces</b>, and seamless access across devices.</p>
+            <p >GoHub – GOUNI Digital Prayer Hub
+            <h4>The Problem</h4>
+            <p>Students at <b style="color: #F9FDCF;">Godfrey Okoye University</b> relied on printed prayer books for their daily devotions. These books could easily be misplaced, forgotten, or damaged, making it difficult for students to maintain a <b style="color: #F9FDCF;">consistent prayer routine</b>. Carrying physical copies also added <b style="color: #F9FDCF;">unnecessary inconvenience</b>.</p>
+            <h4>The Solution</h4>
+            <p>GoHub is a <b style="color: #F9FDCF;">digital prayer companion</b> that replaces traditional prayer books with an accessible mobile platform. Students can <b style="color: #F9FDCF;">access daily prayers</b> and devotional resources anytime, anywhere, making spiritual materials more convenient, always available, and easier to incorporate into their everyday lives.</p>
 
             
             <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
@@ -273,20 +275,23 @@ const projects = {
                       <img src="/icons/figma-svgrepo-com.svg" alt="">
                       <p>Figma</p>
                   </span>
+                  <span class="base">
+                      <img src="/icons/mongo-svgrepo-com.svg" alt="">
+                      <p>MongoDB</p>
+                  </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/clippy-mock.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
-                <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
-                <div class="pic"><img src="" alt="" id="screenshotThree"></div>`,
-    screenshotone: "/img/Hero Section.png",
-    screenshottwo: "/img/What We Offer Section.png",
-    screenshotthree: "/img/How It Works Section.png",
-    screenshotfour: "/img/temnix-contact-graphic.png",
-    screenshotfive: "/img/temnix-footer-graphic.png",
-    livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
+    imgsection: `<div class="image"><img src="/img/GOHUB - MOCK.png" alt="" id="projectImgOne"></div>`,
+    projectscreenshots: ``,
+    // screenshotone: "/img/Hero Section.png",
+    // screenshottwo: "/img/What We Offer Section.png",
+    // screenshotthree: "/img/How It Works Section.png",
+    // screenshotfour: "/img/temnix-contact-graphic.png",
+    // screenshotfive: "/img/temnix-footer-graphic.png",
+    livelink: "https://gohub-alpha.vercel.app"
   },
   facit: {
+    title: "Obi-Dev | FACIT",
     name: "FACIT - Computing Faculty Website",
     service: "Modern responsive faculty website delivering accessible academic resources and engaging campus community.",
     mainimg: "/img/FACIT - MOCK.png",
@@ -337,43 +342,20 @@ const projects = {
     livelink: "https://emmanuel-jnr50.github.io/facit_website/"
   },
   twist: {
+    title: "Obi-Dev | Twist®",
     name: "Twist®",
-    service: "Web Development & Design,Ecommerce Setup, Full-Stack Developement, UI/UX Design",
+    service: "A bold fashion identity celebrating individuality through timeless minimalist streetwear design.",
     mainimg: "/img/TWIST - TRIAL.png",
-    servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design",
+    servicetwo: "Brand Identity Design, Visual Identity Systems, Logo Design, Brand Strategy",
     date: "July 23rd, 2026",
     status: `<h4>Status:</h4>
             <p class="status" style="color: #2973d4; background-color: #2973d414;">Coming Soon</p>`,
     client: "Obi-Dev Enterprise",
     info: `<h4>Description:</h4>
-            <p >A<b style="color: #FDF9CF;"> Nigeria-first</b> commerce platform built to empower sellers with <b style="color: #FDF9CF;">simple storefront creation</b>, smarter product management, and a smoother <b style="color: #FDF9CF;">online selling</b> experience.<br><br>
-
-            <b style="color: #FDF9CF;">BuyTree</b> is a digital commerce concept created to support <b style="color: #FDF9CF;">small businesses</b> and <b style="color: #FDF9CF;">independent vendors</b> by giving them a simple way to launch and manage their own online stores. Inspired by modern e-commerce platforms, the experience was reimagined for the local market with a stronger focus on <b style="color: #FDF9CF;">accessibility, product presentation, and ease of use</b>.<br><br>
-
-            The platform explores features that go beyond basic storefronts, including smarter tools for organizing products, managing sales flow, and <b style="color: #FDF9CF;">helping sellers grow their online presence</b> more effectively.</p>
+            <p >Designed a complete <b style="color: #f9fcdf;">visual identity</b> for <b style="color: #f9fcdf;">Twist</b>, creating a bold, minimalist fashion brand through logo design, typography, colour systems, and brand applications that communicate <b style="color: #f9fcdf;">confidence and individuality</b>. <br><br> <b style="color: #f9fcdf;">Stay Tuned.</b></p>
             
             <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
                 <div class="skill-set">
-                  <span class="base">
-                    <img src="/icons/html-5-svgrepo-com.svg" alt="">
-                    <p>HTML</p>
-                  </span>
-                  <span class="base">
-                    <img src="/icons/react-svgrepo-com.svg" alt="">
-                    <p>React js</p>
-                  </span>
-                  <span class="base">
-                      <img src="/icons/css-3-svgrepo-com.svg" alt="">
-                      <p>CSS3</p>
-                  </span>
-                  <span class="base">
-                      <img src="/icons/js-svgrepo-com.svg" alt="">
-                      <p>Javascript</p>
-                  </span>
-                  <span class="base">
-                      <img src="/icons/tailwind-svgrepo-com.svg" alt="">
-                      <p>Tailwind CSS</p>
-                  </span>
                   <span class="base">
                       <img src="/icons/figma-svgrepo-com.svg" alt="">
                       <p>Figma</p>
@@ -381,8 +363,11 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>`,
-    livelink: "https://www.gunique.com"
+    projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>
+    <div class="pic"><img src="" alt="" id="screenshotTwo"></div>`,
+    screenshotone: "/img/twist-logobg 1.png",
+    screenshottwo: "/img/twist-logo.png",
+    livelink: "#"
   },
 };
 
