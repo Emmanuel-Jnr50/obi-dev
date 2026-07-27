@@ -363,8 +363,7 @@ const projects = {
                 </div>
             `,
     imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.png" alt="" id="projectImgOne"></div>`,
-    projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>
-    <div class="pic"><img src="" alt="" id="screenshotTwo"></div>`,
+    projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>`,
     screenshotone: "/img/twist-logobg 1.png",
     screenshottwo: "/img/twist-logo.png",
     livelink: "#"
