@@ -238,7 +238,7 @@ const projects = {
   gohub: {
     title: "Obi-Dev | GoHub",
     name: "GoHub - Online Prayer Library",
-    service: "Your personal space for collecting, organizing, and finding valuable content whenever you need it.",
+    service: "Digital prayer companion providing accessible devotional resources anytime, anywhere.",
     mainimg: "/img/GOHUB - MOCK.png",
     servicetwo: "UI/UX Design, Mobile App Design, Product Design, User Experience Research, Interaction Design",
     date: "October 10th, 2025",
