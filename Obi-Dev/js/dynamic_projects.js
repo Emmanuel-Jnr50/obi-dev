@@ -137,7 +137,7 @@ const projects = {
     date: "January 2025",
     status: `<h4>Status:</h4>
             <p class="status" style="color: #d4c329; background-color: #d4c32914;">Work In Progress</p>`,
-    mainimg: "/img/fidelity pixel mock.png",
+    mainimg: "/img/fidelity pixel mock.webp",
     client: "Fidelity Bank PLC",
     info: `<h4 style="padding-top: 0px; font-size: 16px; font-weight: 600;">Description:</h4>
             <p style="padding-bottom: 20px;">A modern <b style="color: #FDF9CF;">mobile banking redesign</b> focused on clarity, accessibility, and a smoother user experience. <br><br>
@@ -149,15 +149,15 @@ const projects = {
             
             `
             ,
-    imgsection: `<div class="image"><img src="/img/fidelity pixel mock.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/fidelity pixel mock.webp" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
     <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
     <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>`,
-    screenshotone: "/img/FIDELITY - COMPARE.png",
-    screenshottwo: "/img/FIDELITY - MULTILPLE.png",
-    screenshotthree: "/img/FIDELITY - DOUBLE.png",
-    screenshotfour: "/img/BUYTREE - DASHBOARD.png",
-    screenshotfive: "/img/temnix-footer-graphic.png",
+    screenshotone: "/img/FIDELITY - COMPARE.webp",
+    screenshottwo: "/img/FIDELITY - MULTILPLE.webp",
+    screenshotthree: "/img/FIDELITY - DOUBLE.webp",
+    screenshotfour: "/img/BUYTREE - DASHBOARD.webp",
+    screenshotfive: "/img/temnix-footer-graphic.webp",
     relatedimg: "/img/mockup portfolio-2.png",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
@@ -222,10 +222,10 @@ const projects = {
                         <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div> 
                         <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>
                         <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotFour"></div>`,
-    screenshotone: "/img/GOVOTE - SCREENS.png",
-    screenshottwo: "/img/GOVOTE- VOTES.png",
-    screenshotthree: "/img/GOVOTE - SCREENSLIGHT.png",
-    screenshotfour: "/img/GOVOTE - BW.png",
+    screenshotone: "/img/GOVOTE - SCREENS.webp",
+    screenshottwo: "/img/GOVOTE- VOTES.webp",
+    screenshotthree: "/img/GOVOTE - SCREENSLIGHT.webp",
+    screenshotfour: "/img/GOVOTE - BW2.webp",
     screenshotfive: "/img/temnix-footer-graphic.png",
     // relatedimg: "/img/mockup portfolio-2.png",
     // relatedname: `<h3>GoHub Prayer App</h3>
