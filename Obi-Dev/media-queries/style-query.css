@@ -292,6 +292,9 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 25px;
     width: 90%;
 }
+.hero .about-me .arrow {
+    padding-bottom: 45px;
+}
 .hero .about-me>.arrow img {
     width: 350px;
     margin-top: 15px;
@@ -305,9 +308,33 @@ body::-webkit-scrollbar-thumb {
     width: 95%;
     line-height: 28px;
 }
+.hero .wa-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px #ffffff12;
+    border: none;
+    font-weight: 500;
+    width: fit-content;
+    font-size: 15px;
+    color: var(--main-color);
+    transition: all 400ms;
+    margin-bottom: 30px;
+}
+.hero .wa-btn:active {
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0.8;
+}
+.hero .wa-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
 .hero .about-me .stats {
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
     gap: 25px;
     border-top: 1px solid #39383894;
     border-bottom: 1px solid #39383894;
@@ -407,6 +434,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: 50%;
     transform: translateX(-50%);
     transition: all 400ms;
+    margin-top: 20px;
 }
 .hero .profile a button:active {
     transform: translateX(-50%) scale(0.9);
