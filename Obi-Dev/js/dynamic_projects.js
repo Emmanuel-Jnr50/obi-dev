@@ -7,7 +7,7 @@ const projects = {
     title: "Obi-Dev | Temnix Labs",
     name: "TEMNIX Labs",
     service: "Digital agency website showcasing modern services, trust, and premium design",
-    mainimg: "/img/TEMNIX - TRIAL.png",
+    mainimg: "/img/TEMNIX - TRIAL.webp",
     servicetwo: "Web Design & Development, Front-End Developement, UI/UX Design, Product Design",
     date: "August, 2025",
     status: `<h4>Status:</h4>
@@ -46,7 +46,7 @@ const projects = {
     livelink: "https://www.temnix.com",
     imgsection: `
                 <div class="image">
-                    <img src="/img/TEMNIX - TRIAL.png" alt="">
+                    <img src="/img/TEMNIX - TRIAL.webp" alt="">
                 </div>
             `,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
@@ -54,15 +54,15 @@ const projects = {
                 <div class="pic"><img src="" alt="" id="screenshotThree"></div>
                 <div class="pic"><img src="" alt="" id="screenshotFour"></div>
                 <div class="pic"><img src="" alt="" id="screenshotFive"></div>`,
-    screenshotone: "/img/TEMNIX - HOME.png",
-    screenshottwo: "/img/TEMNIX - ABOUT.png",
-    screenshotthree: "/img/TEMNIX - SERVICES.png",
-    screenshotfour: "/img/TEMNIX - PROJECTS.png",
-    screenshotfive: "/img/TEMNIX - CONTACT.png",
-    relatedimg: "/img/mockup portfolio-2.png",
+    screenshotone: "/img/TEMNIX - HOME.webp",
+    screenshottwo: "/img/TEMNIX - ABOUT.webp",
+    screenshotthree: "/img/TEMNIX - SERVICES.webp",
+    screenshotfour: "/img/TEMNIX - PROJECTS.webp",
+    screenshotfive: "/img/TEMNIX - CONTACT.webp",
+    relatedimg: "/img/mockup portfolio-2.webp",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
-    relatedimgtwo: "/img/buytree mock.png",
+    relatedimgtwo: "/img/buytree mock.webp",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
                   <a href="/project-details.html?id=project2" >Web Application</a>`
   },
@@ -70,7 +70,7 @@ const projects = {
     title: "Obi-Dev | BuyTree",
     name: "BuyTree",
     service: "Empowering Nigerian sellers with seamless online storefronts and intuitive commerce.",
-    mainimg: "/img/BUYTREE - MOCK.png",
+    mainimg: "/img/BUYTREE - MOCK.webp",
     servicetwo: "E-Commerce Setups, SaaS Development, Front-End Developement, UI/UX Design, Product Design",
     date: "April 01st, 2026",
     status: `<h4>Status:</h4>
@@ -111,20 +111,20 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/BUYTREE - MOCK.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/BUYTREE - MOCK.webp" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
                 <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>
                 <div class="pic"><img src="" alt="" id="screenshotThree"></div>
                 <div class="pic"><img src="" alt="" id="screenshotFour"></div>`,
-    screenshotone: "/img/Hero Section.png",
-    screenshottwo: "/img/What We Offer Section.png",
-    screenshotthree: "/img/How It Works Section.png",
-    screenshotfour: "/img/BUYTREE - DASHBOARD.png",
-    screenshotfive: "/img/temnix-footer-graphic.png",
-    // relatedimg: "/img/mockup portfolio-2.png",
+    screenshotone: "/img/Hero Section.webp",
+    screenshottwo: "/img/What We Offer Section.webp",
+    screenshotthree: "/img/How It Works Section.webp",
+    screenshotfour: "/img/BUYTREE - DASHBOARD.webp",
+    screenshotfive: "/img/temnix-footer-graphic.webp",
+    // relatedimg: "/img/mockup portfolio-2.webp",
     // relatedname: `<h3>GoHub Prayer App</h3>
     //               <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
-    // relatedimgtwo: "/img/buytree mock.png",
+    // relatedimgtwo: "/img/buytree mock.webp",
     // relatednametwo: `<h3>BuyTree - Online Store</h3>
     //               <a href="/project-details.html?id=project2" >Web Application</a>`,
     livelink: "https://github.com/Emmanuel-Jnr50/buytree_ui/1"
@@ -158,10 +158,10 @@ const projects = {
     screenshotthree: "/img/FIDELITY - DOUBLE.webp",
     screenshotfour: "/img/BUYTREE - DASHBOARD.webp",
     screenshotfive: "/img/temnix-footer-graphic.webp",
-    relatedimg: "/img/mockup portfolio-2.png",
+    relatedimg: "/img/mockup portfolio-2.webp",
     relatedname: `<h3>GoHub Prayer App</h3>
                   <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
-    relatedimgtwo: "/img/buytree mock.png",
+    relatedimgtwo: "/img/buytree mock.webp",
     relatednametwo: `<h3>BuyTree - Online Store</h3>
     <a href="/project-details.html?id=project2" >Web Application</a>`,
     livelink: "https://www.figma.com/design/QRAjxI8MffkKXmVGaDvQm1/Obi-Dev-Projects?node-id=11164-9420&t=UylEgfftl3fTtyEn-4"
@@ -169,8 +169,8 @@ const projects = {
   govote: {
     title: "Obi-Dev | GoVote",
     name: "GO-Vote",
-    service: "Web Application Design, Front-End Developement, UI/UX Design, Mobile Application",
-    mainimg: "/img/GOVOTE - MOCK.png",
+    service: "Modernize campus event management with secure digital voting and transparent results.",
+    mainimg: "/img/GOVOTE - MOCK.webp",
     servicetwo: "Web Application Development, Digital Voting System Development, Front-End Developement, UI/UX Design",
     date: "June, 2026",
     status: `<h4>Status:</h4>
@@ -217,7 +217,7 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/GOVOTE - MOCK.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/GOVOTE - MOCK.webp" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div> 
                         <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div> 
                         <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotThree"></div>
@@ -226,11 +226,11 @@ const projects = {
     screenshottwo: "/img/GOVOTE- VOTES.webp",
     screenshotthree: "/img/GOVOTE - SCREENSLIGHT.webp",
     screenshotfour: "/img/GOVOTE - BW2.webp",
-    screenshotfive: "/img/temnix-footer-graphic.png",
-    // relatedimg: "/img/mockup portfolio-2.png",
+    screenshotfive: "/img/temnix-footer-graphic.webp",
+    // relatedimg: "/img/mockup portfolio-2.webp",
     // relatedname: `<h3>GoHub Prayer App</h3>
     //               <a href="/project-details.html?id=project3" >UI/UX Design</a>`,
-    // relatedimgtwo: "/img/buytree mock.png",
+    // relatedimgtwo: "/img/buytree mock.webp",
     // relatednametwo: `<h3>BuyTree - Online Store</h3>
     //               <a href="/project-details.html?id=project2" >Web Application</a>`,
     livelink: "www.govote.kesug.com"
@@ -239,7 +239,7 @@ const projects = {
     title: "Obi-Dev | GoHub",
     name: "GoHub - Online Prayer Library",
     service: "Digital prayer companion providing accessible devotional resources anytime, anywhere.",
-    mainimg: "/img/GOHUB - MOCK.png",
+    mainimg: "/img/GOHUB - MOCK.webp",
     servicetwo: "UI/UX Design, Mobile App Design, Product Design, User Experience Research, Interaction Design",
     date: "October 10th, 2025",
     status: `<h4>Status:</h4>
@@ -281,20 +281,20 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/GOHUB - MOCK.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/GOHUB - MOCK.webp" alt="" id="projectImgOne"></div>`,
     projectscreenshots: ``,
-    // screenshotone: "/img/Hero Section.png",
-    // screenshottwo: "/img/What We Offer Section.png",
-    // screenshotthree: "/img/How It Works Section.png",
-    // screenshotfour: "/img/temnix-contact-graphic.png",
-    // screenshotfive: "/img/temnix-footer-graphic.png",
+    // screenshotone: "/img/Hero Section.webp",
+    // screenshottwo: "/img/What We Offer Section.webp",
+    // screenshotthree: "/img/How It Works Section.webp",
+    // screenshotfour: "/img/temnix-contact-graphic.webp",
+    // screenshotfive: "/img/temnix-footer-graphic.webp",
     livelink: "https://gohub-alpha.vercel.app"
   },
   facit: {
     title: "Obi-Dev | FACIT",
     name: "FACIT - Computing Faculty Website",
     service: "Modern responsive faculty website delivering accessible academic resources and engaging campus community.",
-    mainimg: "/img/FACIT - MOCK.png",
+    mainimg: "/img/FACIT - MOCK.webp",
     servicetwo: "Web Development & Design, Full-Stack Developement, UI/UX Design",
     date: "July 2nd, 2026",
     status: `<h4>Status:</h4>
@@ -331,21 +331,21 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/FACIT - MOCK.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/FACIT - MOCK.webp" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotOne"></div>
                 <div class="pic"><img src="img/kevin-bhagat-ms-QnzmKGVM-unsplash.jpg" alt="" id="screenshotTwo"></div>`,
-    screenshotone: "/img/FACIT - HOME.png",
-    screenshottwo: "/img/FACIT - ABOUT.png",
-    screenshotthree: "/img/How It Works Section.png",
-    screenshotfour: "/img/temnix-contact-graphic.png",
-    screenshotfive: "/img/temnix-footer-graphic.png",
+    screenshotone: "/img/FACIT - HOME.webp",
+    screenshottwo: "/img/FACIT - ABOUT.webp",
+    screenshotthree: "/img/How It Works Section.webp",
+    screenshotfour: "/img/temnix-contact-graphic.webp",
+    screenshotfive: "/img/temnix-footer-graphic.webp",
     livelink: "https://emmanuel-jnr50.github.io/facit_website/"
   },
   twist: {
     title: "Obi-Dev | Twist®",
     name: "Twist®",
     service: "A bold fashion identity celebrating individuality through timeless minimalist streetwear design.",
-    mainimg: "/img/TWIST - TRIAL.png",
+    mainimg: "/img/TWIST - TRIAL.webp",
     servicetwo: "Brand Identity Design, Visual Identity Systems, Logo Design, Brand Strategy",
     date: "July 23rd, 2026",
     status: `<h4>Status:</h4>
@@ -362,10 +362,10 @@ const projects = {
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.png" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.webp" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>`,
-    screenshotone: "/img/twist-logobg 1.png",
-    screenshottwo: "/img/twist-logo.png",
+    screenshotone: "/img/twist-logobg 1.webp",
+    screenshottwo: "/img/twist-logo.webp",
     livelink: "#"
   },
 };
