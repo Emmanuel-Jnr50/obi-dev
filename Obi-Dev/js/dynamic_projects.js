@@ -43,7 +43,7 @@ const projects = {
                 <p>GSAP</p>
               </span>
             </div>`,
-    livelink: "https://www.temnix.com",
+    livelink: "https://emmanuel-jnr50.github.io/temnix/",
     imgsection: `
                 <div class="image">
                     <img src="/img/TEMNIX - TRIAL.webp" alt="">

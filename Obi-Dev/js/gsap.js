@@ -42,7 +42,7 @@ gsap.from(".more-info .info>h2", {
 gsap.from(".info .btn", {
   scrollTrigger: {
     trigger: ".more-info .info>h2",     // element to watch
-    start: "top 30%",      // when element hits 80% of viewport
+    start: "top 70%",      // when element hits 80% of viewport
     toggleActions: "play none none none" 
     // play | pause | reverse | reset
   },

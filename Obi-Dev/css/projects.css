@@ -19,7 +19,7 @@ html {
 }
 body {
     overflow-x: hidden;
-    background-color: #141413;
+    background-color: #0e0e0e;
 }
 body::-webkit-scrollbar {
     width: 4px;
@@ -88,7 +88,7 @@ nav {
     margin: 0px 0px 28px 0px;
     padding: 0px 0px 0px 10px;
     gap: 15px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     position: relative;
     justify-content: center;
     top: 30px;
