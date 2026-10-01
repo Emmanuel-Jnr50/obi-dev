@@ -341,32 +341,50 @@ const projects = {
     screenshotfive: "/img/temnix-footer-graphic.webp",
     livelink: "https://emmanuel-jnr50.github.io/facit_website/"
   },
-  twist: {
-    title: "Obi-Dev | Twist®",
-    name: "Twist®",
-    service: "A bold fashion identity celebrating individuality through timeless minimalist streetwear design.",
-    mainimg: "/img/TWIST - TRIAL.webp",
-    servicetwo: "Brand Identity Design, Visual Identity Systems, Logo Design, Brand Strategy",
-    date: "July 23rd, 2026",
+  zeedeecorner: {
+    title: "Obi-Dev | Zee & Dee Corner",
+    name: "Zee & Dee Corner",
+    service: "Modern website showcasing cafe, perfume, decor, wines and makeover under one brand.",
+    mainimg: "/img/Z&D MOCK.jpg",
+    servicetwo: "Brand Identity Design, Website Design, Logo Design, SEO, Front-End Developement",
+    date: "August 26, 2026",
     status: `<h4>Status:</h4>
-            <p class="status" style="color: #2973d4; background-color: #2973d414;">Coming Soon</p>`,
-    client: "Obi-Dev Enterprise",
+            <p class="status" style="color: #0bc90b; background-color: #29d42914;">Finished</p>`,
+    client: "Zee & Dee Corner | Karu, Abuja",
     info: `<h4>Description:</h4>
-            <p >Designed a complete <b style="color: #f9fcdf;">visual identity</b> for <b style="color: #f9fcdf;">Twist</b>, creating a bold, minimalist fashion brand through logo design, typography, colour systems, and brand applications that communicate <b style="color: #f9fcdf;">confidence and individuality</b>. <br><br> <b style="color: #f9fcdf;">Stay Tuned.</b></p>
+            <p>A modern, responsive business and developed for <b style="color: #f9fcdf;">Zee & Dee Corner</b>, a lifestyle destination in Abuja featuring a <b style="color: #f9fcdf;">cafe, wine store, perfumes and fragrances, home decor,</b> and makeover services in  <b style="color: #f9fcdf;">one collective corner store.</b> <br><br> 
+            Built from <b style="color: #f9fcdf;">sratch</b> with a focus on visual storytelling, responsive UI, performance, and local SEO, the website includes <b style="color: #f9fcdf;">dedicated business sections</b>, cafe highlights, galleries, testimonials, <b style="color: #f9fcdf;">Google Maps integration</b>, opening hours and direct WhatsApp contact.<br><br> I also handled image optimization, <b style="color: #f9fcdf;">SEO implementation</b>, local business structured data, domain hosting, and <b style="color: #f9fcdf;">Google Search indexing.</b>
+            <b style="color: #f9fcdf;"></b></p>
             
             <h4 style="margin-top: 60px;">Tools and Technologies Used:</h4>
                 <div class="skill-set">
+                  <span class="base">
+                      <img src="/icons/html-5-svgrepo-com.svg" alt="">
+                      <p>HTML</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/css-3-svgrepo-com.svg" alt="">
+                      <p>CSS3</p>
+                  </span>
+                  <span class="base">
+                      <img src="/icons/js-svgrepo-com.svg" alt="">
+                      <p>Javascript</p>
+                  </span>
+                  <span class="base">
+                      <img src="/img/tweenmax.png.cf27916e926fbb328ff214f66b4c8429.png" alt="">
+                      <p>GSAP</p>
+                  </span>
                   <span class="base">
                       <img src="/icons/figma-svgrepo-com.svg" alt="">
                       <p>Figma</p>
                   </span>
                 </div>
             `,
-    imgsection: `<div class="image"><img src="/img/TWIST - TRIAL.webp" alt="" id="projectImgOne"></div>`,
+    imgsection: `<div class="image"><img src="/img/Z&D MOCK.jpg" alt="" id="projectImgOne"></div>`,
     projectscreenshots: `<div class="pic"><img src="" alt="" id="screenshotOne"></div>`,
     screenshotone: "/img/twist-logobg 1.webp",
     screenshottwo: "/img/twist-logo.webp",
-    livelink: "#"
+    livelink: "https://www.zeeanddee.com"
   },
 };
 

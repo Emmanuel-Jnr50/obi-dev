@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".hero .about-me h2", {
+  opacity: 0,
+  y: 50,
+  filter: "blur(14px)",
+  duration: 2,
+  stagger: 0.08,
+  ease: "power4.out",
+})
 gsap.from(".about-section .header span", {
   scrollTrigger: {
     trigger: ".about-section",     // element to watch
@@ -190,8 +198,8 @@ gsap.from(".services .service-cards .card", {
     // play | pause | reverse | reset
   },
   y: 80,       // move from below
-  opacity: 0.2,   // start invisible
-  duration: 3,
+  opacity: 0,   // start invisible
+  duration: 2,
   ease: "power3.out",
   stagger: 0.2
 });

@@ -573,11 +573,11 @@ nav .phone-menu.active {
     animation: flicker 2s linear infinite;
 }
 .pricing .header .head h2 {
-    font-size: 23px;
+    font-size: 25px;
     line-height: 32px;
     font-weight: 600;
     color: var(--main-color);
-    width: 100%;
+    width: 90%;
     padding: 0 30px;
 }
 .pricing .header h2 span {
@@ -1521,11 +1521,11 @@ nav .phone-menu.active {
     animation: flicker 2s linear infinite;
 }
 .pricing .header .head h2 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 36px;
     font-weight: 600;
     color: var(--main-color);
-    width: 70%;
+    width: 90%;
     padding: 0 30px;
 }
 .pricing .header h2 span {

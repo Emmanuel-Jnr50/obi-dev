@@ -600,7 +600,8 @@ nav .phone-menu.active {
     align-items: center;
     margin-left: 50%;
     transform: translateX(-50%);
-    top: -30%;background-color: transparent;
+    top: -30%;
+    background-color: transparent;
     border-radius: 50%;
     margin-top: 50px;
 }
