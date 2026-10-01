@@ -352,7 +352,7 @@ const projects = {
             <p class="status" style="color: #0bc90b; background-color: #29d42914;">Finished</p>`,
     client: "Zee & Dee Corner | Karu, Abuja",
     info: `<h4>Description:</h4>
-            <p>A modern, responsive business and developed for <b style="color: #f9fcdf;">Zee & Dee Corner</b>, a lifestyle destination in Abuja featuring a <b style="color: #f9fcdf;">cafe, wine store, perfumes and fragrances, home decor,</b> and makeover services in  <b style="color: #f9fcdf;">one collective corner store.</b> <br><br> 
+            <p>A modern, responsive business website designed and developed for <b style="color: #f9fcdf;">Zee & Dee Corner</b>, a lifestyle destination in Abuja featuring a <b style="color: #f9fcdf;">cafe, wine store, perfumes and fragrances, home decor,</b> and makeover services in  <b style="color: #f9fcdf;">one collective corner store.</b> <br><br> 
             Built from <b style="color: #f9fcdf;">sratch</b> with a focus on visual storytelling, responsive UI, performance, and local SEO, the website includes <b style="color: #f9fcdf;">dedicated business sections</b>, cafe highlights, galleries, testimonials, <b style="color: #f9fcdf;">Google Maps integration</b>, opening hours and direct WhatsApp contact.<br><br> I also handled image optimization, <b style="color: #f9fcdf;">SEO implementation</b>, local business structured data, domain hosting, and <b style="color: #f9fcdf;">Google Search indexing.</b>
             <b style="color: #f9fcdf;"></b></p>
             
