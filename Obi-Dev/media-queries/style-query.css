@@ -1,15 +1,15 @@
 :root {
     --main-color: #fdf9cf;
-    --background-color: #141413;
+    --background-color: #0e0e0e;
     --border-color: #262525;
     --small-text-color: #B6B5AF;
 }
 
 @media (min-width: 300px) and (max-width: 450px) {
-    /* headers- var(--main-color),background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- var(--main-color),background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/Uto');  
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     /* outline: 1px solid white; */
     -webkit-tap-highlight-color: transparent;
 }
@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(2px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-family: Campton;
+    font-family: Uto;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
@@ -2018,10 +2018,10 @@ body::-webkit-scrollbar-thumb {
 
 }
 @media (min-width: 451px) and (max-width: 1000px) {
-    /* headers- var(--main-color),background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- var(--main-color),background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/Uto');  
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
                 
@@ -2030,7 +2030,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     /* outline: 1px solid white; */
     -webkit-tap-highlight-color: transparent;
 }
@@ -2091,7 +2091,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(2px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-family: Campton;
+    font-family: Uto;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
@@ -3988,10 +3988,10 @@ body::-webkit-scrollbar-thumb {
 
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-    /* headers- var(--main-color),background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- var(--main-color),background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/Uto');  
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
                 
@@ -4000,7 +4000,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     /* outline: 1px solid white; */
     -webkit-tap-highlight-color: transparent;
 }
@@ -4061,7 +4061,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(2px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-family: Campton;
+    font-family: Uto;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
@@ -4411,7 +4411,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 30px;
     padding: 70px 60px 70px 60px;
     margin-bottom: 25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
 }
 .about-section .header span {
     border: 1px solid #39383894;
@@ -4555,10 +4555,10 @@ body::-webkit-scrollbar-thumb {
     /* scale: 0.1; */
 }
 .about-section .more-info .info .about-content button:hover{
-    color: #141413;
+    color: #0e0e0e;
 }
 .about-section .more-info .info .about-content button:hover svg{
-    stroke: #141413;
+    stroke: #0e0e0e;
 }
 @keyframes upDown {
     0% {
@@ -5905,16 +5905,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1280px) and (max-width: 1550px) {
-/* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+/* headers- #FDF9CF,background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
-@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/Uto');  
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     scroll-behavior: smooth;
 }
 html {
@@ -5954,12 +5954,12 @@ body::-webkit-scrollbar-thumb {
 .web-info h2 {
     color: #FDF9CF;
     font-size: 30px;
-    font-family: Campton;
+    font-family: Uto;
 }
 .web-info h3 {
     color: #B6B5AF;
     font-size: 22px;
-    font-family: Campton;
+    font-family: Uto;
     font-weight: 600;
 }
 @keyframes flicker {
@@ -6000,7 +6000,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(8px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-family: Campton;
+    font-family: Uto;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
@@ -6093,7 +6093,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     padding: 10px 30px 30px 30px;
     border-radius: 20px;
     visibility: hidden;
@@ -6243,7 +6243,7 @@ body::-webkit-scrollbar-thumb {
 }
 .hero .profile .image {
     width: 100%;
-    height: 25%;
+    height: 35%;
     overflow: hidden;
     border-radius: 15px;
     margin-bottom: 25px;
@@ -6316,7 +6316,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 30px;
     padding: 90px 80px 90px 80px;
     margin-bottom: 25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
 }
 .about-section .header span {
     border: 1px solid #39383894;
@@ -6365,7 +6365,7 @@ body::-webkit-scrollbar-thumb {
 .about-section .more-info .image {
     width: 520px;
     border-radius: 20px;
-    height: 650px;
+    height: 600px;
     overflow: hidden;
 }
 .about-section .more-info .image img {
@@ -6380,7 +6380,7 @@ body::-webkit-scrollbar-thumb {
 .about-section .more-info .info h2 {
     font-size: 45px;
     color: #FDF9CF;
-    width: 500px;
+    width: 650px;
     margin-top: 20px;
     /* margin-right: -100px !important; */
     font-weight: 500;
@@ -6404,7 +6404,7 @@ body::-webkit-scrollbar-thumb {
     color: #b6b5afed;
     font-size: 16px;
     line-height: 25px;
-    width: 300px;
+    width: 500px;
 }
 .about-section .more-info .info .about-content .btn {
     height: 180px;
@@ -6458,10 +6458,10 @@ body::-webkit-scrollbar-thumb {
     /* scale: 0.1; */
 }
 .about-section .more-info .info .about-content button:hover{
-    color: #141413;
+    color: #0e0e0e;
 }
 .about-section .more-info .info .about-content button:hover svg{
-    stroke: #141413;
+    stroke: #0e0e0e;
 }
 @keyframes upDown {
     0% {
@@ -6510,7 +6510,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 50%;
+    width: 600px;
 }
 .resume .header h2 span {
     color: transparent;
@@ -6869,7 +6869,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px;
     font-weight: 600;
     color: #FDF9CF;
-    width: 50%;
+    width: 600px;
 }
 .services .header h2 span {
     color: transparent;
@@ -7429,10 +7429,8 @@ body::-webkit-scrollbar-thumb {
 }
 .client .testimonial .review .info {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
 }
 .client .testimonial .review .info span:nth-child(1) h3{
     font-weight: 500;

@@ -1,13 +1,13 @@
-/* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+/* headers- #FDF9CF,background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
-@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/Uto');  
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     scroll-behavior: smooth;
 }
 html {
@@ -47,12 +47,12 @@ body::-webkit-scrollbar-thumb {
 .web-info h2 {
     color: #FDF9CF;
     font-size: 30px;
-    font-family: Campton;
+    font-family: Uto;
 }
 .web-info h3 {
     color: #B6B5AF;
     font-size: 22px;
-    font-family: Campton;
+    font-family: Uto;
     font-weight: 600;
 }
 @keyframes flicker {
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     backdrop-filter: blur(8px);
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-family: Campton;
+    font-family: Uto;
 }
 .preloader span {
     animation: scaleOut 2s linear infinite;
@@ -187,7 +187,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     padding: 10px 30px 30px 30px;
     border-radius: 20px;
     visibility: hidden;
@@ -407,7 +407,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 30px;
     padding: 100px 90px 100px 90px;
     margin-bottom: 25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
 }
 .about-section .header span {
     border: 1px solid #39383894;
@@ -549,10 +549,10 @@ body::-webkit-scrollbar-thumb {
     /* scale: 0.1; */
 }
 .about-section .more-info .info .about-content button:hover{
-    color: #141413;
+    color: #0e0e0e;
 }
 .about-section .more-info .info .about-content button:hover svg{
-    stroke: #141413;
+    stroke: #0e0e0e;
 }
 @keyframes upDown {
     0% {
@@ -1739,6 +1739,10 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     margin: 0 auto;
     width: fit-content;
+}
+.contact .head h3 a {
+    text-decoration: none;
+    color: #FDF9CF;
 }
 .contact .contact-form {
     padding: 100px 50px;

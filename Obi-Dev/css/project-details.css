@@ -1,4 +1,4 @@
-/* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+/* headers- #FDF9CF,background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
 }
 html {
     scroll-behavior: smooth;
@@ -17,7 +17,7 @@ html {
 }
 body {
     overflow-x: hidden;
-    background-color: #141413;
+    background-color: #0e0e0e;
 }
 body::-webkit-scrollbar {
     width: 4px;
@@ -82,7 +82,7 @@ nav {
     margin: 0px 0px 28px 0px;
     padding: 0px 0px 0px 10px;
     gap: 15px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     position: relative;
     justify-content: center;
     top: 30px;
@@ -190,7 +190,7 @@ nav .phone-menu {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     padding: 10px 30px 30px 30px;
     border-radius: 20px;
     visibility: hidden;
@@ -728,7 +728,7 @@ nav .phone-menu.active {
     font-size: 25px;
 }
 .related-projects .info .name p {
-    background-color: #141413;
+    background-color: #0e0e0e;
     color: #FDF9CF;
     font-size: 14px;
     margin: 0 105px;
@@ -737,7 +737,7 @@ nav .phone-menu.active {
     font-weight: 600;
 }
 .related-projects .info .name a {
-    background-color: #141413;
+    background-color: #0e0e0e;
     color: #FDF9CF;
     font-size: 14px;
     margin: 0;
@@ -785,6 +785,10 @@ nav .phone-menu.active {
     justify-content: center;
     margin: 0 auto;
     width: fit-content;
+}
+.contact .head h3 a {
+    text-decoration: none;
+    color: #FDF9CF;
 }
 .contact .contact-form {
     padding: 100px 50px;

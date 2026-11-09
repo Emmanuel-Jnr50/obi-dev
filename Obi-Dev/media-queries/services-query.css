@@ -1,15 +1,15 @@
-@import url('https://fonts.cdnfonts.com/css/campton');  
+@import url('https://fonts.cdnfonts.com/css/Uto');  
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 :root {
     --main-color: #fdf9cf;
-    --background-color: #141413;
+    --background-color: #0e0e0e;
     --border-color: #262525;
     --small-text-color: #B6B5AF;
 }
 
 
 @media (min-width: 300px) and (max-width: 450px) {
-    /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- #FDF9CF,background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     -webkit-tap-highlight-color: transparent;
 }
 html {
@@ -954,7 +954,7 @@ nav .phone-menu.active {
 
 }
 @media (min-width: 451px) and (max-width: 1000px) {
-    /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- #FDF9CF,background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
@@ -962,7 +962,7 @@ nav .phone-menu.active {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     -webkit-tap-highlight-color: transparent;
 }
 html {
@@ -1901,7 +1901,7 @@ nav .phone-menu.active {
 
 }
 @media (min-width: 1000px) and (max-width: 1280px) {
-    /* headers- #FDF9CF,background - #141413, border- #262525, small texts- #B6B5AF*/
+    /* headers- #FDF9CF,background - #0e0e0e, border- #262525, small texts- #B6B5AF*/
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
@@ -1909,7 +1909,7 @@ nav .phone-menu.active {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     -webkit-tap-highlight-color: transparent;
 }
 html {
@@ -1988,7 +1988,7 @@ nav {
     margin: 0px 0px 28px 0px;
     padding: 10px 15px 10px 15px;
     gap: 15px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     position: relative;
     top: 0px;
     width: 100%;
@@ -2099,14 +2099,14 @@ nav .phone-menu {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -15px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
     top: 75px;
     visibility: hidden;
     transition: 400ms;
     opacity: 0;
-    background-color: #141413;
+    background-color: #0e0e0e;
 }
 nav .phone-menu .links2 span {
     display: flex;
@@ -2829,7 +2829,7 @@ nav .phone-menu.active {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Campton;
+    font-family: Uto;
     scroll-behavior: smooth;
 }
 html {
@@ -2906,7 +2906,7 @@ nav {
     margin: 0px 0px 28px 0px;
     padding: 0px 0px 0px 10px;
     gap: 15px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     position: relative;
     justify-content: center;
     top: 30px;
@@ -3014,7 +3014,7 @@ nav .phone-menu {
     box-shadow: inset 0px 0px 20px #ffffff12;
     width: 100%;
     margin-left: -25px;
-    background-color: #141413;
+    background-color: #0e0e0e;
     padding: 10px 30px 30px 30px;
     border-radius: 20px;
     visibility: hidden;

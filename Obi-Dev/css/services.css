@@ -740,6 +740,10 @@ nav .phone-menu.active {
     margin: 0 auto;
     width: fit-content;
 }
+.contact .head h3 a {
+    text-decoration: none;
+    color: #FDF9CF;
+}
 .contact .contact-form {
     padding: 100px 50px;
     display: flex;
